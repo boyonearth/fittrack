@@ -121,7 +121,32 @@
     "Cardio",
     "Full body"
   ],
-  "templates": [],
+  "templates": [
+    {
+      "name": "Chest day",
+      "exercises": [
+        {
+          "name": "Bicep curl",
+          "cat": "Biceps",
+          "sets": 0,
+          "reps": 0,
+          "kg": 0,
+          "dur": 0,
+          "t": "18:36"
+        },
+        {
+          "name": "Dumbell back pull",
+          "cat": "Triceps",
+          "sets": 2,
+          "reps": 10,
+          "kg": 10,
+          "dur": 0,
+          "t": "18:38"
+        }
+      ],
+      "created": "2026-06-13"
+    }
+  ],
   "days": {
     "w_2026-06-13": [
       {
@@ -144,5 +169,5 @@
       }
     ]
   },
-  "synced": "2026-06-13T17:39:45.705Z"
+  "synced": "2026-06-13T17:48:41.694Z"
 }
