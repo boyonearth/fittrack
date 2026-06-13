@@ -104,10 +104,6 @@
     {
       "n": "Jump rope",
       "c": "Cardio"
-    },
-    {
-      "n": "Dumbell back pull",
-      "c": "Triceps"
     }
   ],
   "cats": [
@@ -121,53 +117,7 @@
     "Cardio",
     "Full body"
   ],
-  "templates": [
-    {
-      "name": "Chest day",
-      "exercises": [
-        {
-          "name": "Bicep curl",
-          "cat": "Biceps",
-          "sets": 0,
-          "reps": 0,
-          "kg": 0,
-          "dur": 0,
-          "t": "18:36"
-        },
-        {
-          "name": "Dumbell back pull",
-          "cat": "Triceps",
-          "sets": 2,
-          "reps": 10,
-          "kg": 10,
-          "dur": 0,
-          "t": "18:38"
-        }
-      ],
-      "created": "2026-06-13"
-    }
-  ],
-  "days": {
-    "w_2026-06-13": [
-      {
-        "name": "Bicep curl",
-        "cat": "Biceps",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dur": 0,
-        "t": "18:48"
-      },
-      {
-        "name": "Dumbell back pull",
-        "cat": "Triceps",
-        "sets": 2,
-        "reps": 10,
-        "kg": 10,
-        "dur": 0,
-        "t": "18:48"
-      }
-    ]
-  },
-  "synced": "2026-06-13T17:48:55.303Z"
+  "templates": [],
+  "days": {},
+  "synced": "2026-06-13T20:49:52.627Z"
 }
