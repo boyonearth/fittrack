@@ -166,8 +166,26 @@
         "kg": 10,
         "dur": 0,
         "t": "18:38"
+      },
+      {
+        "name": "Bicep curl",
+        "cat": "Biceps",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dur": 0,
+        "t": "18:48"
+      },
+      {
+        "name": "Dumbell back pull",
+        "cat": "Triceps",
+        "sets": 2,
+        "reps": 10,
+        "kg": 10,
+        "dur": 0,
+        "t": "18:48"
       }
     ]
   },
-  "synced": "2026-06-13T17:48:41.694Z"
+  "synced": "2026-06-13T17:48:46.336Z"
 }
