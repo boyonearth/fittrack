@@ -118,6 +118,18 @@
     "Full body"
   ],
   "templates": [],
-  "days": {},
-  "synced": "2026-06-13T17:35:50.647Z"
+  "days": {
+    "w_2026-06-13": [
+      {
+        "name": "Bicep curl",
+        "cat": "Biceps",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dur": 0,
+        "t": "18:36"
+      }
+    ]
+  },
+  "synced": "2026-06-13T17:36:07.837Z"
 }
