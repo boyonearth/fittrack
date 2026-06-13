@@ -118,6 +118,33 @@
     "Full body"
   ],
   "templates": [],
-  "days": {},
-  "synced": "2026-06-13T20:49:52.627Z"
+  "days": {
+    "w_2026-06-13": [
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "21:52"
+      },
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "21:53"
+      }
+    ]
+  },
+  "synced": "2026-06-13T20:53:25.858Z"
 }
