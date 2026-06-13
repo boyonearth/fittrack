@@ -1,0 +1,123 @@
+{
+  "cfg": {
+    "weight": 79.4,
+    "goal": 2000,
+    "wGoal": 2500
+  },
+  "exercises": [
+    {
+      "n": "Bench press",
+      "c": "Chest"
+    },
+    {
+      "n": "Incline press",
+      "c": "Chest"
+    },
+    {
+      "n": "Chest fly",
+      "c": "Chest"
+    },
+    {
+      "n": "Tricep pushdown",
+      "c": "Triceps"
+    },
+    {
+      "n": "Skull crusher",
+      "c": "Triceps"
+    },
+    {
+      "n": "Dips",
+      "c": "Triceps"
+    },
+    {
+      "n": "Bicep curl",
+      "c": "Biceps"
+    },
+    {
+      "n": "Hammer curl",
+      "c": "Biceps"
+    },
+    {
+      "n": "Preacher curl",
+      "c": "Biceps"
+    },
+    {
+      "n": "Shoulder press",
+      "c": "Shoulders"
+    },
+    {
+      "n": "Lateral raise",
+      "c": "Shoulders"
+    },
+    {
+      "n": "Front raise",
+      "c": "Shoulders"
+    },
+    {
+      "n": "Squat",
+      "c": "Legs/Calves"
+    },
+    {
+      "n": "Leg press",
+      "c": "Legs/Calves"
+    },
+    {
+      "n": "Calf raise",
+      "c": "Legs/Calves"
+    },
+    {
+      "n": "Deadlift",
+      "c": "Legs/Calves"
+    },
+    {
+      "n": "Plank",
+      "c": "Abs"
+    },
+    {
+      "n": "Crunches",
+      "c": "Abs"
+    },
+    {
+      "n": "Leg raise",
+      "c": "Abs"
+    },
+    {
+      "n": "Lat pulldown",
+      "c": "Lateral muscles"
+    },
+    {
+      "n": "Pull-up",
+      "c": "Lateral muscles"
+    },
+    {
+      "n": "Cable row",
+      "c": "Lateral muscles"
+    },
+    {
+      "n": "Running",
+      "c": "Cardio"
+    },
+    {
+      "n": "Cycling",
+      "c": "Cardio"
+    },
+    {
+      "n": "Jump rope",
+      "c": "Cardio"
+    }
+  ],
+  "cats": [
+    "Chest",
+    "Triceps",
+    "Biceps",
+    "Shoulders",
+    "Legs/Calves",
+    "Abs",
+    "Lateral muscles",
+    "Cardio",
+    "Full body"
+  ],
+  "templates": [],
+  "days": {},
+  "synced": "2026-06-13T17:23:12.452Z"
+}
