@@ -104,6 +104,10 @@
     {
       "n": "Jump rope",
       "c": "Cardio"
+    },
+    {
+      "n": "Dumbell back pull",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -131,5 +135,5 @@
       }
     ]
   },
-  "synced": "2026-06-13T17:36:07.837Z"
+  "synced": "2026-06-13T17:38:19.247Z"
 }
