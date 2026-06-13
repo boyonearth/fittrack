@@ -9,6 +9,7 @@
 <meta name="theme-color" content="#8B5CF6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <title>FitTrack</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
@@ -27,22 +28,17 @@ html,body{background:var(--bg);min-height:100vh;color:var(--tx);overflow-x:hidde
 body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var(--safe-bot));-webkit-font-smoothing:antialiased}
 
 /* HEADER */
-.hdr{display:flex;align-items:center;
-  padding:calc(var(--safe-top) + 10px) 20px 14px;
+.hdr{padding:calc(var(--safe-top) + 10px) 20px 12px;
   position:sticky;top:0;z-index:90;background:var(--bg)}
-.logo{font-size:22px;font-weight:900;letter-spacing:-0.8px;color:var(--tx);
-  position:absolute;left:20px;
-  transition:opacity .25s ease,transform .25s ease;
-  pointer-events:auto;white-space:nowrap}
+.hdr-home{display:flex;flex-direction:column;align-items:center;gap:10px}
+.hdr-other{display:flex;align-items:center;justify-content:space-between;width:100%}
+.logo{font-size:24px;font-weight:900;letter-spacing:-0.8px;color:var(--tx);text-align:center;white-space:nowrap}
 .logo span{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.logo.hidden{opacity:0;transform:translateX(-20px);pointer-events:none}
-.hdr-right.spread{margin-left:0;width:100%;justify-content:space-between}
+.hdr-pills{display:flex;align-items:center;gap:8px;justify-content:space-between;width:100%}
+
 .hdr-right{display:flex;align-items:center;gap:8px;margin-left:auto;transition:all .3s ease}
-.dbadge{display:flex;align-items:center;gap:6px;background:var(--sur2);border:1px solid var(--bor2);border-radius:30px;padding:7px 12px;font-size:12px;font-weight:600;color:var(--tx2)}
-.sync-badge{display:flex;align-items:center;justify-content:center;
-  width:32px;height:32px;border-radius:50%;
-  border:2px solid var(--bor2);background:var(--sur2);
-  cursor:pointer;color:var(--tx3);flex-shrink:0;line-height:0;font-size:0}
+.dbadge{display:flex;align-items:center;gap:6px;background:var(--sur2);border:1px solid rgba(245,158,11,.35);border-radius:30px;padding:7px 12px;font-size:12px;font-weight:600;color:#FCD34D}
+.sync-badge{display:flex;align-items:center;gap:5px;padding:7px 11px;border-radius:30px;border:1.5px solid var(--bor2);background:var(--sur2);cursor:pointer;font-size:12px;font-weight:700;font-family:'Inter',sans-serif;flex-shrink:0}
 .sync-badge svg{display:block;flex-shrink:0}
 .sync-badge.notoken{border-color:rgba(160,160,184,.3);color:var(--tx3);animation:pGrey 2.5s ease-in-out infinite}
 .sync-badge.error{border-color:rgba(160,160,184,.3);color:var(--tx3);animation:pGrey 2.5s ease-in-out infinite}
@@ -361,23 +357,45 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 
 <!-- HEADER -->
 <div class="hdr" id="mainHdr">
-  <div class="logo" id="fitLogo">Fit<span>Track</span></div>
-  <div class="hdr-right" id="hdrRight">
-    <div class="sync-badge notoken" id="syncBadge" onclick="navTo(5)" title="Sync status">
-      <svg id="syncIcon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:block"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-    </div>
-    <button class="session-badge" id="sessionBadge" onclick="toggleSessionCard()">
-      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-      <span class="session-badge-txt" id="sessionBadgeTxt">Session</span>
-    </button>
-    <div class="dbadge">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.6"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
-      <span id="dbadge"></span>
+
+  <!-- HOME: logo centred top, 3 pills below spaced evenly -->
+  <div class="hdr-home" id="hdrHome">
+    <div class="logo">Fit<span>Track</span></div>
+    <div class="hdr-pills">
+      <button class="session-badge" id="sessionBadge" onclick="toggleSessionCard()">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+        <span class="session-badge-txt" id="sessionBadgeTxt">Session</span>
+      </button>
+      <div class="sync-badge notoken" id="syncBadge" onclick="navTo(5)" title="Sync">
+        <svg id="syncIcon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:block;flex-shrink:0"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        <span id="syncTxt">No sync</span>
+      </div>
+      <div class="dbadge">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.6"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+        <span id="dbadge"></span>
+      </div>
     </div>
   </div>
+
+  <!-- OTHER TABS: duration left, sync centre, date right -->
+  <div class="hdr-other" id="hdrOther" style="display:none">
+    <button class="session-badge" id="sessionBadge2" onclick="toggleSessionCard()">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+      <span class="session-badge-txt" id="sessionBadgeTxt2">Session</span>
+    </button>
+    <div class="sync-badge notoken" id="syncBadge2" onclick="navTo(5)" title="Sync">
+      <svg id="syncIcon2" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="display:block;flex-shrink:0"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      <span id="syncTxt2">No sync</span>
+    </div>
+    <div class="dbadge">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="opacity:.6"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+      <span id="dbadge2"></span>
+    </div>
+  </div>
+
 </div>
 
-<!-- SWIPEABLE SECTIONS -->
+<!-- SWIPE SECTIONS -->
 <div class="sec-wrap">
 <div class="swipe-wrap" id="swipeWrap">
 
@@ -977,10 +995,17 @@ function navTo(tabIdx){
   const prev=currentTab;
   currentTab=tabIdx;
   // Hide/show logo based on tab
-  const logo=document.getElementById('fitLogo');
-  const hdrRight=document.getElementById('hdrRight');
-  if(logo){logo.classList.toggle('hidden',tabIdx!==0);}
-  if(hdrRight){hdrRight.classList.toggle('spread',tabIdx!==0);}
+  const hdrHome=document.getElementById('hdrHome');
+  const hdrOther=document.getElementById('hdrOther');
+  if(tabIdx===0){
+    if(hdrHome)hdrHome.style.display='flex';
+    if(hdrOther)hdrOther.style.display='none';
+  } else {
+    if(hdrHome)hdrHome.style.display='none';
+    if(hdrOther)hdrOther.style.display='flex';
+    // Sync state to second header
+    syncHeaderState();
+  }
   // Hide all sections
   document.querySelectorAll('.swipe-sec').forEach(s=>s.classList.remove('active'));
   // Show target
@@ -1013,19 +1038,51 @@ function saveGHToken(){
   pushToGitHub().then(()=>{updateSettingsSync();alert('GitHub connected! Data will sync automatically.')}).catch(e=>{setSyncStatus('error','Error');alert('Connection failed: '+e.message)});
 }
 function disconnectGH(){showConfirm('Disconnect GitHub?','Your local data stays safe. You can reconnect anytime.',()=>{['gh_token','gh_user','gh_repo'].forEach(k=>localStorage.removeItem(k));ghSHA='';setSyncStatus('error','No sync');updateSettingsSync();})}
+function syncHeaderState(){
+  // Mirror session badge state to second header
+  const sb=document.getElementById('sessionBadge');
+  const sb2=document.getElementById('sessionBadge2');
+  const txt=document.getElementById('sessionBadgeTxt');
+  const txt2=document.getElementById('sessionBadgeTxt2');
+  if(sb&&sb2){sb2.className=sb.className;}
+  if(txt&&txt2){txt2.textContent=txt.textContent;}
+  // Mirror date badge
+  const d1=document.getElementById('dbadge');
+  const d2=document.getElementById('dbadge2');
+  if(d1&&d2){d2.textContent=d1.textContent;}
+  // Mirror sync badge
+  const sync1=document.getElementById('syncBadge');
+  const sync2=document.getElementById('syncBadge2');
+  const ic1=document.getElementById('syncIcon');
+  const ic2=document.getElementById('syncIcon2');
+  if(sync1&&sync2){sync2.className=sync1.className;}
+  if(ic1&&ic2){ic2.innerHTML=ic1.innerHTML;}
+}
 function setSyncStatus(state,text){
-  const b=document.getElementById('syncBadge'),ic=document.getElementById('syncIcon');
-  if(!b||!ic)return;
-  b.className='sync-badge '+state;
-  b.title=text;
-  const S='width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="display:block"';
-  if(state==='syncing'){
-    ic.outerHTML='<svg id="syncIcon" class="spinning" '+S+'><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>';
-  } else if(state==='synced'){
-    ic.outerHTML='<svg id="syncIcon" '+S+'><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>';
-  } else {
-    ic.outerHTML='<svg id="syncIcon" '+S+'><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>';
-  }
+  // Update class on both sync badges
+  ['syncBadge','syncBadge2'].forEach(id=>{
+    const b=document.getElementById(id);if(b)b.className='sync-badge '+state;
+  });
+  // Update text labels
+  const txt=document.getElementById('syncTxt');
+  const txt2=document.getElementById('syncTxt2');
+  const ic=document.getElementById('syncIcon');
+  const ic2=document.getElementById('syncIcon2');
+  const spinPath='M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z';
+  const checkPath='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z';
+  const crossPath='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z';
+  let label, path, spin=false;
+  if(state==='syncing'){label='Syncing...';path=spinPath;spin=true;}
+  else if(state==='synced'){label='Synced';path=checkPath;}
+  else{label='No sync';path=crossPath;}
+  if(txt)txt.textContent=label;
+  if(txt2)txt2.textContent=label;
+  // Update icons using setAttribute to avoid outerHTML id loss
+  [ic,ic2].forEach(el=>{
+    if(!el)return;
+    el.querySelector('path')&&el.querySelector('path').setAttribute('d',path);
+    spin?el.classList.add('spinning'):el.classList.remove('spinning');
+  });
 }
 function collectAllData(){
   const data={cfg,exercises,cats,templates,days:{},synced:new Date().toISOString()};
@@ -1803,7 +1860,9 @@ function exportCSV(){
 function saveSettings(){cfg.weight=parseFloat(document.getElementById('sWeight').value)||79.4;cfg.goal=parseInt(document.getElementById('sGoal').value)||2000;cfg.wGoal=parseInt(document.getElementById('sWGoal').value)||2500;svAndSync('cfg5',cfg);updStats();renderHome();renderWater();const m=document.getElementById('savedMsg');m.style.display='block';setTimeout(()=>m.style.display='none',2000)}
 
 // ── INIT ─────────────────────────────────────────────────────────────────────
-document.getElementById('dbadge').textContent=TODAY.toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'});
+const dateStr=TODAY.toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'});
+const dbEl=document.getElementById('dbadge');if(dbEl)dbEl.textContent=dateStr;
+const d2=document.getElementById('dbadge2');if(d2)d2.textContent=dateStr;
 async function initApp(){
   updateSettingsSync();
   const gh=getGH();
