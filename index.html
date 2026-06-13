@@ -7,7 +7,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="FitTrack">
 <meta name="theme-color" content="#8B5CF6">
-<link rel="apple-touch-icon" href="https://fav.farm/💪">
 <title>FitTrack</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -23,25 +22,28 @@
 }
 html,body{background:var(--bg);min-height:100vh;color:var(--tx)}
 body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bottom:90px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.app{max-width:430px;margin:0 auto;position:relative}
-
-.hdr{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;position:sticky;top:0;z-index:50;background:var(--bg)}
+.app{max-width:430px;margin:0 auto}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:calc(env(safe-area-inset-top,20px) + 12px) 20px 16px;position:sticky;top:0;z-index:50;background:var(--bg)}
 .logo{font-size:22px;font-weight:900;letter-spacing:-0.8px;color:var(--tx)}
 .logo span{background:linear-gradient(135deg,#8B5CF6,#EC4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.dbadge{display:flex;align-items:center;gap:8px;background:var(--sur2);border:1px solid var(--bor2);border-radius:30px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--tx2)}
-
+.hdr-right{display:flex;align-items:center;gap:8px}
+.dbadge{display:flex;align-items:center;gap:6px;background:var(--sur2);border:1px solid var(--bor2);border-radius:30px;padding:7px 12px;font-size:12px;font-weight:600;color:var(--tx2)}
+.sync-badge{display:flex;align-items:center;gap:5px;padding:7px 10px;border-radius:30px;font-size:11px;font-weight:700;border:1px solid var(--bor2);background:var(--sur2);cursor:pointer;transition:all .2s;color:var(--tx3)}
+.sync-badge.syncing{color:var(--am);border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.08)}
+.sync-badge.synced{color:var(--gr);border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.08)}
+.sync-badge.error{color:var(--rd);border-color:rgba(239,68,68,.3);background:rgba(239,68,68,.08)}
+.sync-badge.notoken{color:var(--tx3)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinning{animation:spin .8s linear infinite;display:inline-block}
 .nav{display:flex;background:var(--sur);border-top:1px solid var(--bor);padding:12px 4px calc(12px + env(safe-area-inset-bottom,0px));position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;z-index:80}
 .nb{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 2px;border:none;background:none;cursor:pointer;color:var(--tx3);font-size:9px;font-family:'Inter',sans-serif;font-weight:700;border-radius:12px;transition:all .2s;min-width:0;letter-spacing:.3px}
-.nb i{font-size:21px;transition:transform .2s}
-.nb.on{color:var(--ac2)}.nb.on i{transform:scale(1.1)}
-
+.nb span:first-child{font-size:22px;transition:transform .2s}
+.nb.on{color:var(--ac2)}.nb.on span:first-child{transform:scale(1.1);display:inline-block}
 .sec{display:none;padding:0 20px 24px;animation:fadeUp .3s cubic-bezier(.4,0,.2,1) both}
 .sec.on{display:block}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
-
 .card{background:var(--sur);border:1px solid var(--bor2);border-radius:var(--r);padding:20px;margin-bottom:14px}
 .card-sm{background:var(--sur2);border:1px solid var(--bor);border-radius:var(--rm);padding:14px 16px;margin-bottom:10px}
-
 .hero{background:var(--sur);border:1px solid var(--bor2);border-radius:var(--r);padding:24px;margin-bottom:16px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(139,92,246,.12);pointer-events:none}
 .hero::after{content:'';position:absolute;bottom:-40px;left:-40px;width:150px;height:150px;border-radius:50%;background:rgba(236,72,153,.08);pointer-events:none}
@@ -55,41 +57,35 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .hg{background:var(--sur2);border-radius:var(--rs);padding:12px 10px;text-align:center;border:1px solid var(--bor)}
 .hg-n{font-size:20px;font-weight:800;color:var(--tx);line-height:1}
 .hg-l{font-size:10px;color:var(--tx3);margin-top:4px;font-weight:700;letter-spacing:.5px}
-
 .streak{display:flex;gap:6px;margin-bottom:18px}
 .sday{flex:1;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 2px;gap:3px;background:var(--sur2);border:1px solid var(--bor);transition:all .2s}
 .sday .sl{font-size:9px;font-weight:700;color:var(--tx3);letter-spacing:.4px}
 .sday .sn{font-size:15px;font-weight:800;color:var(--tx2)}
 .sday.done{background:rgba(139,92,246,.15);border-color:rgba(139,92,246,.4)}.sday.done .sn{color:var(--ac2)}.sday.done .sl{color:var(--ac2);opacity:.7}
 .sday.today{border-color:var(--ac2);border-width:2px}
-
 .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px}
 .mini{background:var(--sur);border:1px solid var(--bor2);border-radius:var(--rm);padding:16px;display:flex;align-items:center;gap:12px}
 .mini-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
 .mini-n{font-size:22px;font-weight:800;color:var(--tx);line-height:1}
 .mini-l{font-size:11px;color:var(--tx3);margin-top:3px;font-weight:700;letter-spacing:.3px}
-
 .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .mstat{background:var(--sur);border:1px solid var(--bor2);border-radius:var(--rm);padding:16px}
 .mstat-v{font-size:26px;font-weight:800;color:var(--tx);line-height:1}
 .mstat-l{font-size:11px;color:var(--tx3);margin-top:5px;font-weight:700;letter-spacing:.3px}
-
 .stitle{font-size:20px;font-weight:800;color:var(--tx);margin-bottom:14px;letter-spacing:-.5px}
 .slabel{font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:1.2px;margin-bottom:10px}
-
-.add-btn{width:100%;padding:18px;border:none;border-radius:var(--rm);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,opacity .15s;letter-spacing:.1px}
+.add-btn{width:100%;padding:18px;border:none;border-radius:var(--rm);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:transform .15s,opacity .15s}
 .add-btn:active{transform:scale(.97);opacity:.9}
 .add-btn.purple{background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff}
 .add-btn.green{background:var(--gr);color:#fff}
 .add-btn.blue{background:var(--bl);color:#fff}
-
-.btn{padding:10px 18px;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:transform .12s,opacity .15s;letter-spacing:.1px}
+.btn{padding:10px 18px;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:6px;transition:transform .12s}
 .btn:active{transform:scale(.97)}
 .btn.ac{background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff}
 .btn.out{background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2)}
 .btn.sm{padding:8px 14px;font-size:12px}
 .btn.full{width:100%;justify-content:center}
-
+.btn.danger{background:rgba(239,68,68,.15);color:var(--rd);border:1px solid rgba(239,68,68,.3)}
 .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}
 .cat-btn{padding:16px 12px;border-radius:var(--rm);border:1.5px solid var(--bor2);background:var(--sur2);cursor:pointer;display:flex;align-items:center;gap:10px;transition:all .18s;font-family:'Inter',sans-serif}
 .cat-btn:active{transform:scale(.97)}
@@ -97,7 +93,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .cat-icon{width:40px;height:40px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
 .cat-name{font-size:13px;font-weight:700;color:var(--tx);line-height:1.2}
 .cat-count{font-size:11px;color:var(--tx3);margin-top:2px;font-weight:500}
-
 .ex-list{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
 .ex-item{display:flex;align-items:center;justify-content:space-between;background:var(--sur2);border:1.5px solid var(--bor);border-radius:var(--rs);padding:16px;cursor:pointer;transition:all .15s}
 .ex-item:hover{border-color:var(--ac2);background:rgba(139,92,246,.1)}
@@ -106,7 +101,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .ex-check{width:26px;height:26px;border-radius:50%;border:2px solid var(--bor2);display:flex;align-items:center;justify-content:center;font-size:12px;color:transparent;transition:all .15s;flex-shrink:0}
 .ex-item.sel .ex-check{background:var(--ac);border-color:var(--ac);color:#fff}
 .ex-item.sel{border-color:var(--ac2);background:rgba(139,92,246,.1)}
-
 .detail-form{background:var(--sur2);border-radius:var(--rm);padding:18px;margin-bottom:14px;border:1px solid var(--bor)}
 .fr{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
 .fr.full{grid-template-columns:1fr}
@@ -115,7 +109,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .fg input,.fg select{padding:16px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;transition:border-color .2s;width:100%}
 .fg input:focus,.fg select:focus{border-color:var(--ac2)}
 .fg input::placeholder{color:var(--tx3);font-weight:400}
-
 .elist{display:flex;flex-direction:column;gap:8px}
 .ei{background:var(--sur);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px 16px;display:flex;align-items:center;gap:12px}
 .eico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
@@ -124,7 +117,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .em{font-size:12px;color:var(--tx3);margin-top:3px;font-weight:500}
 .ev{font-size:14px;font-weight:800;white-space:nowrap}
 .db{background:none;border:none;cursor:pointer;color:var(--tx3);font-size:18px;padding:6px;border-radius:10px;transition:all .15s}
-
 .prow{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .prow .lbl{font-size:13px;color:var(--tx3);font-weight:600}
 .prow .val{font-size:15px;color:var(--tx);font-weight:800}
@@ -134,7 +126,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .mc{background:var(--sur2);border:1px solid var(--bor);border-radius:var(--rs);padding:12px;text-align:center}
 .mv{font-size:16px;font-weight:800;color:var(--tx)}
 .ml{font-size:10px;color:var(--tx3);margin-top:4px;font-weight:700;letter-spacing:.4px}
-
 .wgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:14px 0}
 .wg{border-radius:var(--rs);border:1.5px solid var(--bor2);background:var(--sur2);height:44px;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--tx3);font-weight:700;transition:all .22s}
 .wg.full{background:rgba(59,130,246,.2);color:#60A5FA;border-color:rgba(59,130,246,.5)}
@@ -142,7 +133,6 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .wbtn{padding:14px;border-radius:var(--rs);border:1.5px solid var(--bor2);background:var(--sur2);color:var(--tx2);font-size:15px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;font-family:'Inter',sans-serif;transition:all .15s}
 .wbtn:active{transform:scale(.97)}
 .wbtn.add{background:rgba(59,130,246,.2);color:#60A5FA;border-color:rgba(59,130,246,.5)}
-
 .cal-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
 .cal-nav{background:var(--sur2);border:1px solid var(--bor2);border-radius:12px;width:40px;height:40px;cursor:pointer;color:var(--tx2);display:flex;align-items:center;justify-content:center;font-size:18px;transition:all .15s}
 .cal-nav:hover{background:rgba(139,92,246,.2);color:var(--ac2)}
@@ -160,19 +150,14 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid var(--bor)}
 .leg{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tx3);font-weight:600}
 .legdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-
 .steps{display:flex;gap:6px;margin-bottom:20px}
 .step{flex:1;height:4px;border-radius:4px;background:var(--sur3);transition:background .3s}
 .step.on{background:var(--ac2)}.step.done{background:var(--ac)}
-
-.back-btn{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--tx3);background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;margin-bottom:16px;padding:0;transition:color .15s}
-.back-btn:hover{color:var(--tx)}
-
+.back-btn{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--tx3);background:none;border:none;cursor:pointer;font-family:'Inter',sans-serif;margin-bottom:16px;padding:0}
 .tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
 .tag{padding:7px 14px;border-radius:20px;font-size:12px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);display:flex;align-items:center;gap:6px;font-weight:600}
 .tdel{cursor:pointer;color:var(--rd);font-size:13px;line-height:1}
 .divider{height:1px;background:var(--bor);margin:14px 0}
-
 .srow{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .srow label{font-size:12px;color:var(--tx3);font-weight:700;min-width:120px;letter-spacing:.3px}
 .srow input{flex:1;padding:12px 14px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur2);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none;transition:border-color .2s}
@@ -181,6 +166,12 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 .saved{font-size:13px;color:var(--gr);text-align:center;margin-top:12px;display:none;font-weight:700}
 .empty{text-align:center;padding:40px 20px;color:var(--tx3);font-size:14px;font-weight:600;line-height:1.7}
 .empty i{font-size:40px;display:block;margin-bottom:12px;opacity:.3}
+.token-setup{background:rgba(139,92,246,.1);border:1px solid rgba(139,92,246,.3);border-radius:var(--rm);padding:16px;margin-bottom:14px}
+.token-setup p{font-size:13px;color:var(--tx2);line-height:1.7;font-weight:500;margin-bottom:12px}
+.token-setup ol{font-size:13px;color:var(--tx2);line-height:2;font-weight:500;padding-left:18px;margin-bottom:12px}
+.token-status{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:var(--rs);font-size:13px;font-weight:700;margin-bottom:12px}
+.token-status.ok{background:rgba(16,185,129,.12);color:#34D399;border:1px solid rgba(16,185,129,.3)}
+.token-status.none{background:rgba(239,68,68,.1);color:#FCA5A5;border:1px solid rgba(239,68,68,.2)}
 </style>
 </head>
 <body>
@@ -188,7 +179,13 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 
 <div class="hdr">
   <div class="logo">Fit<span>Track</span></div>
-  <div class="dbadge"><i class="ti ti-calendar" style="font-size:15px"></i><span id="dbadge"></span></div>
+  <div class="hdr-right">
+    <div class="sync-badge notoken" id="syncBadge" onclick="tab('S',document.querySelectorAll('.nb')[5])" title="Sync status">
+      <span id="syncIcon">☁</span>
+      <span id="syncTxt">No sync</span>
+    </div>
+    <div class="dbadge"><span style="font-size:14px">📅</span><span id="dbadge"></span></div>
+  </div>
 </div>
 
 <!-- HOME -->
@@ -207,10 +204,10 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
   <div class="stitle">This week</div>
   <div class="streak" id="streakRow"></div>
   <div class="mini-grid">
-    <div class="mini"><div class="mini-ico" style="background:rgba(139,92,246,.2);color:#A78BFA"><i class="ti ti-flame"></i></div><div><div class="mini-n" id="mStreak">0</div><div class="mini-l">DAY STREAK</div></div></div>
-    <div class="mini"><div class="mini-ico" style="background:rgba(16,185,129,.15);color:#34D399"><i class="ti ti-calendar-check"></i></div><div><div class="mini-n" id="mDays">0</div><div class="mini-l">DAYS TRAINED</div></div></div>
-    <div class="mini"><div class="mini-ico" style="background:rgba(59,130,246,.15);color:#60A5FA"><i class="ti ti-droplet"></i></div><div><div class="mini-n" id="mAvgW">0</div><div class="mini-l">AVG ML/DAY</div></div></div>
-    <div class="mini"><div class="mini-ico" style="background:rgba(245,158,11,.15);color:#FCD34D"><i class="ti ti-salad"></i></div><div><div class="mini-n" id="mAvgC">0</div><div class="mini-l">AVG KCAL/DAY</div></div></div>
+    <div class="mini"><div class="mini-ico" style="background:rgba(139,92,246,.2);color:#A78BFA;font-size:22px">🔥</div><div><div class="mini-n" id="mStreak">0</div><div class="mini-l">DAY STREAK</div></div></div>
+    <div class="mini"><div class="mini-ico" style="background:rgba(16,185,129,.15);color:#34D399;font-size:22px">✅</div><div><div class="mini-n" id="mDays">0</div><div class="mini-l">DAYS TRAINED</div></div></div>
+    <div class="mini"><div class="mini-ico" style="background:rgba(59,130,246,.15);color:#60A5FA;font-size:22px">💧</div><div><div class="mini-n" id="mAvgW">0</div><div class="mini-l">AVG ML/DAY</div></div></div>
+    <div class="mini"><div class="mini-ico" style="background:rgba(245,158,11,.15);color:#FCD34D;font-size:22px">🥗</div><div><div class="mini-n" id="mAvgC">0</div><div class="mini-l">AVG KCAL/DAY</div></div></div>
   </div>
   <div class="stitle">This month</div>
   <div class="mgrid">
@@ -225,27 +222,33 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 <div id="secW" class="sec">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
     <div class="stitle" style="margin:0">Workout log</div>
-    <button class="btn out sm" onclick="toggleManage()"><i class="ti ti-settings"></i> Manage</button>
+    <button class="btn out sm" onclick="toggleManage()">⚙ Manage</button>
   </div>
-
   <div id="addFlow" style="display:none">
     <div id="stepCat">
-      <div class="steps"><div class="step on"></div><div class="step"></div><div class="step"></div></div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div class="steps" style="flex:1;margin:0 12px 0 0"><div class="step on"></div><div class="step"></div><div class="step"></div></div>
+        <button onclick="hideAddFlow()" style="width:36px;height:36px;border-radius:50%;background:var(--sur2);border:1px solid var(--bor2);color:var(--tx2);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:inherit">✕</button>
+      </div>
       <div class="stitle">Pick a category</div>
       <div class="cat-grid" id="catGrid"></div>
-      <button class="btn out full" onclick="hideAddFlow()">Cancel</button>
     </div>
     <div id="stepEx" style="display:none">
-      <div class="steps"><div class="step done"></div><div class="step on"></div><div class="step"></div></div>
-      <button class="back-btn" onclick="goStep(1)"><i class="ti ti-arrow-left"></i> Back</button>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div class="steps" style="flex:1;margin:0 12px 0 0"><div class="step done"></div><div class="step on"></div><div class="step"></div></div>
+        <button onclick="hideAddFlow()" style="width:36px;height:36px;border-radius:50%;background:var(--sur2);border:1px solid var(--bor2);color:var(--tx2);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:inherit">✕</button>
+      </div>
+      <button class="back-btn" onclick="goStep(1)">← Back</button>
       <div class="stitle" id="stepExTitle">Choose exercise</div>
       <div class="ex-list" id="exListFlow"></div>
-      <button class="btn out full" style="margin-bottom:10px" onclick="openCustomEx()"><i class="ti ti-plus"></i> Add custom exercise</button>
-      <button class="btn out full" onclick="hideAddFlow()">Cancel</button>
+      <button class="btn out full" style="margin-bottom:10px" onclick="openCustomEx()">+ Add custom exercise</button>
     </div>
     <div id="stepDetail" style="display:none">
-      <div class="steps"><div class="step done"></div><div class="step done"></div><div class="step on"></div></div>
-      <button class="back-btn" onclick="goStep(2)"><i class="ti ti-arrow-left"></i> Back</button>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+        <div class="steps" style="flex:1;margin:0 12px 0 0"><div class="step done"></div><div class="step done"></div><div class="step on"></div></div>
+        <button onclick="hideAddFlow()" style="width:36px;height:36px;border-radius:50%;background:var(--sur2);border:1px solid var(--bor2);color:var(--tx2);font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:inherit">✕</button>
+      </div>
+      <button class="back-btn" onclick="goStep(2)">← Back</button>
       <div class="stitle" id="stepDetailTitle">Set details</div>
       <div class="detail-form">
         <div class="fr">
@@ -257,21 +260,20 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
           <div class="fg"><label>DURATION (MIN)</label><input id="dDur" type="number" placeholder="–" inputmode="numeric"></div>
         </div>
       </div>
-      <button class="add-btn purple" onclick="confirmAddEx()"><i class="ti ti-check"></i> Add to workout</button>
+      <button class="add-btn purple" onclick="confirmAddEx()">✓ Add to workout</button>
     </div>
   </div>
-
   <div id="managePanel" style="display:none" class="card">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
       <div class="stitle" style="margin:0;font-size:17px">Manage exercises</div>
-      <button class="btn ac sm" onclick="toggleManage()"><i class="ti ti-check"></i> Done</button>
+      <button class="btn ac sm" onclick="toggleManage()">✓ Done</button>
     </div>
     <div class="slabel">ADD EXERCISE</div>
     <div class="fr" style="margin-bottom:10px">
       <div class="fg"><label>NAME</label><input id="newExName" type="text" placeholder="e.g. Cable row"></div>
       <div class="fg"><label>CATEGORY</label><select id="newExCat" style="padding:16px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"></select></div>
     </div>
-    <button class="btn ac full" style="margin-bottom:16px" onclick="addCustomExConfirm()"><i class="ti ti-plus"></i> Add exercise</button>
+    <button class="btn ac full" style="margin-bottom:16px" onclick="addCustomExConfirm()">+ Add exercise</button>
     <div class="divider"></div>
     <div class="slabel">EXERCISES</div>
     <div class="tags" id="exTagList"></div>
@@ -279,14 +281,13 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
     <div class="slabel">CATEGORIES</div>
     <div class="tags" id="catTagList"></div>
     <div class="fg" style="margin-top:10px"><label>NEW CATEGORY</label><input id="newCatName" type="text" placeholder="e.g. Glutes" style="margin-top:6px"></div>
-    <button class="btn out full" style="margin-top:10px" onclick="addCat()"><i class="ti ti-plus"></i> Add category</button>
+    <button class="btn out full" style="margin-top:10px" onclick="addCat()">+ Add category</button>
   </div>
-
   <div id="noAddFlow">
-    <button class="add-btn purple" onclick="showAddFlow()" style="margin-bottom:18px"><i class="ti ti-plus"></i> Add exercise</button>
+    <button class="add-btn purple" onclick="showAddFlow()" style="margin-bottom:18px">+ Add exercise</button>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
       <div class="stitle" style="margin:0">Today's workout</div>
-      <button class="btn out sm" onclick="toggleTpl()"><i class="ti ti-template"></i> Templates</button>
+      <button class="btn out sm" onclick="toggleTpl()">📋 Templates</button>
     </div>
     <div id="tplPanelW" style="display:none;margin-bottom:16px">
       <div class="slabel">SAVED TEMPLATES</div>
@@ -294,7 +295,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
       <div class="fr full" style="margin-top:12px;margin-bottom:10px">
         <div class="fg"><label>SAVE TODAY AS TEMPLATE</label><input id="tplNameIn" type="text" placeholder="e.g. Chest day" style="margin-top:6px"></div>
       </div>
-      <button class="btn ac full" onclick="saveTemplate()"><i class="ti ti-bookmark"></i> Save today as template</button>
+      <button class="btn ac full" onclick="saveTemplate()">🔖 Save today as template</button>
     </div>
     <div id="wList" class="elist"></div>
   </div>
@@ -324,7 +325,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
       <div class="fg"><label>FAT (G)</label><input id="fFa" type="number" placeholder="8" inputmode="numeric"></div>
       <div class="fg"><label>AMOUNT</label><input id="fAmt" type="text" placeholder="200g / 1 cup"></div>
     </div>
-    <button class="add-btn green" onclick="addFood()"><i class="ti ti-plus"></i> Add food</button>
+    <button class="add-btn green" onclick="addFood()">+ Add food</button>
   </div>
   <div class="stitle">Today's food</div>
   <div id="fList" class="elist"></div>
@@ -339,13 +340,13 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
     <div class="wgrid" id="wGrid"></div>
     <p style="font-size:14px;color:var(--tx3);text-align:center;margin-bottom:16px;font-weight:600" id="wMsg">Tap + to start logging</p>
     <div class="wbtns">
-      <button class="wbtn" onclick="addWater(-250)"><i class="ti ti-minus"></i> 250 ml</button>
-      <button class="wbtn add" onclick="addWater(250)"><i class="ti ti-plus"></i> 250 ml</button>
+      <button class="wbtn" onclick="addWater(-250)">− 250 ml</button>
+      <button class="wbtn add" onclick="addWater(250)">+ 250 ml</button>
     </div>
     <div style="display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--bor)">
       <span style="font-size:11px;color:var(--tx3);font-weight:700;white-space:nowrap;letter-spacing:.5px">DAILY GOAL (ML)</span>
       <input type="number" id="wGoalIn" value="2500" min="500" max="6000" step="250" inputmode="numeric" style="flex:1;padding:14px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur2);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
-      <button class="btn out" onclick="saveWGoal()"><i class="ti ti-check"></i> Set</button>
+      <button class="btn out" onclick="saveWGoal()">✓ Set</button>
     </div>
   </div>
 </div>
@@ -353,9 +354,9 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 <!-- CALENDAR -->
 <div id="secCal" class="sec">
   <div class="cal-hdr">
-    <button class="cal-nav" onclick="changeMonth(-1)"><i class="ti ti-chevron-left"></i></button>
+    <button class="cal-nav" onclick="changeMonth(-1)">‹</button>
     <span class="cal-title" id="calTitle"></span>
-    <button class="cal-nav" onclick="changeMonth(1)"><i class="ti ti-chevron-right"></i></button>
+    <button class="cal-nav" onclick="changeMonth(1)">›</button>
   </div>
   <div class="cal-card">
     <div class="cal-grid" id="calGrid"></div>
@@ -365,21 +366,61 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
   <div class="stitle">Export data</div>
   <div class="card">
     <p style="font-size:14px;color:var(--tx3);line-height:1.7;margin-bottom:16px;font-weight:500">Download all your workout and food data as a CSV — opens in Excel or Google Sheets.</p>
-    <button class="add-btn blue" onclick="exportCSV()"><i class="ti ti-download"></i> Download as CSV (Excel)</button>
+    <button class="add-btn blue" onclick="exportCSV()">⬇ Download as CSV (Excel)</button>
   </div>
 </div>
 
 <!-- SETTINGS -->
 <div id="secS" class="sec">
   <div class="stitle">Settings</div>
+
+  <!-- GITHUB SYNC SETUP -->
+  <div class="card">
+    <div class="slabel" style="margin-bottom:14px">GITHUB CLOUD SYNC</div>
+    <div id="tokenStatus"></div>
+
+    <div class="token-setup" id="tokenSetup">
+      <p>Connect to GitHub to sync your data across all devices. Your data saves to <strong>fittrack-data.json</strong> in your repo automatically.</p>
+      <ol>
+        <li>Go to <strong>github.com → Settings → Developer settings</strong></li>
+        <li>Click <strong>Personal access tokens → Tokens (classic)</strong></li>
+        <li>Click <strong>Generate new token (classic)</strong></li>
+        <li>Give it a name: <em>FitTrack</em></li>
+        <li>Tick <strong>repo</strong> checkbox (full repo access)</li>
+        <li>Click <strong>Generate token</strong></li>
+        <li>Copy the token and paste below</li>
+      </ol>
+      <div class="fg" style="margin-bottom:12px">
+        <label>GITHUB TOKEN (starts with ghp_)</label>
+        <input id="ghToken" type="password" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" style="margin-top:6px">
+      </div>
+      <div class="fg" style="margin-bottom:12px">
+        <label>GITHUB USERNAME</label>
+        <input id="ghUser" type="text" placeholder="e.g. boyonearth" style="margin-top:6px">
+      </div>
+      <div class="fg" style="margin-bottom:12px">
+        <label>REPOSITORY NAME</label>
+        <input id="ghRepo" type="text" placeholder="fittrack" value="fittrack" style="margin-top:6px">
+      </div>
+      <button class="btn ac full" onclick="saveGHToken()">☁ Connect GitHub</button>
+    </div>
+
+    <div id="syncActions" style="display:none">
+      <button class="btn out full" style="margin-bottom:10px" onclick="manualSync()">↺ Sync now</button>
+      <button class="btn danger full" onclick="disconnectGH()">⊗ Disconnect GitHub</button>
+    </div>
+  </div>
+
+  <div class="stitle">Profile</div>
   <div class="card">
     <div class="slabel" style="margin-bottom:16px">YOUR PROFILE</div>
     <div class="srow"><label>BODY WEIGHT (KG)</label><input id="sWeight" type="number" step="0.1" inputmode="decimal"></div>
     <div class="srow"><label>CALORIE GOAL</label><input id="sGoal" type="number" inputmode="numeric"></div>
     <div class="srow"><label>WATER GOAL (ML)</label><input id="sWGoal" type="number" step="250" inputmode="numeric"></div>
-    <button class="add-btn purple" onclick="saveSettings()"><i class="ti ti-check"></i> Save settings</button>
+    <button class="add-btn purple" onclick="saveSettings()">✓ Save settings</button>
     <div class="saved" id="savedMsg">Settings saved!</div>
   </div>
+
   <div class="stitle">Calorie burn</div>
   <div class="card"><div class="info-box">
     Cardio: duration × (weight × 0.09)<br>
@@ -390,12 +431,12 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding-bot
 </div>
 
 <nav class="nav">
-  <button class="nb on" onclick="tab('Home',this)"><i class="ti ti-home"></i><span>Home</span></button>
-  <button class="nb" onclick="tab('W',this)"><i class="ti ti-barbell"></i><span>Workout</span></button>
-  <button class="nb" onclick="tab('F',this)"><i class="ti ti-apple"></i><span>Food</span></button>
-  <button class="nb" onclick="tab('Wt',this)"><i class="ti ti-droplet"></i><span>Water</span></button>
-  <button class="nb" onclick="tab('Cal',this)"><i class="ti ti-calendar"></i><span>Calendar</span></button>
-  <button class="nb" onclick="tab('S',this)"><i class="ti ti-settings"></i><span>Settings</span></button>
+  <button class="nb on" onclick="tab('Home',this)"><span style="font-size:22px">🏠</span><span>Home</span></button>
+  <button class="nb" onclick="tab('W',this)"><span style="font-size:22px">🏋️</span><span>Workout</span></button>
+  <button class="nb" onclick="tab('F',this)"><span style="font-size:22px">🍎</span><span>Food</span></button>
+  <button class="nb" onclick="tab('Wt',this)"><span style="font-size:22px">💧</span><span>Water</span></button>
+  <button class="nb" onclick="tab('Cal',this)"><span style="font-size:22px">📅</span><span>Calendar</span></button>
+  <button class="nb" onclick="tab('S',this)"><span style="font-size:22px">⚙️</span><span>Settings</span></button>
 </nav>
 </div>
 
@@ -404,9 +445,11 @@ const DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const TODAY=new Date(),TODAYK=TODAY.toISOString().slice(0,10);
 const CCAT={Chest:'#8B5CF6',Triceps:'#3B82F6',Biceps:'#10B981',Shoulders:'#F59E0B','Legs/Calves':'#EF4444',Abs:'#EC4899','Lateral muscles':'#14B8A6',Cardio:'#F97316','Full body':'#6366F1'};
+
 function ld(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch{return d}}
 function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}
 function fk(d){return d.toISOString().slice(0,10)}
+
 let cfg=ld('cfg5',{weight:79.4,goal:2000,wGoal:2500});
 let exercises=ld('exList5',[
   {n:'Bench press',c:'Chest'},{n:'Incline press',c:'Chest'},{n:'Chest fly',c:'Chest'},
@@ -422,8 +465,205 @@ let cats=ld('catList5',['Chest','Triceps','Biceps','Shoulders','Legs/Calves','Ab
 let templates=ld('tpls5',[]);
 let calM={y:TODAY.getFullYear(),m:TODAY.getMonth()};
 let addState={cat:'',ex:'',step:1};
+let syncTimer=null;
+let ghSHA='';
+
 function gc(){cfg=ld('cfg5',{weight:79.4,goal:2000,wGoal:2500});return cfg}
+
+// ─── GITHUB SYNC ────────────────────────────────────────────────────────────
+
+function getGH(){
+  return{
+    token:localStorage.getItem('gh_token')||'',
+    user:localStorage.getItem('gh_user')||'',
+    repo:localStorage.getItem('gh_repo')||'fittrack'
+  }
+}
+
+function saveGHToken(){
+  const token=document.getElementById('ghToken').value.trim();
+  const user=document.getElementById('ghUser').value.trim();
+  const repo=document.getElementById('ghRepo').value.trim()||'fittrack';
+  if(!token||!user){alert('Please enter both token and username');return}
+  localStorage.setItem('gh_token',token);
+  localStorage.setItem('gh_user',user);
+  localStorage.setItem('gh_repo',repo);
+  setSyncStatus('syncing','Connecting...');
+  pushToGitHub().then(()=>{
+    updateSettingsSync();
+    alert('GitHub connected! Your data will now sync automatically.');
+  }).catch(e=>{
+    setSyncStatus('error','Error');
+    alert('Connection failed. Check your token and username.\n\n'+e.message);
+  });
+}
+
+function disconnectGH(){
+  if(!confirm('Disconnect GitHub sync? Your local data stays safe.'))return;
+  localStorage.removeItem('gh_token');
+  localStorage.removeItem('gh_user');
+  localStorage.removeItem('gh_repo');
+  ghSHA='';
+  setSyncStatus('notoken','No sync');
+  updateSettingsSync();
+}
+
+function setSyncStatus(state,text){
+  const badge=document.getElementById('syncBadge');
+  const icon=document.getElementById('syncIcon');
+  const txt=document.getElementById('syncTxt');
+  badge.className='sync-badge '+state;
+  txt.textContent=text;
+  if(state==='syncing'){icon.textContent='↻';icon.className='spinning'}
+  else if(state==='synced'){icon.textContent='☁✓';icon.className=''}
+  else if(state==='error'){icon.textContent='☁✗';icon.className=''}
+  else{icon.textContent='☁';icon.className=''}
+}
+
+function collectAllData(){
+  const data={cfg,exercises,cats,templates,days:{},synced:new Date().toISOString()};
+  for(let i=0;i<localStorage.length;i++){
+    const k=localStorage.key(i);
+    if(k.startsWith('w_')||k.startsWith('f_')||k.startsWith('wt_')){
+      try{data.days[k]=JSON.parse(localStorage.getItem(k))}catch{}
+    }
+  }
+  return data;
+}
+
+function applyAllData(data){
+  if(!data)return;
+  if(data.cfg){cfg=data.cfg;sv('cfg5',cfg)}
+  if(data.exercises){exercises=data.exercises;sv('exList5',exercises)}
+  if(data.cats){cats=data.cats;sv('catList5',cats)}
+  if(data.templates){templates=data.templates;sv('tpls5',templates)}
+  if(data.days){
+    Object.entries(data.days).forEach(([k,v])=>{
+      localStorage.setItem(k,JSON.stringify(v));
+    });
+  }
+}
+
+async function pushToGitHub(){
+  const gh=getGH();
+  if(!gh.token||!gh.user)return;
+  const content=btoa(unescape(encodeURIComponent(JSON.stringify(collectAllData(),null,2))));
+  const url=`https://api.github.com/repos/${gh.user}/${gh.repo}/contents/fittrack-data.json`;
+  const headers={'Authorization':'token '+gh.token,'Content-Type':'application/json'};
+  let sha=ghSHA;
+  if(!sha){
+    try{
+      const r=await fetch(url,{headers});
+      if(r.ok){const j=await r.json();sha=j.sha;ghSHA=sha}
+    }catch{}
+  }
+  const body={message:'FitTrack sync '+new Date().toISOString(),content};
+  if(sha)body.sha=sha;
+  const res=await fetch(url,{method:'PUT',headers,body:JSON.stringify(body)});
+  if(!res.ok){const e=await res.json();throw new Error(e.message||'GitHub error')}
+  const j=await res.json();
+  ghSHA=j.content.sha;
+}
+
+async function pullFromGitHub(){
+  const gh=getGH();
+  if(!gh.token||!gh.user)return null;
+  const url=`https://api.github.com/repos/${gh.user}/${gh.repo}/contents/fittrack-data.json`;
+  const headers={'Authorization':'token '+gh.token};
+  const res=await fetch(url,{headers});
+  if(res.status===404)return null;
+  if(!res.ok)throw new Error('Pull failed');
+  const j=await res.json();
+  ghSHA=j.sha;
+  const decoded=decodeURIComponent(escape(atob(j.content.replace(/\n/g,''))));
+  return JSON.parse(decoded);
+}
+
+function scheduleSyncPush(){
+  if(!getGH().token)return;
+  clearTimeout(syncTimer);
+  setSyncStatus('syncing','Saving...');
+  syncTimer=setTimeout(async()=>{
+    try{
+      await pushToGitHub();
+      setSyncStatus('synced','Synced');
+    }catch(e){
+      setSyncStatus('error','Sync failed');
+      console.error('Sync error:',e);
+    }
+  },2000);
+}
+
+async function manualSync(){
+  const gh=getGH();
+  if(!gh.token){alert('Set up GitHub sync in Settings first');return}
+  setSyncStatus('syncing','Syncing...');
+  try{
+    const remote=await pullFromGitHub();
+    if(remote){
+      applyAllData(remote);
+      renderW();renderF();renderWater();updStats();renderHome();
+    }
+    await pushToGitHub();
+    setSyncStatus('synced','Synced');
+    alert('Sync complete!');
+  }catch(e){
+    setSyncStatus('error','Sync failed');
+    alert('Sync failed: '+e.message);
+  }
+}
+
+function updateSettingsSync(){
+  const gh=getGH();
+  const hasToken=!!gh.token;
+  document.getElementById('tokenSetup').style.display=hasToken?'none':'block';
+  document.getElementById('syncActions').style.display=hasToken?'block':'none';
+  const statusEl=document.getElementById('tokenStatus');
+  if(hasToken){
+    statusEl.innerHTML=`<div class="token-status ok">✓ Connected as <strong>${gh.user}/${gh.repo}</strong></div>`;
+    setSyncStatus('synced','Synced');
+  }else{
+    statusEl.innerHTML=`<div class="token-status none">☁ Not connected — data stays local only</div>`;
+    setSyncStatus('notoken','No sync');
+  }
+}
+
+// ─── DATA HELPERS ────────────────────────────────────────────────────────────
+
+function svAndSync(k,v){sv(k,v);scheduleSyncPush()}
+
+// ─── APP INIT ────────────────────────────────────────────────────────────────
+
 document.getElementById('dbadge').textContent=TODAY.toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'});
+
+async function initApp(){
+  updateSettingsSync();
+  const gh=getGH();
+  if(gh.token){
+    setSyncStatus('syncing','Loading...');
+    try{
+      const remote=await pullFromGitHub();
+      if(remote){
+        applyAllData(remote);
+        cfg=ld('cfg5',{weight:79.4,goal:2000,wGoal:2500});
+        exercises=ld('exList5',exercises);
+        cats=ld('catList5',cats);
+        templates=ld('tpls5',templates);
+      }
+      setSyncStatus('synced','Synced');
+    }catch(e){
+      setSyncStatus('error','Offline');
+    }
+  }
+  const c0=gc();
+  document.getElementById('sWeight').value=c0.weight;
+  document.getElementById('sGoal').value=c0.goal;
+  document.getElementById('sWGoal').value=c0.wGoal||2500;
+  popCats();renderChips();renderW();renderF();renderWater();updStats();renderHome();
+}
+
+// ─── EXERCISE FLOW ───────────────────────────────────────────────────────────
+
 function showAddFlow(){document.getElementById('addFlow').style.display='block';document.getElementById('noAddFlow').style.display='none';goStep(1)}
 function hideAddFlow(){document.getElementById('addFlow').style.display='none';document.getElementById('noAddFlow').style.display='block';addState={cat:'',ex:'',step:1}}
 function goStep(n){
@@ -432,11 +672,13 @@ function goStep(n){
   if(n===1)renderCatGrid();
   if(n===2)renderExGrid();
 }
+const CAT_EMOJI={Chest:'🏋️',Triceps:'💪',Biceps:'💪',Shoulders:'🔝','Legs/Calves':'🦵',Abs:'🔥','Lateral muscles':'↔️',Cardio:'🏃','Full body':'⚡'};
 function renderCatGrid(){
   document.getElementById('catGrid').innerHTML=cats.map(c=>{
     const col=CCAT[c]||'#8B5CF6',count=exercises.filter(e=>e.c===c).length;
+    const emoji=CAT_EMOJI[c]||'💪';
     return`<div class="cat-btn${addState.cat===c?' sel':''}" onclick="pickCat('${c.replace(/'/g,"\\'")}')">
-      <div class="cat-icon" style="background:${col}22;color:${col}"><i class="ti ti-barbell"></i></div>
+      <div class="cat-icon" style="background:${col}22;font-size:22px;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:11px;flex-shrink:0">${emoji}</div>
       <div><div class="cat-name">${c}</div><div class="cat-count">${count} exercises</div></div>
     </div>`;
   }).join('');
@@ -448,12 +690,12 @@ function renderExGrid(){
   document.getElementById('exListFlow').innerHTML=filtered.length
     ?filtered.map(e=>`<div class="ex-item${addState.ex===e.n?' sel':''}" onclick="pickEx('${e.n.replace(/'/g,"\\'")}')">
       <div><div class="ex-item-name">${e.n}</div><div class="ex-item-cat">${e.c}</div></div>
-      <div class="ex-check"><i class="ti ti-check"></i></div>
+      <div class="ex-check">✓</div>
     </div>`).join('')
-    :'<div class="empty"><i class="ti ti-barbell"></i>No exercises here.<br>Use Manage to add some.</div>';
+    :'<div class="empty"><div style="font-size:36px;margin-bottom:10px">🏋️</div>No exercises here.<br>Use Manage to add some.</div>';
 }
 function pickEx(n){addState.ex=n;document.getElementById('stepDetailTitle').textContent=n;goStep(3);['dSets','dReps','dKg','dDur'].forEach(id=>document.getElementById(id).value='')}
-function openCustomEx(){const n=prompt('Exercise name:');if(!n)return;exercises.push({n,c:addState.cat});sv('exList5',exercises);renderExGrid();renderManage()}
+function openCustomEx(){const n=prompt('Exercise name:');if(!n)return;exercises.push({n,c:addState.cat});svAndSync('exList5',exercises);renderExGrid();renderManage()}
 function confirmAddEx(){
   const sets=parseInt(document.getElementById('dSets').value)||0;
   const reps=parseInt(document.getElementById('dReps').value)||0;
@@ -461,64 +703,70 @@ function confirmAddEx(){
   const dur=parseInt(document.getElementById('dDur').value)||0;
   const l=ld('w_'+TODAYK,[]);
   l.push({name:addState.ex,cat:addState.cat,sets,reps,kg,dur,t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
-  sv('w_'+TODAYK,l);hideAddFlow();renderW();updStats();renderHome();
+  svAndSync('w_'+TODAYK,l);hideAddFlow();renderW();updStats();renderHome();
+}
+
+function popCats(){
+  const el=document.getElementById('newExCat');if(!el)return;
+  el.innerHTML=cats.map(c=>`<option>${c}</option>`).join('');
 }
 function toggleManage(){
   const p=document.getElementById('managePanel'),naf=document.getElementById('noAddFlow'),af=document.getElementById('addFlow');
   const on=p.style.display==='none'||!p.style.display;
-  p.style.display=on?'block':'none';
-  naf.style.display=on?'none':'block';
+  p.style.display=on?'block':'none';naf.style.display=on?'none':'block';
   if(on){af.style.display='none';renderManage()}
 }
 function renderManage(){
-  const el=document.getElementById('newExCat');el.innerHTML=cats.map(c=>`<option>${c}</option>`).join('');
-  document.getElementById('exTagList').innerHTML=exercises.map((e,i)=>`<div class="tag">${e.n}<span class="tdel" onclick="delEx(${i})"><i class="ti ti-x"></i></span></div>`).join('');
-  document.getElementById('catTagList').innerHTML=cats.map((c,i)=>`<div class="tag"><span style="width:8px;height:8px;border-radius:50%;background:${CCAT[c]||'var(--tx3)'};display:inline-block;margin-right:4px"></span>${c}<span class="tdel" onclick="delCat(${i})"><i class="ti ti-x"></i></span></div>`).join('');
+  popCats();
+  document.getElementById('exTagList').innerHTML=exercises.map((e,i)=>`<div class="tag">${e.n}<span class="tdel" onclick="delEx(${i})">✕</span></div>`).join('');
+  document.getElementById('catTagList').innerHTML=cats.map((c,i)=>`<div class="tag"><span style="width:8px;height:8px;border-radius:50%;background:${CCAT[c]||'var(--tx3)'};display:inline-block;margin-right:4px"></span>${c}<span class="tdel" onclick="delCat(${i})">✕</span></div>`).join('');
 }
-function addCustomExConfirm(){const n=document.getElementById('newExName').value.trim(),c=document.getElementById('newExCat').value;if(!n)return;exercises.push({n,c});sv('exList5',exercises);document.getElementById('newExName').value='';renderManage()}
-function delEx(i){exercises.splice(i,1);sv('exList5',exercises);renderManage()}
-function addCat(){const n=document.getElementById('newCatName').value.trim();if(!n||cats.includes(n))return;cats.push(n);sv('catList5',cats);document.getElementById('newCatName').value='';renderManage()}
-function delCat(i){cats.splice(i,1);sv('catList5',cats);renderManage()}
+function addCustomExConfirm(){const n=document.getElementById('newExName').value.trim(),c=document.getElementById('newExCat').value;if(!n)return;exercises.push({n,c});svAndSync('exList5',exercises);document.getElementById('newExName').value='';renderManage()}
+function delEx(i){exercises.splice(i,1);svAndSync('exList5',exercises);renderManage()}
+function addCat(){const n=document.getElementById('newCatName').value.trim();if(!n||cats.includes(n))return;cats.push(n);svAndSync('catList5',cats);document.getElementById('newCatName').value='';renderManage()}
+function delCat(i){cats.splice(i,1);svAndSync('catList5',cats);renderManage()}
+
 function toggleTpl(){const p=document.getElementById('tplPanelW'),on=p.style.display==='none';p.style.display=on?'block':'none';if(on)renderTpls()}
 function renderTpls(){
   const el=document.getElementById('tplListW');
-  if(!templates.length){el.innerHTML='<div class="empty" style="padding:16px 0 8px"><i class="ti ti-template"></i>No templates yet</div>';return}
+  if(!templates.length){el.innerHTML='<div class="empty" style="padding:16px 0 8px"><div style="font-size:32px;margin-bottom:8px">📋</div>No templates yet</div>';return}
   el.innerHTML=templates.map((t,i)=>`<div class="card-sm" style="display:flex;align-items:center;gap:10px">
     <div style="flex:1"><div style="font-size:14px;font-weight:700;color:var(--tx)">${t.name}</div><div style="font-size:11px;color:var(--tx3);margin-top:2px;font-weight:500">${t.exercises.length} exercises · ${t.created}</div></div>
-    <button class="btn ac sm" onclick="loadTpl(${i})"><i class="ti ti-player-play"></i></button>
-    <button class="btn out sm" onclick="delTpl(${i})"><i class="ti ti-trash"></i></button>
+    <button class="btn ac sm" onclick="loadTpl(${i})">▶</button>
+    <button class="btn out sm" onclick="delTpl(${i})">🗑</button>
   </div>`).join('');
 }
-function saveTemplate(){const n=document.getElementById('tplNameIn').value.trim();if(!n){alert('Give it a name');return}const wl=ld('w_'+TODAYK,[]);if(!wl.length){alert('Add exercises first');return}templates.push({name:n,exercises:wl.map(e=>({...e})),created:TODAYK});sv('tpls5',templates);document.getElementById('tplNameIn').value='';renderTpls();alert('Saved!')}
-function loadTpl(i){const t=templates[i],now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});sv('w_'+TODAYK,[...ld('w_'+TODAYK,[]),...t.exercises.map(e=>({...e,t:now}))]);renderW();updStats();renderHome();alert('Loaded "'+t.name+'"!')}
-function delTpl(i){if(!confirm('Delete?'))return;templates.splice(i,1);sv('tpls5',templates);renderTpls()}
+function saveTemplate(){const n=document.getElementById('tplNameIn').value.trim();if(!n){alert('Give it a name');return}const wl=ld('w_'+TODAYK,[]);if(!wl.length){alert('Add exercises first');return}templates.push({name:n,exercises:wl.map(e=>({...e})),created:TODAYK});svAndSync('tpls5',templates);document.getElementById('tplNameIn').value='';renderTpls();alert('Saved!')}
+function loadTpl(i){const t=templates[i],now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});svAndSync('w_'+TODAYK,[...ld('w_'+TODAYK,[]),...t.exercises.map(e=>({...e,t:now}))]);renderW();updStats();renderHome();alert('Loaded "'+t.name+'"!')}
+function delTpl(i){if(!confirm('Delete?'))return;templates.splice(i,1);svAndSync('tpls5',templates);renderTpls()}
+
 function renderW(){
   const l=ld('w_'+TODAYK,[]),el=document.getElementById('wList');
-  if(!l.length){el.innerHTML='<div class="empty"><i class="ti ti-barbell"></i>No exercises yet.<br>Tap "Add exercise" to start.</div>';return}
-  el.innerHTML=l.map((w,i)=>{const col=CCAT[w.cat]||'var(--ac2)';return`<div class="ei">
-    <div class="eico" style="background:${col}20;color:${col}"><i class="ti ti-barbell"></i></div>
+  if(!l.length){el.innerHTML='<div class="empty"><div style="font-size:40px;margin-bottom:12px">🏋️</div>No exercises yet.<br>Tap "Add exercise" to start.</div>';return}
+  el.innerHTML=l.map((w,i)=>{const col=CCAT[w.cat]||'var(--ac2)';const em=CAT_EMOJI[w.cat]||'💪';return`<div class="ei">
+    <div class="eico" style="background:${col}20;font-size:22px;display:flex;align-items:center;justify-content:center">${em}</div>
     <div class="ebody"><div class="en">${w.name}</div><div class="em">${w.cat}${w.sets?' · '+w.sets+'×'+w.reps:''} · ${w.t}</div></div>
     <div style="text-align:right">${w.kg?`<div class="ev" style="color:${col}">${w.kg}kg</div>`:''}${w.dur?`<div style="font-size:12px;color:var(--tx3);font-weight:600">${w.dur}min</div>`:''}</div>
-    <button class="db" onclick="delW(${i})"><i class="ti ti-x"></i></button>
+    <button class="db" onclick="delW(${i})">✕</button>
   </div>`}).join('');
 }
 function addFood(){
   const name=document.getElementById('fName').value.trim();if(!name){alert('Enter food name');return}
   const l=ld('f_'+TODAYK,[]);
   l.push({name,meal:document.getElementById('fMeal').value,cal:parseInt(document.getElementById('fCal').value)||0,pr:parseInt(document.getElementById('fPr').value)||0,ca:parseInt(document.getElementById('fCa2').value)||0,fa:parseInt(document.getElementById('fFa').value)||0,amt:document.getElementById('fAmt').value.trim(),t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
-  sv('f_'+TODAYK,l);['fName','fCal','fPr','fCa2','fFa','fAmt'].forEach(id=>document.getElementById(id).value='');
+  svAndSync('f_'+TODAYK,l);['fName','fCal','fPr','fCa2','fFa','fAmt'].forEach(id=>document.getElementById(id).value='');
   renderF();updStats();renderHome();
 }
-function delW(i){const l=ld('w_'+TODAYK,[]);l.splice(i,1);sv('w_'+TODAYK,l);renderW();updStats();renderHome()}
-function delF(i){const l=ld('f_'+TODAYK,[]);l.splice(i,1);sv('f_'+TODAYK,l);renderF();updStats();renderHome()}
+function delW(i){const l=ld('w_'+TODAYK,[]);l.splice(i,1);svAndSync('w_'+TODAYK,l);renderW();updStats();renderHome()}
+function delF(i){const l=ld('f_'+TODAYK,[]);l.splice(i,1);svAndSync('f_'+TODAYK,l);renderF();updStats();renderHome()}
 function renderF(){
   const l=ld('f_'+TODAYK,[]),el=document.getElementById('fList');
-  if(!l.length){el.innerHTML='<div class="empty"><i class="ti ti-apple"></i>No food logged yet</div>';return}
+  if(!l.length){el.innerHTML='<div class="empty"><div style="font-size:40px;margin-bottom:12px">🍎</div>No food logged yet</div>';return}
   el.innerHTML=l.map((f,i)=>`<div class="ei">
-    <div class="eico" style="background:rgba(16,185,129,.15);color:#34D399"><i class="ti ti-apple"></i></div>
+    <div class="eico" style="background:rgba(16,185,129,.15);font-size:22px;display:flex;align-items:center;justify-content:center">🍎</div>
     <div class="ebody"><div class="en">${f.name}</div><div class="em">${f.meal}${f.amt?' · '+f.amt:''} · ${f.t}</div></div>
     <div style="text-align:right"><div class="ev" style="color:#34D399">${f.cal} kcal</div>${f.pr?`<div style="font-size:11px;color:var(--tx3);font-weight:600">P:${f.pr}g</div>`:''}</div>
-    <button class="db" onclick="delF(${i})"><i class="ti ti-x"></i></button>
+    <button class="db" onclick="delF(${i})">✕</button>
   </div>`).join('');
 }
 function renderWater(){
@@ -531,8 +779,8 @@ function renderWater(){
   let h='';for(let i=0;i<segs;i++)h+=`<div class="wg${i<filled?' full':''}">${(i+1)*250}ml</div>`;
   document.getElementById('wGrid').innerHTML=h;
 }
-function addWater(d){const c=gc();let ml=ld('wt_'+TODAYK,0);ml=Math.max(0,Math.min(c.wGoal||2500,ml+d));sv('wt_'+TODAYK,ml);renderWater();updStats();renderHome()}
-function saveWGoal(){const g=parseInt(document.getElementById('wGoalIn').value)||2500;cfg.wGoal=g;sv('cfg5',cfg);renderWater()}
+function addWater(d){const c=gc();let ml=ld('wt_'+TODAYK,0);ml=Math.max(0,Math.min(c.wGoal||2500,ml+d));svAndSync('wt_'+TODAYK,ml);renderWater();updStats();renderHome()}
+function saveWGoal(){const g=parseInt(document.getElementById('wGoalIn').value)||2500;cfg.wGoal=g;svAndSync('cfg5',cfg);renderWater()}
 function updStats(){
   const c=gc(),wl=ld('w_'+TODAYK,[]),fl=ld('f_'+TODAYK,[]);
   const sets=wl.reduce((a,w)=>a+(w.sets||0),0);
@@ -587,10 +835,10 @@ function exportCSV(){
   const csv=rows.map(r=>r.map(v=>'"'+String(v||'').replace(/"/g,'""')+'"').join(',')).join('\n');
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='fittrack_data.csv';document.body.appendChild(a);a.click();document.body.removeChild(a);
 }
-function saveSettings(){cfg.weight=parseFloat(document.getElementById('sWeight').value)||79.4;cfg.goal=parseInt(document.getElementById('sGoal').value)||2000;cfg.wGoal=parseInt(document.getElementById('sWGoal').value)||2500;sv('cfg5',cfg);updStats();renderHome();renderWater();const m=document.getElementById('savedMsg');m.style.display='block';setTimeout(()=>m.style.display='none',2000)}
+function saveSettings(){cfg.weight=parseFloat(document.getElementById('sWeight').value)||79.4;cfg.goal=parseInt(document.getElementById('sGoal').value)||2000;cfg.wGoal=parseInt(document.getElementById('sWGoal').value)||2500;svAndSync('cfg5',cfg);updStats();renderHome();renderWater();const m=document.getElementById('savedMsg');m.style.display='block';setTimeout(()=>m.style.display='none',2000)}
 function tab(id,btn){document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));document.querySelectorAll('.nb').forEach(b=>b.classList.remove('on'));document.getElementById('sec'+id).classList.add('on');btn.classList.add('on');if(id==='Cal')renderCalendar();else if(id==='Wt')renderWater();else if(id==='Home')renderHome()}
-const c0=gc();document.getElementById('sWeight').value=c0.weight;document.getElementById('sGoal').value=c0.goal;document.getElementById('sWGoal').value=c0.wGoal||2500;
-renderW();renderF();renderWater();updStats();renderHome();
+
+initApp();
 </script>
 </body>
 </html>
