@@ -24,6 +24,11 @@
   --safe-top:env(safe-area-inset-top,44px);
   --safe-bot:env(safe-area-inset-bottom,20px);
 }
+[data-theme="light"]{
+  --bg:#F0F0F7;--sur:#FFFFFF;--sur2:#E8E8F0;--sur3:#DEDEE8;
+  --tx:#0A0A1A;--tx2:#4A4A6A;--tx3:#8A8AA8;
+  --bor:rgba(0,0,0,0.07);--bor2:rgba(0,0,0,0.12);
+}
 html,body{background:var(--bg);min-height:100vh;color:var(--tx);overflow-x:hidden}
 body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var(--safe-bot));-webkit-font-smoothing:antialiased}
 
@@ -561,21 +566,32 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
   <!-- MAIN WORKOUT VIEW -->
 
   <!-- TEMPLATES PANEL -->
-    <div id="tplPanelW" style="display:none;margin-bottom:14px">
-    <div class="card" style="margin-bottom:12px;padding:16px 20px">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0">
-        <div class="stitle" style="margin:0;font-size:16px">Manage templates</div>
-        <button class="btn ac sm" onclick="toggleTpl()">✓ Done</button>
-      </div>
+     <div id="tplPanelW" style="display:none;margin-bottom:14px">
+    <!-- HEADER -->
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div class="stitle" style="margin:0;font-size:16px">Templates</div>
+      <button class="close-x" onclick="toggleTpl()">✕</button>
     </div>
-      <div class="slabel">SAVED TEMPLATES</div>
-      <div id="tplListW"></div>
-      <div class="fr full" style="margin-top:10px;margin-bottom:9px">
-        <div class="fg"><label>SAVE TODAY AS TEMPLATE</label><input id="tplNameIn" type="text" placeholder="e.g. Chest day" style="margin-top:5px"></div>
-      </div>
-      <button class="btn ac full" onclick="saveTemplate()">🔖 Save today as template</button>
+    <!-- 3 ACTION BUTTONS -->
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:14px">
+      <button onclick="showNewTplFlow()" style="padding:12px 6px;background:var(--sur);border:1.5px solid var(--bor2);border-radius:var(--rm);color:var(--tx2);font-size:11px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;transition:border-color .15s" id="btnNewTpl">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+        New template
+      </button>
+      <button onclick="showSaveFromExisting()" style="padding:12px 6px;background:var(--sur);border:1.5px solid var(--bor2);border-radius:var(--rm);color:var(--tx2);font-size:11px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;transition:border-color .15s">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
+        From existing
+      </button>
+      <button onclick="saveTodayAsTemplate()" style="padding:12px 6px;background:var(--sur);border:1.5px solid var(--bor2);border-radius:var(--rm);color:var(--tx2);font-size:11px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:5px;transition:border-color .15s">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"/></svg>
+        Save today
+      </button>
     </div>
-
+    <!-- INLINE FLOWS -->
+    <div id="tplFlowArea"></div>
+    <!-- SAVED TEMPLATES -->
+    <div id="tplListW"></div>
+    </div>
 
   <div id="noAddFlow">
     <button class="add-btn purple" onclick="showAddFlow()" style="margin-bottom:16px">
@@ -729,6 +745,19 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 <div class="swipe-sec" id="sec5">
   <div class="stitle">Settings</div>
 
+  <!-- THEME TOGGLE -->
+  <div style="display:flex;align-items:center;justify-content:space-between;background:var(--sur);border:1px solid var(--bor2);border-radius:var(--r);padding:16px 20px;margin-bottom:10px">
+    <div>
+      <div style="font-size:15px;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:8px">
+        <span id="themeIcon">🌙</span> Appearance
+      </div>
+      <div style="font-size:11px;color:var(--tx3);margin-top:2px;font-weight:500" id="themeLabel">Dark mode</div>
+    </div>
+    <button id="themeToggleBtn" onclick="toggleTheme()" style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:30px;border:1.5px solid var(--bor2);background:var(--sur2);color:var(--tx2);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s">
+      <span id="themeToggleTxt">Switch to Light</span>
+    </button>
+  </div>
+
   <!-- GITHUB SYNC ACCORDION -->
   <button class="acc-btn" id="accGH" onclick="toggleAcc('accGH','bodyGH')">
     <div>
@@ -859,7 +888,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 </div>
 
 <script>
-const DN=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const DN=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 const MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
 const TODAY=new Date();let TODAYK=TODAY.toISOString().slice(0,10);
 // Refresh TODAYK on focus in case day changed
@@ -1216,15 +1245,20 @@ function confirmAddEx(){
 function popCats(){const el=document.getElementById('newExCat');if(!el)return;const v=el.value;el.innerHTML=cats.map(c=>`<option>${c}</option>`).join('');if(cats.includes(v))el.value=v}
 function toggleManage(){
   const p=document.getElementById('managePanel'),naf=document.getElementById('noAddFlow'),af=document.getElementById('addFlow');
+  const btnW=document.getElementById('btnWorkouts');
+  const btnT=document.getElementById('btnTemplates');
   const on=p.style.display==='none'||!p.style.display;
-  // Close templates if open
   if(on){
+    // Close templates
     const tpl=document.getElementById('tplPanelW');
-    if(tpl)tpl.style.display='none';
-    document.getElementById('btnTemplates') && (document.getElementById('btnTemplates').style.background='');
+    if(tpl){tpl.style.display='none';}
+    if(btnT){btnT.style.background='';btnT.style.borderColor='';}
   }
-  p.style.display=on?'block':'none';naf.style.display=on?'none':'block';
-  if(on){af.style.display='none';renderManage()}
+  p.style.display=on?'block':'none';
+  naf.style.display=on?'none':'block';
+  if(btnW){btnW.style.background=on?'rgba(139,92,246,.2)':'';btnW.style.borderColor=on?'var(--ac2)':'var(--bor2)';}
+  if(on&&btnT){btnT.style.background='';btnT.style.borderColor='var(--bor2)';}
+  if(on){af.style.display='none';renderManage();}
 }
 let manageCatFilter2='all';
 function renderManage(filterCat){
@@ -1345,14 +1379,23 @@ function delW(i){showConfirm('Delete exercise?','This entry will be removed perm
 // ── TEMPLATES ───────────────────────────────────────────────────────────────
 function toggleTpl(){
   const p=document.getElementById('tplPanelW');
+  const naf=document.getElementById('noAddFlow');
+  const btnT=document.getElementById('btnTemplates');
+  const btnW=document.getElementById('btnWorkouts');
   const on=p.style.display==='none'||!p.style.display;
-  // Close manage panel if open
   if(on){
+    // Close manage panel if open
     const mp=document.getElementById('managePanel');
-    const naf=document.getElementById('noAddFlow');
     if(mp&&mp.style.display==='block'){mp.style.display='none';if(naf)naf.style.display='block';}
+    // Hide workout list area while templates open
+    if(naf)naf.style.display='none';
+  } else {
+    if(naf)naf.style.display='block';
   }
   p.style.display=on?'block':'none';
+  // Highlight Templates, clear Workouts
+  if(btnT){btnT.style.background=on?'rgba(139,92,246,.2)':'';btnT.style.borderColor=on?'var(--ac2)':'var(--bor2)';}
+  if(on&&btnW){btnW.style.background='';btnW.style.borderColor='var(--bor2)';}
   if(on)renderTpls();
 }
 function renderTpls(){
@@ -1375,12 +1418,29 @@ function renderTpls(){
         </div>
         <div class="tpl-ex-list">
           ${t.exercises.map((e,ei)=>`
-            <div class="tpl-ex-row">
-              <div class="tpl-ex-name">${e.name}</div>
-              <div class="tpl-ex-meta">${e.sets?e.sets+'×'+e.reps:''} ${e.kg?e.kg+'kg':''}</div>
+            <div class="tpl-ex-row" id="tpl-ex-row-${ti}-${ei}">
+              <div style="flex:1">
+                <div class="tpl-ex-name">${e.name}</div>
+                <div class="tpl-ex-meta">${[e.sets?e.sets+'×'+e.reps:'',e.kg?e.kg+'kg':'',e.dist?e.dist+'km':'',e.dur?e.dur+'min':''].filter(Boolean).join(' · ')}</div>
+              </div>
               <button class="reorder-btn" onclick="moveTplEx(${ti},${ei},-1)">▲</button>
               <button class="reorder-btn" onclick="moveTplEx(${ti},${ei},1)">▼</button>
+              <button class="btn out sm" style="padding:5px 8px;font-size:11px" onclick="editTplEx(${ti},${ei})">✏</button>
               <button class="tdel" onclick="delTplEx(${ti},${ei})">✕</button>
+            </div>
+            <div id="tpl-ex-edit-${ti}-${ei}" style="display:none;padding:8px;background:var(--sur2);border-radius:var(--rs);margin-bottom:4px;border:1px solid var(--bor2)">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
+                <input type="number" id="te-sets-${ti}-${ei}" placeholder="Sets" value="${e.sets||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-reps-${ti}-${ei}" placeholder="Reps" value="${e.reps||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-kg-${ti}-${ei}" placeholder="Weight kg" value="${e.kg||''}" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-dist-${ti}-${ei}" placeholder="Distance km" value="${e.dist||''}" step="0.1" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-dur-${ti}-${ei}" placeholder="Duration min" value="${e.dur||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-cal-${ti}-${ei}" placeholder="Cal burned" value="${e.calBurn||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+              </div>
+              <div style="display:flex;gap:6px">
+                <button onclick="saveTplEx(${ti},${ei})" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+                <button onclick="document.getElementById('tpl-ex-edit-${ti}-${ei}').style.display='none'" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+              </div>
             </div>`).join('')}
         </div>
       </div>
@@ -1436,6 +1496,25 @@ function confirmAddCustomToTpl(ti){
   // Re-open the expanded template
   setTimeout(()=>{const exp=document.getElementById('tpl-exp-'+ti);if(exp)exp.classList.add('open')},50);
 }
+function editTplEx(ti,ei){
+  const editDiv=document.getElementById('tpl-ex-edit-'+ti+'-'+ei);
+  if(editDiv)editDiv.style.display=editDiv.style.display==='none'?'block':'none';
+}
+function saveTplEx(ti,ei){
+  const e=templates[ti].exercises[ei];
+  e.sets=parseInt(document.getElementById('te-sets-'+ti+'-'+ei).value)||0;
+  e.reps=parseInt(document.getElementById('te-reps-'+ti+'-'+ei).value)||0;
+  e.kg=parseFloat(document.getElementById('te-kg-'+ti+'-'+ei).value)||0;
+  e.dist=parseFloat(document.getElementById('te-dist-'+ti+'-'+ei).value)||0;
+  e.dur=parseInt(document.getElementById('te-dur-'+ti+'-'+ei).value)||0;
+  e.calBurn=parseInt(document.getElementById('te-cal-'+ti+'-'+ei).value)||0;
+  svAndSync('tpls5',templates);
+  renderTpls();
+  setTimeout(()=>{
+    const exp=document.getElementById('tpl-exp-'+ti);
+    if(exp)exp.classList.add('open');
+  },20);
+}
 function addTodayToTpl(ti){
   const wl=ld('w_'+TODAYK,[]);
   if(!wl.length){alert('No exercises logged today');return}
@@ -1461,7 +1540,74 @@ function delTplEx(ti,ei){
     setTimeout(()=>{const exp=document.getElementById('tpl-exp-'+ti);if(exp)exp.classList.add('open');},20);
   });
 }
-function saveTemplate(){const n=document.getElementById('tplNameIn').value.trim();if(!n){alert('Give it a name');return}const wl=ld('w_'+TODAYK,[]);if(!wl.length){alert('Add exercises first');return}templates.push({name:n,exercises:wl.map(e=>({...e})),created:TODAYK});svAndSync('tpls5',templates);document.getElementById('tplNameIn').value='';renderTpls();alert('Saved!')}
+function showNewTplFlow(){
+  document.getElementById('tplFlowArea').innerHTML=`
+    <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">NEW TEMPLATE NAME</div>
+      <div style="display:flex;gap:8px">
+        <input type="text" id="newTplNameInput" placeholder="e.g. Push day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
+        <button onclick="createBlankTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
+        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+      </div>
+    </div>`;
+  document.getElementById('newTplNameInput').focus();
+}
+function createBlankTemplate(){
+  const n=document.getElementById('newTplNameInput').value.trim();
+  if(!n){alert('Enter a name');return;}
+  templates.push({name:n,exercises:[],created:TODAYK});
+  svAndSync('tpls5',templates);
+  clearTplFlow();
+  renderTpls();
+  alert('Template "'+n+'" created. Expand it to add exercises.');
+}
+function showSaveFromExisting(){
+  // Pick from exercises list to build template
+  const exOpts=exercises.map(e=>`<div style="display:flex;align-items:center;gap:8px;padding:8px;border-bottom:1px solid var(--bor)">
+    <input type="checkbox" id="ex-pick-${e.n.replace(/[^a-z]/gi,'')}" value="${e.n}|${e.c}" style="width:18px;height:18px;accent-color:var(--ac2);cursor:pointer">
+    <label for="ex-pick-${e.n.replace(/[^a-z]/gi,'')}" style="font-size:13px;font-weight:600;color:var(--tx);cursor:pointer;flex:1">${e.n} <span style="color:var(--tx3);font-weight:500">${e.c}</span></label>
+  </div>`).join('');
+  document.getElementById('tplFlowArea').innerHTML=`
+    <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">SELECT EXERCISES</div>
+      <div style="max-height:200px;overflow-y:auto;margin-bottom:10px">${exOpts}</div>
+      <input type="text" id="existTplName" placeholder="Template name" style="width:100%;padding:11px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
+      <div style="display:flex;gap:8px">
+        <button onclick="saveFromExisting()" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+        <button onclick="clearTplFlow()" style="padding:11px 16px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+      </div>
+    </div>`;
+}
+function saveFromExisting(){
+  const n=document.getElementById('existTplName').value.trim();
+  if(!n){alert('Enter a template name');return;}
+  const checks=document.querySelectorAll('#tplFlowArea input[type=checkbox]:checked');
+  const exs=Array.from(checks).map(c=>{const p=c.value.split('|');return{name:p[0],cat:p[1]||'',sets:0,reps:0,kg:0,dist:0,dur:0,calBurn:0};});
+  if(!exs.length){alert('Select at least one exercise');return;}
+  templates.push({name:n,exercises:exs,created:TODAYK});
+  svAndSync('tpls5',templates);
+  clearTplFlow();
+  renderTpls();
+}
+function saveTodayAsTemplate(){
+  const wl=ld('w_'+TODAYK,[]);
+  if(!wl.length){alert('No exercises logged today');return;}
+  document.getElementById('tplFlowArea').innerHTML=`
+    <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">SAVE TODAY AS TEMPLATE</div>
+      <div style="display:flex;gap:8px">
+        <input type="text" id="tplNameIn" placeholder="e.g. Chest day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
+        <button onclick="saveTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
+        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+      </div>
+      <div style="font-size:12px;color:var(--tx3);margin-top:8px;font-weight:500">${wl.length} exercises from today will be saved</div>
+    </div>`;
+  document.getElementById('tplNameIn').focus();
+}
+function clearTplFlow(){
+  document.getElementById('tplFlowArea').innerHTML='';
+}
+function saveTemplate(){const n=document.getElementById('tplNameIn').value.trim();if(!n){alert('Give it a name');return}const wl=ld('w_'+TODAYK,[]);if(!wl.length){alert('Add exercises first');return}templates.push({name:n,exercises:wl.map(e=>({...e})),created:TODAYK});svAndSync('tpls5',templates);clearTplFlow();renderTpls();}
 function loadTpl(i){const t=templates[i],now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});svAndSync('w_'+TODAYK,[...ld('w_'+TODAYK,[]),...t.exercises.map(e=>({...e,t:now}))]);renderW();updStats();renderHome();alert('Loaded "'+t.name+'"!')}
 function delTpl(i){showConfirm('Delete template?','This template will be permanently deleted.',()=>{templates.splice(i,1);svAndSync('tpls5',templates);renderTpls();})}
 
@@ -1598,9 +1744,9 @@ function renderHome(){
   document.getElementById('hSub').textContent='of '+goal+' goal · '+Math.round(calIn/goal*100)+'% reached';
   document.getElementById('hBar').style.width=Math.min(100,Math.round(calIn/goal*100))+'%';
   document.getElementById('hBurn').textContent=calBurn;document.getElementById('hSets').textContent=sets;document.getElementById('hWml').textContent=ml;
-  const ws=new Date(TODAY);ws.setDate(TODAY.getDate()-TODAY.getDay());
+  const ws=new Date(TODAY);ws.setDate(TODAY.getDate()-((TODAY.getDay()+6)%7));
   let streak=0,sHtml='';
-  for(let d=0;d<7;d++){const dt=new Date(ws);dt.setDate(ws.getDate()+d);const k=fk(dt),worked=ld('w_'+k,[]).length>0,isT=k===TODAYK;if(worked)streak++;sHtml+=`<div class="sday${worked?' done':''}${isT?' today':''}" onclick="goToDay('${fk(dt)}')" style="cursor:pointer"><span class="sl">${DN[dt.getDay()].charAt(0)}</span><span class="sn">${dt.getDate()}</span></div>`}
+  for(let d=0;d<7;d++){const dt=new Date(ws);dt.setDate(ws.getDate()+d);const k=fk(dt),worked=ld('w_'+k,[]).length>0,isT=k===TODAYK;if(worked)streak++;sHtml+=`<div class="sday${worked?' done':''}${isT?' today':''}" onclick="goToDay('${fk(dt)}')" style="cursor:pointer"><span class="sl">${DN[(dt.getDay()+6)%7].charAt(0)}</span><span class="sn">${dt.getDate()}</span></div>`}
   document.getElementById('streakRow').innerHTML=sHtml;document.getElementById('mStreak').textContent=streak;
   const y=TODAY.getFullYear(),mo=TODAY.getMonth(),dim=new Date(y,mo+1,0).getDate();
   let dT=0,tEx=0,tSets=0,tW=0,tC=0,fDays=0;
@@ -1647,7 +1793,7 @@ function openDetail(type){
     if(fl.length)html+=`<div class="slabel" style="margin-bottom:8px">TODAY'S FOOD</div>`+fl.map(f=>`<div class="detail-row"><span class="name">${f.name}</span><span class="val">${f.cal} kcal</span></div>`).join('');
   }else if(type==='streak'){
     title='Training streak';
-    let streak=0;const ws=new Date(TODAY);ws.setDate(TODAY.getDate()-TODAY.getDay());
+    let streak=0;const ws=new Date(TODAY);ws.setDate(TODAY.getDate()-((TODAY.getDay()+6)%7));
     for(let d=0;d<7;d++){const dt=new Date(ws);dt.setDate(ws.getDate()+d);if(ld('w_'+fk(dt),[]).length)streak++}
     let dT=0,tEx=0;for(let d=1;d<=dim;d++){const k=y+'-'+String(mo+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');if(ld('w_'+k,[]).length){dT++;tEx+=ld('w_'+k,[]).length}}
     html=`<div class="dm-stat-grid"><div class="dm-stat"><div class="dm-stat-v" style="color:var(--ac2)">${streak}</div><div class="dm-stat-l">THIS WEEK</div></div><div class="dm-stat"><div class="dm-stat-v">${dT}</div><div class="dm-stat-l">DAYS THIS MONTH</div></div></div><div class="dm-stat-grid"><div class="dm-stat"><div class="dm-stat-v">${tEx}</div><div class="dm-stat-l">TOTAL EXERCISES</div></div></div>`;
@@ -1763,8 +1909,8 @@ function renderCalendar(){
   const isCurrentMonth=y===TODAY.getFullYear()&&m===TODAY.getMonth();
   const todayJumpBtn=document.getElementById('todayJumpBtn');
   if(todayJumpBtn)todayJumpBtn.style.display=isCurrentMonth?'none':'block';
-  const fd=new Date(y,m,1).getDay(),dim=new Date(y,m+1,0).getDate();
-  let h='';['S','M','T','W','T','F','S'].forEach(d=>h+=`<div class="cal-dow">${d}</div>`);
+  const fd=(new Date(y,m,1).getDay()+6)%7,dim=new Date(y,m+1,0).getDate();
+  let h='';['M','T','W','T','F','S','S'].forEach(d=>h+=`<div class="cal-dow">${d}</div>`);
   for(let i=0;i<fd;i++)h+=`<div class="cal-day empty"></div>`;
   for(let d=1;d<=dim;d++){
     const k=y+'-'+String(m+1).padStart(2,'0')+'-'+String(d).padStart(2,'0');
@@ -1806,11 +1952,14 @@ function renderCalDay(k){
 }
 function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
   const sess=ld('session_'+k,null);
-  const sessHtml=sess?`<div style="display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(139,92,246,.1);border-radius:var(--rs);margin-bottom:12px;border:1px solid rgba(139,92,246,.25)">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--ac2)"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-    <span style="font-size:12px;font-weight:700;color:var(--ac2)">${sess.start} → ${sess.end} · ${sess.dur>=60?Math.floor(sess.dur/60)+'h '+sess.dur%60+'min':sess.dur+' min'}</span>
-  </div>`:'';
-  let html=`<div class="card">
+  const sessHtml=sess?`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(139,92,246,.1);border-radius:var(--rs);margin-bottom:12px;border:1px solid rgba(139,92,246,.25)">
+    <div style="display:flex;align-items:center;gap:8px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--ac2)"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
+      <span style="font-size:12px;font-weight:700;color:var(--ac2)">${sess.start} → ${sess.end} · ${sess.dur>=60?Math.floor(sess.dur/60)+'h '+sess.dur%60+'min':sess.dur+' min'}</span>
+    </div>
+    <button onclick="editCalSession('${k}')" style="background:none;border:none;color:var(--tx3);cursor:pointer;font-size:12px;font-family:'Inter',sans-serif;font-weight:600;padding:2px 6px">✏ Edit</button>
+  </div>`:'<div style="margin-bottom:10px"><button onclick="editCalSession(\''+k+'\')" style="width:100%;padding:9px;background:var(--sur2);border:1px dashed var(--bor2);border-radius:var(--rs);color:var(--tx3);cursor:pointer;font-size:12px;font-family:\'Inter\',sans-serif;font-weight:600">+ Add session time</button></div>';
+  let html=`<div class="card" id="cal-day-card-${k}">
     <div class="detail-day-title">${dt.toLocaleDateString('en-IE',{weekday:'long',day:'numeric',month:'long'})}</div>
     ${sessHtml}
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px">
@@ -1818,23 +1967,324 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
       <div class="mc"><div class="mv" style="color:var(--gr)">${calIn}</div><div class="ml">KCAL</div></div>
       <div class="mc"><div class="mv" style="color:var(--bl)">${wt}</div><div class="ml">ML WATER</div></div>
     </div>`;
-  if((calFilter==='all'||calFilter==='workout')&&wl.length){
-    html+=`<div class="detail-section"><div class="detail-sec-title">WORKOUT</div>`;
-    html+=wl.map(w=>`<div class="detail-row"><span class="name" style="color:${CCAT[w.cat]||'var(--ac2)'}">${w.name}</span><span class="val">${w.sets?w.sets+'×'+w.reps:''} ${w.kg?w.kg+'kg':''}</span></div>`).join('');
-    html+=`</div>`;
+  if((calFilter==='all'||calFilter==='workout')){
+    html+=`<div class="detail-section">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;cursor:pointer;user-select:none" onclick="toggleCalSection('cal-sec-w-${k}','cal-chev-w-${k}')">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:1px">WORKOUT</span>
+          <span style="font-size:11px;color:var(--tx3);transition:transform .25s;display:inline-block" id="cal-chev-w-${k}">▾</span>
+          <span style="font-size:10px;color:var(--tx3);font-weight:500">${wl.length} exercises</span>
+        </div>
+      </div>
+      <div id="cal-sec-w-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
+        <div style="display:flex;gap:6px;margin-bottom:8px">
+          <button onclick="addCalExercise('${k}')" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>
+          ${wl.length?`<button onclick="toggleCalEdit('${k}','w')" id="cal-edit-toggle-w-${k}" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:''}
+        </div>`;
+    if(wl.length){
+      html+=wl.map((w,wi)=>{
+        const parts=[w.sets?w.sets+'×'+w.reps:'',w.kg?w.kg+'kg':'',w.dist?w.dist+'km':'',w.dur?w.dur+'min':'',w.calBurn?w.calBurn+' kcal':''].filter(Boolean).join(' · ');
+        return`<div style="border-bottom:1px solid var(--bor);padding:6px 0">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:700;color:${CCAT[w.cat]||'var(--ac2)'};font-size:13px">${w.name}</span>
+            <div style="display:flex;align-items:center;gap:4px">
+              <span style="font-size:11px;color:var(--tx2);font-weight:600">${parts}</span>
+              <button onclick="editCalW('${k}',${wi})" class="cal-edit-btn-w-${k}" style="display:none;background:none;border:none;color:var(--ac2);cursor:pointer;font-size:12px;padding:2px 5px;font-weight:700;font-family:'Inter',sans-serif">✏</button>
+              <button onclick="delCalW('${k}',${wi})" class="cal-edit-btn-w-${k}" style="display:none;background:none;border:none;color:var(--rd);cursor:pointer;font-size:12px;padding:2px 5px;font-weight:700;font-family:'Inter',sans-serif">✕</button>
+            </div>
+          </div>
+          ${w.notes?`<div style="font-size:11px;color:var(--tx3);padding-top:2px;font-style:italic">${w.notes}</div>`:''}
+        </div>`;
+      }).join('');;
+    } else {
+      html+=`<div style="font-size:13px;color:var(--tx3);padding:8px 0;font-weight:500">No exercises logged</div>`;
+    }
+    html+=`</div></div>`;
   }
-  if((calFilter==='all'||calFilter==='food')&&fl.length){
-    html+=`<div class="detail-section"><div class="detail-sec-title">FOOD</div>`;
-    html+=fl.map(f=>`<div class="detail-row"><span class="name">${f.name}</span><span class="val">${f.cal} kcal${f.pr?' · P:'+f.pr+'g':''}</span></div>`).join('');
-    html+=`</div>`;
+  if((calFilter==='all'||calFilter==='food')){
+    html+=`<div class="detail-section">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:7px;cursor:pointer;user-select:none" onclick="toggleCalSection('cal-sec-f-${k}','cal-chev-f-${k}')">
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:1px">FOOD</span>
+          <span style="font-size:11px;color:var(--tx3);transition:transform .25s;display:inline-block" id="cal-chev-f-${k}">▾</span>
+          <span style="font-size:10px;color:var(--tx3);font-weight:500">${fl.length} items · ${calIn} kcal</span>
+        </div>
+      </div>
+      <div id="cal-sec-f-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
+        <div style="display:flex;gap:6px;margin-bottom:8px">
+          <button onclick="addCalFood('${k}')" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>
+          ${fl.length?`<button onclick="toggleCalEdit('${k}','f')" id="cal-edit-toggle-f-${k}" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:''}
+        </div>`;
+    if(fl.length){
+      html+=fl.map((f,fi)=>`<div style="border-bottom:1px solid var(--bor);padding:7px 0">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <span style="font-weight:600;color:var(--tx);font-size:13px">${f.name}</span>
+          <div style="display:flex;align-items:center;gap:6px">
+            <span style="font-size:12px;color:var(--gr);font-weight:700">${f.cal} kcal</span>
+            <button onclick="editCalF('${k}',${fi})" class="cal-edit-btn-f-${k}" style="display:none;background:none;border:none;color:var(--tx3);cursor:pointer;font-size:12px;padding:2px 4px">✏</button>
+            <button onclick="delCalF('${k}',${fi})" class="cal-edit-btn-f-${k}" style="display:none;background:none;border:none;color:var(--rd);cursor:pointer;font-size:12px;padding:2px 4px">✕</button>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--tx3);margin-top:2px">${f.meal}${f.pr?' · P:'+f.pr+'g':''}${f.ca?' · C:'+f.ca+'g':''}${f.fa?' · F:'+f.fa+'g':''}</div>
+      </div>`).join('');
+    } else {
+      html+=`<div style="font-size:13px;color:var(--tx3);padding:8px 0;font-weight:500">No food logged</div>`;
+    }
+    html+=`</div></div>`;
   }
-  if((calFilter==='all'||calFilter==='water')&&wt>0){
-    html+=`<div class="detail-section"><div class="detail-sec-title">WATER</div><div class="detail-row"><span class="name">Total intake</span><span class="val" style="color:var(--bl)">${wt} ml</span></div></div>`;
+  if((calFilter==='all'||calFilter==='water')){
+    html+=`<div class="detail-section">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:7px;cursor:pointer;user-select:none" onclick="toggleCalSection('cal-sec-wt-${k}','cal-chev-wt-${k}')">
+        <span style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:1px">WATER</span>
+        <span style="font-size:11px;color:var(--tx3);transition:transform .25s;display:inline-block" id="cal-chev-wt-${k}">▾</span>
+        <span style="font-size:10px;color:var(--bl);font-weight:600">${wt>0?wt+' ml':'No water'}</span>
+      </div>
+      <div id="cal-sec-wt-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
+        <div style="padding-bottom:8px">
+          <div style="font-size:15px;font-weight:800;color:var(--bl);margin-bottom:8px">${wt>0?wt+' ml':'No water logged'}</div>
+          ${wt>0?`<button onclick="editCalWater('${k}',${wt})" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:`<button onclick="editCalWater('${k}',0)" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>`}
+        </div>
+      </div>
+    </div>`;
   }
-  if(!wl.length&&!fl.length&&!wt){html+=`<p style="font-size:13px;color:var(--tx3);text-align:center;padding:8px 0;font-weight:600">No entries for this day</p>`}
   html+=`</div>`;
   return html;
 }
+
+// ── CALENDAR EDIT FUNCTIONS ──────────────────────────────────────────────
+function editCalSession(k){
+  const sess=ld('session_'+k,null)||{start:'',end:'',dur:0};
+  const html=`<div style="padding:14px;background:var(--sur2);border-radius:var(--rs);margin-bottom:12px;border:1px solid rgba(139,92,246,.3)">
+    <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:10px">EDIT SESSION TIME</div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+      <div style="flex:1"><div style="font-size:10px;color:var(--tx3);font-weight:700;margin-bottom:4px">START</div>
+        <input type="time" id="cedit-start" value="${sess.start||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
+      <span style="color:var(--tx3);font-size:18px;padding-top:18px">→</span>
+      <div style="flex:1"><div style="font-size:10px;color:var(--tx3);font-weight:700;margin-bottom:4px">END</div>
+        <input type="time" id="cedit-end" value="${sess.end||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button onclick="saveCalSession('${k}')" style="flex:1;padding:10px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:10px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+    </div>
+  </div>`;
+  // Remove existing session form first (toggle)
+  const existSess=document.getElementById('cal-sess-edit-form');
+  if(existSess){existSess.remove();return;}
+  const sessDiv=document.createElement('div');sessDiv.id='cal-sess-edit-form';sessDiv.innerHTML=html;
+  const card=document.getElementById('cal-day-card-'+k);
+  if(card)card.prepend(sessDiv.firstElementChild);
+}
+function toggleCalSection(secId,chevId){
+  const sec=document.getElementById(secId);
+  const chev=document.getElementById(chevId);
+  if(!sec)return;
+  const isOpen=sec.style.maxHeight&&sec.style.maxHeight!=='0px';
+  sec.style.maxHeight=isOpen?'0px':'1000px';
+  if(chev)chev.style.transform=isOpen?'':'rotate(180deg)';
+}
+function toggleCalEdit(k,type){
+  let btns=[];
+  try{ btns=Array.from(document.querySelectorAll('.cal-edit-btn-'+type+'-'+k)); }catch(e){}
+  const toggle=document.getElementById('cal-edit-toggle-'+type+'-'+k);
+  const isOn=btns.length>0&&btns[0].style.display!=='none'&&btns[0].style.display!=='';
+  // Close any open edit form when toggling off
+  if(isOn){
+    const ef=document.getElementById('cal-w-edit-form');if(ef)ef.remove();
+    const ff=document.getElementById('cal-f-edit-form');if(ff)ff.remove();
+  }
+  btns.forEach(b=>b.style.display=isOn?'none':'inline-flex');
+  if(toggle){
+    toggle.textContent=isOn?'✏ Edit':'✓ Done';
+    toggle.style.color=isOn?'var(--tx3)':'var(--ac2)';
+    toggle.style.borderColor=isOn?'var(--bor2)':'rgba(139,92,246,.4)';
+    toggle.style.background=isOn?'var(--sur2)':'rgba(139,92,246,.1)';
+  }
+}
+function saveCalSession(k){
+  const s=document.getElementById('cedit-start').value;
+  const e=document.getElementById('cedit-end').value;
+  if(!s){renderCalDay(k);return;}
+  let dur=0;
+  if(s&&e){const[sh,sm]=s.split(':').map(Number);const[eh,em]=e.split(':').map(Number);dur=(eh*60+em)-(sh*60+sm);if(dur<0)dur+=1440;}
+  sv('session_'+k,{start:s,end:e,dur});
+  scheduleSyncPush();
+  renderCalDay(k);
+}
+
+function editCalW(k,wi){
+  // Remove any existing edit form first (only one at a time)
+  const existing=document.getElementById('cal-w-edit-form');
+  if(existing){
+    // If clicking same row again, just close
+    if(existing.dataset.wi==wi){existing.remove();return;}
+    existing.remove();
+  }
+  const wl=ld('w_'+k,[]);const w=wl[wi];if(!w)return;
+  const inp=(id,ph,val,type,step)=>`<input type="${type||'number'}" id="${id}" placeholder="${ph}" value="${val||''}" ${step?'step="'+step+'"':''} inputmode="${type==='text'?'text':'decimal'}" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">`;
+  const div=document.createElement('div');
+  div.id='cal-w-edit-form';
+  div.dataset.wi=wi;
+  div.style.cssText='padding:12px;background:var(--sur2);border-radius:var(--rs);margin:4px 0 6px;border:1px solid rgba(139,92,246,.3)';
+  div.innerHTML=`
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
+      ${inp('cew-sets','Sets',w.sets,'number')}${inp('cew-reps','Reps',w.reps,'number')}
+      ${inp('cew-kg','Weight kg',w.kg,'number','0.5')}${inp('cew-dist','Distance km',w.dist,'number','0.1')}
+      ${inp('cew-dur','Duration min',w.dur,'number')}${inp('cew-cal','Cal burned',w.calBurn,'number')}
+    </div>
+    ${inp('cew-notes','Notes',w.notes,'text')}
+    <div style="display:flex;gap:6px;margin-top:6px">
+      <button onclick="saveCalW('${k}',${wi})" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+      <button onclick="document.getElementById('cal-w-edit-form').remove()" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕ Cancel</button>
+    </div>`;
+  // Insert after the row that was clicked
+  const rowEl=document.querySelector('.cal-edit-btn-w-'+k+'[onclick*=",'+wi+')"]');
+  if(rowEl){
+    const parentRow=rowEl.closest('[style*="border-bottom"]');
+    if(parentRow&&parentRow.parentNode){parentRow.parentNode.insertBefore(div,parentRow.nextSibling);return;}
+  }
+  // Fallback: append to detail inner
+  const inner=document.getElementById('calDetailInner');
+  if(inner)inner.appendChild(div);
+}
+function saveCalW(k,wi){
+  const wl=ld('w_'+k,[]);
+  wl[wi].sets=parseInt(document.getElementById('cew-sets-'+wi).value)||0;
+  wl[wi].reps=parseInt(document.getElementById('cew-reps-'+wi).value)||0;
+  wl[wi].kg=parseFloat(document.getElementById('cew-kg-'+wi).value)||0;
+  wl[wi].dist=parseFloat(document.getElementById('cew-dist-'+wi).value)||0;
+  wl[wi].dur=parseInt(document.getElementById('cew-dur-'+wi).value)||0;
+  wl[wi].calBurn=parseInt(document.getElementById('cew-cal-'+wi).value)||0;
+  wl[wi].notes=document.getElementById('cew-notes-'+wi).value.trim();
+  svAndSync('w_'+k,wl);renderCalDay(k);
+}
+function delCalW(k,wi){
+  showConfirm('Delete exercise?','Remove this exercise from '+k+'.',()=>{
+    const wl=ld('w_'+k,[]);wl.splice(wi,1);svAndSync('w_'+k,wl);renderCalDay(k);renderCalendar();
+  });
+}
+function addCalExercise(k){
+  const cats2=cats.map(c=>`<option value="${c}">${c}</option>`).join('');
+  const exOpts=exercises.map(e=>`<option value="${e.n}|${e.c}">${e.n} (${e.c})</option>`).join('');
+  const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid var(--bor2)" id="cal-add-ex-form">
+    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">ADD EXERCISE TO ${k}</div>
+    <select id="cal-ex-sel" style="width:100%;padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:8px">${exOpts}</select>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+      <input type="number" id="cal-ex-sets" placeholder="Sets" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-reps" placeholder="Reps" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-kg" placeholder="Weight kg" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-dur" placeholder="Duration min" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+    </div>
+    <div style="display:flex;gap:6px">
+      <button onclick="saveCalExercise('${k}')" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Add</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+    </div>
+  </div>`;
+  // Remove existing add form first
+  const ef=document.getElementById('cal-add-ex-form');if(ef){ef.remove();return;}
+  const inner=document.getElementById('calDetailInner');
+  if(inner){const tmp=document.createElement('div');tmp.innerHTML=html;inner.appendChild(tmp.firstElementChild);}
+}
+function saveCalExercise(k){
+  const sel=document.getElementById('cal-ex-sel');if(!sel)return;
+  const parts=sel.value.split('|');
+  const wl=ld('w_'+k,[]);
+  wl.push({name:parts[0],cat:parts[1]||'',sets:parseInt(document.getElementById('cal-ex-sets').value)||0,reps:parseInt(document.getElementById('cal-ex-reps').value)||0,kg:parseFloat(document.getElementById('cal-ex-kg').value)||0,dur:parseInt(document.getElementById('cal-ex-dur').value)||0,t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
+  svAndSync('w_'+k,wl);renderCalDay(k);renderCalendar();
+}
+function editCalF(k,fi){
+  const fl=ld('f_'+k,[]);const f=fl[fi];if(!f)return;
+  const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:6px 0;border:1px solid var(--bor2)" id="cal-edit-f-form">
+    <input type="text" id="cef-name" placeholder="Food name" value="${f.name||''}" style="width:100%;padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+      <input type="number" id="cef-cal" placeholder="Calories" value="${f.cal||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-pr" placeholder="Protein g" value="${f.pr||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-ca" placeholder="Carbs g" value="${f.ca||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-fa" placeholder="Fat g" value="${f.fa||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+    </div>
+    <div style="display:flex;gap:6px">
+      <button onclick="saveCalF('${k}',${fi})" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+    </div>
+  </div>`;
+  // Remove existing food edit form first
+  const ef=document.getElementById('cal-f-edit-form');if(ef)ef.remove();
+  const div=document.createElement('div');
+  div.id='cal-f-edit-form';
+  div.innerHTML=html;
+  const inner=document.getElementById('calDetailInner');
+  if(inner)inner.appendChild(div.firstElementChild);
+}
+function saveCalF(k,fi){
+  const fl=ld('f_'+k,[]);
+  fl[fi].name=document.getElementById('cef-name').value.trim()||fl[fi].name;
+  fl[fi].cal=parseInt(document.getElementById('cef-cal').value)||0;
+  fl[fi].pr=parseInt(document.getElementById('cef-pr').value)||0;
+  fl[fi].ca=parseInt(document.getElementById('cef-ca').value)||0;
+  fl[fi].fa=parseInt(document.getElementById('cef-fa').value)||0;
+  svAndSync('f_'+k,fl);renderCalDay(k);
+}
+function delCalF(k,fi){
+  showConfirm('Delete food entry?','Remove this entry from '+k+'.',()=>{
+    const fl=ld('f_'+k,[]);fl.splice(fi,1);svAndSync('f_'+k,fl);renderCalDay(k);
+  });
+}
+function addCalFood(k){
+  const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid var(--bor2)" id="cal-add-f-form">
+    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">ADD FOOD TO ${k}</div>
+    <input type="text" id="caf-name" placeholder="Food name" style="width:100%;padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
+      <input type="number" id="caf-cal" placeholder="Calories" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="caf-pr" placeholder="Protein g" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+    </div>
+    <div style="display:flex;gap:6px">
+      <button onclick="saveCalNewFood('${k}')" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Add</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+    </div>
+  </div>`;
+  // Remove existing add form first
+  const ef=document.getElementById('cal-add-f-form');if(ef){ef.remove();return;}
+  const inner=document.getElementById('calDetailInner');
+  if(inner){const tmp=document.createElement('div');tmp.innerHTML=html;inner.appendChild(tmp.firstElementChild);}
+}
+function saveCalNewFood(k){
+  const name=document.getElementById('caf-name').value.trim();if(!name)return;
+  const fl=ld('f_'+k,[]);
+  fl.push({name,cal:parseInt(document.getElementById('caf-cal').value)||0,pr:parseInt(document.getElementById('caf-pr').value)||0,ca:0,fa:0,meal:'Other',amt:'',t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
+  svAndSync('f_'+k,fl);renderCalDay(k);
+}
+function editCalWater(k,current){
+  const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid rgba(59,130,246,.3)" id="cal-edit-water-form">
+    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">EDIT WATER (ML)</div>
+    <input type="number" id="cew-water" value="${current}" step="250" inputmode="numeric" style="width:100%;padding:11px;border:1.5px solid rgba(59,130,246,.4);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:700;outline:none;margin-bottom:8px">
+    <div style="display:flex;gap:6px">
+      <button onclick="saveCalWater('${k}')" style="flex:1;padding:9px;background:var(--bl);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+    </div>
+  </div>`;
+  // Remove existing water edit form first (only one at a time)
+  const existing=document.getElementById('cal-edit-water-form');
+  if(existing){existing.remove();return;}
+  const inner=document.getElementById('calDetailInner');
+  if(inner){const tmp=document.createElement('div');tmp.innerHTML=html;inner.appendChild(tmp.firstElementChild);}
+}
+function saveCalWater(k){
+  const ml=parseInt(document.getElementById('cew-water').value)||0;
+  svAndSync('wt_'+k,ml);renderCalDay(k);renderCalendar();
+}
+function renderCalDay(k){
+  const wl=ld('w_'+k,[]),fl=ld('f_'+k,[]),wt=ld('wt_'+k,0);
+  const dt=new Date(k+'T12:00:00');
+  const calIn=fl.reduce((a,f)=>a+f.cal,0);
+  const detail=document.getElementById('calDetail');
+  const inner=document.getElementById('calDetailInner');
+  activeCalDay=k;
+  detail.classList.add('open');
+  let html=buildCalDayHTML(k,wl,fl,wt,calIn,dt);
+  inner.innerHTML=html;
+  renderCalendar();
+}
+
 function showCalDay(k,d){
   const wl=ld('w_'+k,[]),fl=ld('f_'+k,[]),wt=ld('wt_'+k,0);
   const dt=new Date(k+'T12:00:00');
@@ -1860,6 +2310,29 @@ function exportCSV(){
 function saveSettings(){cfg.weight=parseFloat(document.getElementById('sWeight').value)||79.4;cfg.goal=parseInt(document.getElementById('sGoal').value)||2000;cfg.wGoal=parseInt(document.getElementById('sWGoal').value)||2500;svAndSync('cfg5',cfg);updStats();renderHome();renderWater();const m=document.getElementById('savedMsg');m.style.display='block';setTimeout(()=>m.style.display='none',2000)}
 
 // ── INIT ─────────────────────────────────────────────────────────────────────
+function applyTheme(theme){
+  document.documentElement.setAttribute('data-theme',theme);
+  localStorage.setItem('theme',theme);
+  const icon=document.getElementById('themeIcon');
+  const label=document.getElementById('themeLabel');
+  const btn=document.getElementById('themeToggleTxt');
+  if(theme==='light'){
+    if(icon)icon.textContent='☀️';
+    if(label)label.textContent='Light mode';
+    if(btn)btn.textContent='Switch to Dark';
+  } else {
+    if(icon)icon.textContent='🌙';
+    if(label)label.textContent='Dark mode';
+    if(btn)btn.textContent='Switch to Light';
+  }
+}
+function toggleTheme(){
+  const current=localStorage.getItem('theme')||'dark';
+  applyTheme(current==='dark'?'light':'dark');
+}
+// Apply saved theme on load
+applyTheme(localStorage.getItem('theme')||'dark');
+
 const dateStr=TODAY.toLocaleDateString('en-IE',{weekday:'short',day:'numeric',month:'short'});
 const dbEl=document.getElementById('dbadge');if(dbEl)dbEl.textContent=dateStr;
 const d2=document.getElementById('dbadge2');if(d2)d2.textContent=dateStr;
