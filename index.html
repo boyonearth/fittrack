@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="FitTrack">
@@ -422,7 +422,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
   <div class="session-card" id="sessionCard">
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
       <div>
-        <div style="font-size:14px;font-weight:700;color:var(--tx)">Today's workout session</div>
+        <div style="font-size:16px;font-weight:700;color:var(--tx)">Today's workout session</div>
         <div style="font-size:11px;color:var(--tx3);margin-top:2px;font-weight:500">Enter start & end time manually</div>
       </div>
       <button class="btn ac sm" onclick="saveSession()">✓ Save & hide</button>
@@ -548,7 +548,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
     <div class="slabel">ADD EXERCISE</div>
     <div class="fr" style="margin-bottom:9px">
       <div class="fg"><label>NAME</label><input id="newExName" type="text" placeholder="e.g. Cable row"></div>
-      <div class="fg"><label>CATEGORY</label><select id="newExCat" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"></select></div>
+      <div class="fg"><label>CATEGORY</label><select id="newExCat" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"></select></div>
     </div>
     <button class="btn ac full" style="margin-bottom:14px" onclick="addCustomExConfirm()">+ Add exercise</button>
     <div class="divider"></div>
@@ -624,7 +624,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
     <div id="foodForm" style="display:none;margin-top:14px">
       <div class="fr full" style="margin-bottom:11px"><div class="fg"><label>FOOD NAME</label><input id="fName" type="text" placeholder="e.g. Chicken breast, Oats"></div></div>
       <div class="fr" style="margin-bottom:11px">
-        <div class="fg"><label>MEAL</label><select id="fMeal" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select></div>
+        <div class="fg"><label>MEAL</label><select id="fMeal" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"><option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option></select></div>
         <div class="fg"><label>CALORIES</label><input id="fCal" type="number" placeholder="300" inputmode="numeric"></div>
       </div>
       <div class="fr" style="margin-bottom:11px">
@@ -652,7 +652,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
     <div class="prow"><span class="lbl">Today</span><span class="val" id="wLbl">0 / 2500 ml</span></div>
     <div class="pbw"><div class="pb" id="wPb" style="width:0%;background:var(--bl)"></div></div>
     <div class="wgrid" id="wGrid"></div>
-    <p style="font-size:13px;color:var(--tx3);text-align:center;margin-bottom:14px;font-weight:600" id="wMsg">Tap + to start logging</p>
+    <p style="font-size:16px;color:var(--tx3);text-align:center;margin-bottom:14px;font-weight:600" id="wMsg">Tap + to start logging</p>
     <!-- QUICK BUTTONS always visible -->
     <div class="wbtns" style="margin-bottom:8px">
       <button class="wbtn" onclick="addWater(-250)">
@@ -674,7 +674,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
       </div>
       <div style="display:flex;align-items:center;gap:9px;padding-top:12px;border-top:1px solid var(--bor)">
         <span style="font-size:10px;color:var(--tx3);font-weight:700;white-space:nowrap;letter-spacing:.5px">DAILY GOAL (ML)</span>
-        <input type="number" id="wGoalIn" value="2500" min="500" max="6000" step="250" inputmode="numeric" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur2);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
+        <input type="number" id="wGoalIn" value="2500" min="500" max="6000" step="250" inputmode="numeric" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur2);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
         <button class="btn out" onclick="saveWGoal()">✓ Set</button>
       </div>
     </div>
@@ -733,7 +733,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 
   <div class="stitle">Export data</div>
   <div class="card">
-    <p style="font-size:13px;color:var(--tx3);line-height:1.7;margin-bottom:14px;font-weight:500">Download all your workout and food data as a CSV — opens in Excel or Google Sheets.</p>
+    <p style="font-size:16px;color:var(--tx3);line-height:1.7;margin-bottom:14px;font-weight:500">Download all your workout and food data as a CSV — opens in Excel or Google Sheets.</p>
     <button class="add-btn blue" onclick="exportCSV()">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
       Download as CSV (Excel)
@@ -748,12 +748,12 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
   <!-- THEME TOGGLE -->
   <div style="display:flex;align-items:center;justify-content:space-between;background:var(--sur);border:1px solid var(--bor2);border-radius:var(--r);padding:16px 20px;margin-bottom:10px">
     <div>
-      <div style="font-size:15px;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:8px">
+      <div style="font-size:16px;font-weight:700;color:var(--tx);display:flex;align-items:center;gap:8px">
         <span id="themeIcon">🌙</span> Appearance
       </div>
       <div style="font-size:11px;color:var(--tx3);margin-top:2px;font-weight:500" id="themeLabel">Dark mode</div>
     </div>
-    <button id="themeToggleBtn" onclick="toggleTheme()" style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:30px;border:1.5px solid var(--bor2);background:var(--sur2);color:var(--tx2);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s">
+    <button id="themeToggleBtn" onclick="toggleTheme()" style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:30px;border:1.5px solid var(--bor2);background:var(--sur2);color:var(--tx2);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;transition:all .2s">
       <span id="themeToggleTxt">Switch to Light</span>
     </button>
   </div>
@@ -773,8 +773,8 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
     <div class="card" style="margin-bottom:0">
       <div id="tokenStatus"></div>
       <div class="token-setup" id="tokenSetup">
-        <p style="font-size:13px;color:var(--tx2);line-height:1.7;font-weight:500;margin-bottom:11px">Connect GitHub to sync your data across all devices. Saves to <strong>fittrack-data.json</strong> in your repo.</p>
-        <ol style="font-size:13px;color:var(--tx2);line-height:2;font-weight:500;padding-left:18px;margin-bottom:11px">
+        <p style="font-size:16px;color:var(--tx2);line-height:1.7;font-weight:500;margin-bottom:11px">Connect GitHub to sync your data across all devices. Saves to <strong>fittrack-data.json</strong> in your repo.</p>
+        <ol style="font-size:16px;color:var(--tx2);line-height:2;font-weight:500;padding-left:18px;margin-bottom:11px">
           <li>Go to <strong>github.com → Settings → Developer settings</strong></li>
           <li>Personal access tokens → <strong>Tokens (classic)</strong></li>
           <li>Generate new token → note: <em>FitTrack</em>, tick <strong>repo</strong></li>
@@ -1146,7 +1146,7 @@ function setSyncStatus(state,text){
 }
 function collectAllData(){
   const data={cfg,exercises,cats,templates,days:{},synced:new Date().toISOString()};
-  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&(k.startsWith('w_')||k.startsWith('f_')||k.startsWith('wt_')||k.startsWith('session_'))){try{data.days[k]=JSON.parse(localStorage.getItem(k))}catch{}}}
+  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&(k.startsWith('w_')||k.startsWith('f_')||k.startsWith('wt_')||k.startsWith('wtlog_')||k.startsWith('session_'))){try{data.days[k]=JSON.parse(localStorage.getItem(k))}catch{}}}
   return data;
 }
 function applyAllData(data){
@@ -1252,10 +1252,10 @@ function openCustomEx(){
   div.id='customExInput';
   div.style.cssText='background:var(--sur2);border-radius:var(--rs);padding:12px;margin-top:10px;border:1px solid var(--bor2)';
   div.innerHTML=`<div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">EXERCISE NAME</div>
-    <input type="text" id="customExName" placeholder="e.g. Cable fly" style="width:100%;padding:12px 14px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:10px">
+    <input type="text" id="customExName" placeholder="e.g. Cable fly" style="width:100%;padding:12px 14px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:10px">
     <div style="display:flex;gap:8px">
-      <button onclick="confirmCustomEx()" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Add</button>
-      <button onclick="document.getElementById('customExInput').remove()" style="flex:1;padding:11px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+      <button onclick="confirmCustomEx()" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Add</button>
+      <button onclick="document.getElementById('customExInput').remove()" style="flex:1;padding:11px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
     </div>`;
   document.getElementById('exListFlow').after(div);
   document.getElementById('customExName').focus();
@@ -1474,12 +1474,12 @@ function renderTpls(){
             </div>
             <div id="tpl-ex-edit-${ti}-${ei}" style="display:none;padding:8px;background:var(--sur2);border-radius:var(--rs);margin-bottom:4px;border:1px solid var(--bor2)">
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px">
-                <input type="number" id="te-sets-${ti}-${ei}" placeholder="Sets" value="${e.sets||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-                <input type="number" id="te-reps-${ti}-${ei}" placeholder="Reps" value="${e.reps||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-                <input type="number" id="te-kg-${ti}-${ei}" placeholder="Weight kg" value="${e.kg||''}" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-                <input type="number" id="te-dist-${ti}-${ei}" placeholder="Distance km" value="${e.dist||''}" step="0.1" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-                <input type="number" id="te-dur-${ti}-${ei}" placeholder="Duration min" value="${e.dur||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-                <input type="number" id="te-cal-${ti}-${ei}" placeholder="Cal burned" value="${e.calBurn||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-sets-${ti}-${ei}" placeholder="Sets" value="${e.sets||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-reps-${ti}-${ei}" placeholder="Reps" value="${e.reps||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-kg-${ti}-${ei}" placeholder="Weight kg" value="${e.kg||''}" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-dist-${ti}-${ei}" placeholder="Distance km" value="${e.dist||''}" step="0.1" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-dur-${ti}-${ei}" placeholder="Duration min" value="${e.dur||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+                <input type="number" id="te-cal-${ti}-${ei}" placeholder="Cal burned" value="${e.calBurn||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
               </div>
               <div style="display:flex;gap:6px">
                 <button onclick="saveTplEx(${ti},${ei})" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
@@ -1506,18 +1506,18 @@ function addCustomToTpl(ti){
   div.style.cssText='background:var(--sur2);border-radius:var(--rs);padding:12px;margin:8px 0;border:1px solid var(--bor2)';
   div.innerHTML=`
     <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">ADD EXERCISE TO TEMPLATE</div>
-    <select id="tplExSelect_${ti}" style="width:100%;padding:11px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:8px">${exOpts}</select>
+    <select id="tplExSelect_${ti}" style="width:100%;padding:11px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:8px">${exOpts}</select>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
-      <input type="number" id="tplExSets_${ti}" placeholder="Sets" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="tplExReps_${ti}" placeholder="Reps" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="tplExSets_${ti}" placeholder="Sets" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="tplExReps_${ti}" placeholder="Reps" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px">
-      <input type="number" id="tplExKg_${ti}" placeholder="Weight kg" step="0.5" inputmode="decimal" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="tplExDur_${ti}" placeholder="Duration min" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="tplExKg_${ti}" placeholder="Weight kg" step="0.5" inputmode="decimal" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="tplExDur_${ti}" placeholder="Duration min" inputmode="numeric" style="padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
     </div>
     <div style="display:flex;gap:8px">
-      <button onclick="confirmAddCustomToTpl(${ti})" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Add</button>
-      <button onclick="document.getElementById('tplCustomForm_${ti}').remove()" style="flex:1;padding:11px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+      <button onclick="confirmAddCustomToTpl(${ti})" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Add</button>
+      <button onclick="document.getElementById('tplCustomForm_${ti}').remove()" style="flex:1;padding:11px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
     </div>`;
   // Insert after the buttons row inside this template expand
   const expandEl=document.getElementById('tpl-exp-'+ti);
@@ -1589,9 +1589,9 @@ function showNewTplFlow(){
     <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
       <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">NEW TEMPLATE NAME</div>
       <div style="display:flex;gap:8px">
-        <input type="text" id="newTplNameInput" placeholder="e.g. Push day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
-        <button onclick="createBlankTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
-        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+        <input type="text" id="newTplNameInput" placeholder="e.g. Push day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
+        <button onclick="createBlankTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
+        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
       </div>
     </div>`;
   document.getElementById('newTplNameInput').focus();
@@ -1609,16 +1609,16 @@ function showSaveFromExisting(){
   // Pick from exercises list to build template
   const exOpts=exercises.map(e=>`<div style="display:flex;align-items:center;gap:8px;padding:8px;border-bottom:1px solid var(--bor)">
     <input type="checkbox" id="ex-pick-${e.n.replace(/[^a-z]/gi,'')}" value="${e.n}|${e.c}" style="width:18px;height:18px;accent-color:var(--ac2);cursor:pointer">
-    <label for="ex-pick-${e.n.replace(/[^a-z]/gi,'')}" style="font-size:13px;font-weight:600;color:var(--tx);cursor:pointer;flex:1">${e.n} <span style="color:var(--tx3);font-weight:500">${e.c}</span></label>
+    <label for="ex-pick-${e.n.replace(/[^a-z]/gi,'')}" style="font-size:16px;font-weight:600;color:var(--tx);cursor:pointer;flex:1">${e.n} <span style="color:var(--tx3);font-weight:500">${e.c}</span></label>
   </div>`).join('');
   document.getElementById('tplFlowArea').innerHTML=`
     <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
       <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">SELECT EXERCISES</div>
       <div style="max-height:200px;overflow-y:auto;margin-bottom:10px">${exOpts}</div>
-      <input type="text" id="existTplName" placeholder="Template name" style="width:100%;padding:11px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
+      <input type="text" id="existTplName" placeholder="Template name" style="width:100%;padding:11px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
       <div style="display:flex;gap:8px">
-        <button onclick="saveFromExisting()" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
-        <button onclick="clearTplFlow()" style="padding:11px 16px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+        <button onclick="saveFromExisting()" style="flex:1;padding:11px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+        <button onclick="clearTplFlow()" style="padding:11px 16px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
       </div>
     </div>`;
 }
@@ -1640,9 +1640,9 @@ function saveTodayAsTemplate(){
     <div style="background:var(--sur2);border:1px solid var(--bor2);border-radius:var(--rm);padding:14px;margin-bottom:12px">
       <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">SAVE TODAY AS TEMPLATE</div>
       <div style="display:flex;gap:8px">
-        <input type="text" id="tplNameIn" placeholder="e.g. Chest day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
-        <button onclick="saveTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
-        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:14px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+        <input type="text" id="tplNameIn" placeholder="e.g. Chest day" style="flex:1;padding:12px 13px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none">
+        <button onclick="saveTemplate()" style="padding:12px 16px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓</button>
+        <button onclick="clearTplFlow()" style="padding:12px 14px;background:var(--sur2);color:var(--tx3);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
       </div>
       <div style="font-size:12px;color:var(--tx3);margin-top:8px;font-weight:500">${wl.length} exercises from today will be saved</div>
     </div>`;
@@ -1699,9 +1699,9 @@ function renderF(){
     </div>
     <div class="ei-expand" id="fi-exp-${i}">
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding-top:10px;margin-bottom:10px">
-        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:var(--tx)">${f.pr||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">PROTEIN</div></div>
-        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:var(--tx)">${f.ca||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">CARBS</div></div>
-        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:var(--tx)">${f.fa||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">FAT</div></div>
+        <div style="text-align:center"><div style="font-size:16px;font-weight:800;color:var(--tx)">${f.pr||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">PROTEIN</div></div>
+        <div style="text-align:center"><div style="font-size:16px;font-weight:800;color:var(--tx)">${f.ca||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">CARBS</div></div>
+        <div style="text-align:center"><div style="font-size:16px;font-weight:800;color:var(--tx)">${f.fa||0}g</div><div style="font-size:10px;color:var(--tx3);font-weight:700;letter-spacing:.4px">FAT</div></div>
       </div>
       <div class="ei-actions">
         <button class="btn out sm" onclick="startEditF(${i})">✏ Edit</button>
@@ -1711,7 +1711,7 @@ function renderF(){
         <div class="fr"><div class="fg"><label>FOOD NAME</label><input type="text" id="ef-name-${i}" value="${f.name}"></div></div>
         <div class="fr">
           <div class="fg"><label>CALORIES</label><input type="number" id="ef-cal-${i}" value="${f.cal||''}" inputmode="numeric"></div>
-          <div class="fg"><label>MEAL</label><select id="ef-meal-${i}" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:15px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"><option${f.meal==='Breakfast'?' selected':''}>Breakfast</option><option${f.meal==='Lunch'?' selected':''}>Lunch</option><option${f.meal==='Dinner'?' selected':''}>Dinner</option><option${f.meal==='Snack'?' selected':''}>Snack</option></select></div>
+          <div class="fg"><label>MEAL</label><select id="ef-meal-${i}" style="padding:14px 15px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;width:100%"><option${f.meal==='Breakfast'?' selected':''}>Breakfast</option><option${f.meal==='Lunch'?' selected':''}>Lunch</option><option${f.meal==='Dinner'?' selected':''}>Dinner</option><option${f.meal==='Snack'?' selected':''}>Snack</option></select></div>
         </div>
         <div class="fr">
           <div class="fg"><label>PROTEIN (G)</label><input type="number" id="ef-pr-${i}" value="${f.pr||''}" inputmode="numeric"></div>
@@ -1755,7 +1755,19 @@ function renderWater(){
   let h='';for(let i=0;i<segs;i++)h+=`<div class="wg${i<filled?' full':''}">${(i+1)*250}ml</div>`;
   document.getElementById('wGrid').innerHTML=h;
 }
-function addWater(d){const c=gc();let ml=ld('wt_'+TODAYK,0);ml=Math.max(0,Math.min(c.wGoal||2500,ml+d));svAndSync('wt_'+TODAYK,ml);renderWater();updStats();renderHome()}
+function addWater(d){
+  const c=gc();
+  let ml=ld('wt_'+TODAYK,0);
+  ml=Math.max(0,Math.min(c.wGoal||2500,ml+d));
+  svAndSync('wt_'+TODAYK,ml);
+  // Also log the entry with timestamp
+  if(d>0){
+    const log=ld('wtlog_'+TODAYK,[]);
+    log.push({ml:d,t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
+    svAndSync('wtlog_'+TODAYK,log);
+  }
+  renderWater();updStats();renderHome();
+}
 function saveWGoal(){const g=parseInt(document.getElementById('wGoalIn').value)||2500;cfg.wGoal=g;svAndSync('cfg5',cfg);renderWater()}
 function resetWater(){showConfirm('Reset water?','This will set today\'s water intake to 0 ml.',()=>{svAndSync('wt_'+TODAYK,0);renderWater();updStats();renderHome();})}
 
@@ -1818,7 +1830,7 @@ function openDetail(type){
   const y=TODAY.getFullYear(),mo=TODAY.getMonth(),dim=new Date(y,mo+1,0).getDate();
   if(type==='burn'){
     title='Calories burned';
-    html=`<div class="dm-stat-grid"><div class="dm-stat"><div class="dm-stat-v" style="color:#F59E0B">${calBurn}</div><div class="dm-stat-l">BURNED TODAY</div></div><div class="dm-stat"><div class="dm-stat-v">${wl.length}</div><div class="dm-stat-l">EXERCISES</div></div></div><p style="font-size:13px;color:var(--tx2);line-height:1.8;font-weight:500">Cardio: duration × (weight × 0.09)<br>Weights: sets × reps × (weight × 0.005)</p>`;
+    html=`<div class="dm-stat-grid"><div class="dm-stat"><div class="dm-stat-v" style="color:#F59E0B">${calBurn}</div><div class="dm-stat-l">BURNED TODAY</div></div><div class="dm-stat"><div class="dm-stat-v">${wl.length}</div><div class="dm-stat-l">EXERCISES</div></div></div><p style="font-size:16px;color:var(--tx2);line-height:1.8;font-weight:500">Cardio: duration × (weight × 0.09)<br>Weights: sets × reps × (weight × 0.005)</p>`;
   }else if(type==='sets'){
     title='Workout details';
     const sets=wl.reduce((a,w)=>a+(w.sets||0),0),reps=wl.reduce((a,w)=>a+(w.sets||0)*(w.reps||0),0);
@@ -2030,7 +2042,7 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
         const parts=[w.sets?w.sets+'×'+w.reps:'',w.kg?w.kg+'kg':'',w.dist?w.dist+'km':'',w.dur?w.dur+'min':'',w.calBurn?w.calBurn+' kcal':''].filter(Boolean).join(' · ');
         return`<div style="border-bottom:1px solid var(--bor);padding:6px 0">
           <div style="display:flex;justify-content:space-between;align-items:center">
-            <span style="font-weight:700;color:${CCAT[w.cat]||'var(--ac2)'};font-size:13px">${w.name}</span>
+            <span style="font-weight:700;color:${CCAT[w.cat]||'var(--ac2)'};font-size:16px">${w.name}</span>
             <div style="display:flex;align-items:center;gap:4px">
               <span style="font-size:11px;color:var(--tx2);font-weight:600">${parts}</span>
               <button onclick="editCalW('${k}',${wi})" class="cal-edit-btn-w-${k}" style="display:none;background:none;border:none;color:var(--ac2);cursor:pointer;font-size:12px;padding:2px 5px;font-weight:700;font-family:'Inter',sans-serif">✏</button>
@@ -2041,7 +2053,7 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
         </div>`;
       }).join('');;
     } else {
-      html+=`<div style="font-size:13px;color:var(--tx3);padding:8px 0;font-weight:500">No exercises logged</div>`;
+      html+=`<div style="font-size:16px;color:var(--tx3);padding:8px 0;font-weight:500">No exercises logged</div>`;
     }
     html+=`</div></div>`;
   }
@@ -2062,17 +2074,17 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
     if(fl.length){
       html+=fl.map((f,fi)=>`<div style="border-bottom:1px solid var(--bor);padding:7px 0">
         <div style="display:flex;justify-content:space-between;align-items:center">
-          <span style="font-weight:600;color:var(--tx);font-size:13px">${f.name}</span>
+          <span style="font-weight:600;color:var(--tx);font-size:16px">${f.name}</span>
           <div style="display:flex;align-items:center;gap:6px">
             <span style="font-size:12px;color:var(--gr);font-weight:700">${f.cal} kcal</span>
             <button onclick="editCalF('${k}',${fi})" class="cal-edit-btn-f-${k}" style="display:none;background:none;border:none;color:var(--tx3);cursor:pointer;font-size:12px;padding:2px 4px">✏</button>
             <button onclick="delCalF('${k}',${fi})" class="cal-edit-btn-f-${k}" style="display:none;background:none;border:none;color:var(--rd);cursor:pointer;font-size:12px;padding:2px 4px">✕</button>
           </div>
         </div>
-        <div style="font-size:11px;color:var(--tx3);margin-top:2px">${f.meal}${f.pr?' · P:'+f.pr+'g':''}${f.ca?' · C:'+f.ca+'g':''}${f.fa?' · F:'+f.fa+'g':''}</div>
+        <div style="font-size:11px;color:var(--tx3);margin-top:2px">${f.meal}${f.t?' · '+f.t:''}${f.pr?' · P:'+f.pr+'g':''}${f.ca?' · C:'+f.ca+'g':''}${f.fa?' · F:'+f.fa+'g':''}</div>
       </div>`).join('');
     } else {
-      html+=`<div style="font-size:13px;color:var(--tx3);padding:8px 0;font-weight:500">No food logged</div>`;
+      html+=`<div style="font-size:16px;color:var(--tx3);padding:8px 0;font-weight:500">No food logged</div>`;
     }
     html+=`</div></div>`;
   }
@@ -2085,8 +2097,11 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
       </div>
       <div id="cal-sec-wt-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
         <div style="padding-bottom:8px">
-          <div style="font-size:15px;font-weight:800;color:var(--bl);margin-bottom:8px">${wt>0?wt+' ml':'No water logged'}</div>
-          ${wt>0?`<button onclick="editCalWater('${k}',${wt})" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:`<button onclick="editCalWater('${k}',0)" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>`}
+          <div style="font-size:16px;font-weight:800;color:var(--bl);margin-bottom:8px">${wt>0?wt+' ml total':'No water logged'}</div>
+          ${(()=>{const log=ld('wtlog_'+k,[]);return log.length?log.map(e=>`<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid var(--bor)"><span style="font-size:12px;color:var(--tx2);font-weight:600">${e.t}</span><span style="font-size:12px;color:var(--bl);font-weight:700">+${e.ml} ml</span></div>`).join(''):'';})()}
+          <div style="margin-top:8px">
+          ${wt>0?`<button onclick="editCalWater('${k}',${wt})" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit total</button>`:`<button onclick="editCalWater('${k}',0)" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>`}
+          </div>
         </div>
       </div>
     </div>`;
@@ -2102,14 +2117,14 @@ function editCalSession(k){
     <div style="font-size:11px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:10px">EDIT SESSION TIME</div>
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
       <div style="flex:1"><div style="font-size:10px;color:var(--tx3);font-weight:700;margin-bottom:4px">START</div>
-        <input type="time" id="cedit-start" value="${sess.start||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
+        <input type="time" id="cedit-start" value="${sess.start||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
       <span style="color:var(--tx3);font-size:18px;padding-top:18px">→</span>
       <div style="flex:1"><div style="font-size:10px;color:var(--tx3);font-weight:700;margin-bottom:4px">END</div>
-        <input type="time" id="cedit-end" value="${sess.end||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:14px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
+        <input type="time" id="cedit-end" value="${sess.end||''}" style="width:100%;padding:10px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none"></div>
     </div>
     <div style="display:flex;gap:8px">
-      <button onclick="saveCalSession('${k}')" style="flex:1;padding:10px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
-      <button onclick="renderCalDay('${k}')" style="flex:1;padding:10px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:13px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
+      <button onclick="saveCalSession('${k}')" style="flex:1;padding:10px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
+      <button onclick="renderCalDay('${k}')" style="flex:1;padding:10px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
     </div>
   </div>`;
   // Remove existing session form first (toggle)
@@ -2165,7 +2180,7 @@ function editCalW(k,wi){
     existing.remove();
   }
   const wl=ld('w_'+k,[]);const w=wl[wi];if(!w)return;
-  const inp=(id,ph,val,type,step)=>`<input type="${type||'number'}" id="${id}" placeholder="${ph}" value="${val||''}" ${step?'step="'+step+'"':''} inputmode="${type==='text'?'text':'decimal'}" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">`;
+  const inp=(id,ph,val,type,step)=>`<input type="${type||'number'}" id="${id}" placeholder="${ph}" value="${val||''}" ${step?'step="'+step+'"':''} inputmode="${type==='text'?'text':'decimal'}" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">`;
   const div=document.createElement('div');
   div.id='cal-w-edit-form';
   div.dataset.wi=wi;
@@ -2193,14 +2208,16 @@ function editCalW(k,wi){
 }
 function saveCalW(k,wi){
   const wl=ld('w_'+k,[]);
-  wl[wi].sets=parseInt(document.getElementById('cew-sets-'+wi).value)||0;
-  wl[wi].reps=parseInt(document.getElementById('cew-reps-'+wi).value)||0;
-  wl[wi].kg=parseFloat(document.getElementById('cew-kg-'+wi).value)||0;
-  wl[wi].dist=parseFloat(document.getElementById('cew-dist-'+wi).value)||0;
-  wl[wi].dur=parseInt(document.getElementById('cew-dur-'+wi).value)||0;
-  wl[wi].calBurn=parseInt(document.getElementById('cew-cal-'+wi).value)||0;
-  wl[wi].notes=document.getElementById('cew-notes-'+wi).value.trim();
-  svAndSync('w_'+k,wl);renderCalDay(k);
+  wl[wi].sets=parseInt(document.getElementById('cew-sets').value)||0;
+  wl[wi].reps=parseInt(document.getElementById('cew-reps').value)||0;
+  wl[wi].kg=parseFloat(document.getElementById('cew-kg').value)||0;
+  wl[wi].dist=parseFloat(document.getElementById('cew-dist').value)||0;
+  wl[wi].dur=parseInt(document.getElementById('cew-dur').value)||0;
+  wl[wi].calBurn=parseInt(document.getElementById('cew-cal').value)||0;
+  wl[wi].notes=document.getElementById('cew-notes').value.trim();
+  svAndSync('w_'+k,wl);
+  document.getElementById('cal-w-edit-form')&&document.getElementById('cal-w-edit-form').remove();
+  renderCalDay(k);
 }
 function delCalW(k,wi){
   showConfirm('Delete exercise?','Remove this exercise from '+k+'.',()=>{
@@ -2212,12 +2229,12 @@ function addCalExercise(k){
   const exOpts=exercises.map(e=>`<option value="${e.n}|${e.c}">${e.n} (${e.c})</option>`).join('');
   const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid var(--bor2)" id="cal-add-ex-form">
     <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">ADD EXERCISE TO ${k}</div>
-    <select id="cal-ex-sel" style="width:100%;padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:8px">${exOpts}</select>
+    <select id="cal-ex-sel" style="width:100%;padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;margin-bottom:8px">${exOpts}</select>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
-      <input type="number" id="cal-ex-sets" placeholder="Sets" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cal-ex-reps" placeholder="Reps" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cal-ex-kg" placeholder="Weight kg" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cal-ex-dur" placeholder="Duration min" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-sets" placeholder="Sets" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-reps" placeholder="Reps" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-kg" placeholder="Weight kg" step="0.5" inputmode="decimal" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cal-ex-dur" placeholder="Duration min" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
     </div>
     <div style="display:flex;gap:6px">
       <button onclick="saveCalExercise('${k}')" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Add</button>
@@ -2239,12 +2256,12 @@ function saveCalExercise(k){
 function editCalF(k,fi){
   const fl=ld('f_'+k,[]);const f=fl[fi];if(!f)return;
   const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:6px 0;border:1px solid var(--bor2)" id="cal-edit-f-form">
-    <input type="text" id="cef-name" placeholder="Food name" value="${f.name||''}" style="width:100%;padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
+    <input type="text" id="cef-name" placeholder="Food name" value="${f.name||''}" style="width:100%;padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
-      <input type="number" id="cef-cal" placeholder="Calories" value="${f.cal||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cef-pr" placeholder="Protein g" value="${f.pr||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cef-ca" placeholder="Carbs g" value="${f.ca||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="cef-fa" placeholder="Fat g" value="${f.fa||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-cal" placeholder="Calories" value="${f.cal||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-pr" placeholder="Protein g" value="${f.pr||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-ca" placeholder="Carbs g" value="${f.ca||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="cef-fa" placeholder="Fat g" value="${f.fa||''}" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
     </div>
     <div style="display:flex;gap:6px">
       <button onclick="saveCalF('${k}',${fi})" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Save</button>
@@ -2274,28 +2291,47 @@ function delCalF(k,fi){
   });
 }
 function addCalFood(k){
-  const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid var(--bor2)" id="cal-add-f-form">
-    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:8px">ADD FOOD TO ${k}</div>
-    <input type="text" id="caf-name" placeholder="Food name" style="width:100%;padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;margin-bottom:8px">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px">
-      <input type="number" id="caf-cal" placeholder="Calories" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-      <input type="number" id="caf-pr" placeholder="Protein g" inputmode="numeric" style="padding:9px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:13px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
-    </div>
-    <div style="display:flex;gap:6px">
-      <button onclick="saveCalNewFood('${k}')" style="flex:1;padding:9px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Add</button>
-      <button onclick="renderCalDay('${k}')" style="flex:1;padding:9px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:12px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">Cancel</button>
-    </div>
-  </div>`;
-  // Remove existing add form first
   const ef=document.getElementById('cal-add-f-form');if(ef){ef.remove();return;}
+  const S='width:100%;padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:\'Inter\',sans-serif;font-weight:600;outline:none;-webkit-appearance:none;box-sizing:border-box;display:block;margin-bottom:8px';
+  const div=document.createElement('div');
+  div.id='cal-add-f-form';
+  div.style.cssText='padding:14px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid rgba(16,185,129,.3)';
+  div.innerHTML=`
+    <div style="font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.5px;margin-bottom:10px">ADD FOOD · ${k}</div>
+    <input type="text" id="caf-name" placeholder="Food name" style="${S}">
+    <select id="caf-meal" style="${S}">
+      <option>Breakfast</option><option>Lunch</option><option>Dinner</option><option>Snack</option>
+    </select>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:8px">
+      <input type="number" id="caf-cal" placeholder="Calories" inputmode="numeric" style="padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="caf-pr" placeholder="Protein g" inputmode="numeric" style="padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="caf-ca" placeholder="Carbs g" inputmode="numeric" style="padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+      <input type="number" id="caf-fa" placeholder="Fat g" inputmode="numeric" style="padding:11px;border:1.5px solid var(--bor2);border-radius:var(--rs);background:var(--sur3);color:var(--tx);font-size:16px;font-family:'Inter',sans-serif;font-weight:600;outline:none;width:100%">
+    </div>
+    <input type="text" id="caf-amt" placeholder="Amount (e.g. 200g, 1 cup)" style="${S}">
+    <div style="display:flex;gap:8px">
+      <button onclick="saveCalNewFood('${k}')" style="flex:1;padding:12px;background:linear-gradient(135deg,#8B5CF6,#EC4899);color:#fff;border:none;border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✓ Add</button>
+      <button onclick="document.getElementById('cal-add-f-form').remove()" style="flex:1;padding:12px;background:var(--sur2);color:var(--tx2);border:1px solid var(--bor2);border-radius:var(--rs);font-size:16px;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer">✕</button>
+    </div>`;
   const inner=document.getElementById('calDetailInner');
-  if(inner){const tmp=document.createElement('div');tmp.innerHTML=html;inner.appendChild(tmp.firstElementChild);}
+  if(inner)inner.appendChild(div);
 }
 function saveCalNewFood(k){
   const name=document.getElementById('caf-name').value.trim();if(!name)return;
   const fl=ld('f_'+k,[]);
-  fl.push({name,cal:parseInt(document.getElementById('caf-cal').value)||0,pr:parseInt(document.getElementById('caf-pr').value)||0,ca:0,fa:0,meal:'Other',amt:'',t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
-  svAndSync('f_'+k,fl);renderCalDay(k);
+  fl.push({
+    name,
+    meal:document.getElementById('caf-meal').value||'Breakfast',
+    cal:parseInt(document.getElementById('caf-cal').value)||0,
+    pr:parseInt(document.getElementById('caf-pr').value)||0,
+    ca:parseInt(document.getElementById('caf-ca').value)||0,
+    fa:parseInt(document.getElementById('caf-fa').value)||0,
+    amt:document.getElementById('caf-amt').value.trim(),
+    t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})
+  });
+  svAndSync('f_'+k,fl);
+  const ef=document.getElementById('cal-add-f-form');if(ef)ef.remove();
+  renderCalDay(k);
 }
 function editCalWater(k,current){
   const html=`<div style="padding:12px;background:var(--sur2);border-radius:var(--rs);margin:8px 0;border:1px solid rgba(59,130,246,.3)" id="cal-edit-water-form">
