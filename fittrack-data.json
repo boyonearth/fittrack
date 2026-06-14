@@ -108,6 +108,10 @@
     {
       "n": "Outdoor Walk",
       "c": "Cardio"
+    },
+    {
+      "n": "Tricpes back pull",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -168,5 +172,5 @@
       }
     ]
   },
-  "synced": "2026-06-14T13:33:58.746Z"
+  "synced": "2026-06-14T13:35:10.448Z"
 }
