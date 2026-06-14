@@ -122,6 +122,21 @@
     "Full body"
   ],
   "templates": [],
-  "days": {},
-  "synced": "2026-06-14T13:12:57.178Z"
+  "days": {
+    "w_2026-06-14": [
+      {
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 3.77,
+        "dur": 50,
+        "calBurn": 0,
+        "notes": "",
+        "t": "14:13"
+      }
+    ]
+  },
+  "synced": "2026-06-14T13:13:35.575Z"
 }
