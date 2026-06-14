@@ -104,6 +104,10 @@
     {
       "n": "Jump rope",
       "c": "Cardio"
+    },
+    {
+      "n": "Outdoor Walk",
+      "c": "Cardio"
     }
   ],
   "cats": [
@@ -119,5 +123,5 @@
   ],
   "templates": [],
   "days": {},
-  "synced": "2026-06-14T10:03:06.009Z"
+  "synced": "2026-06-14T13:12:57.178Z"
 }
