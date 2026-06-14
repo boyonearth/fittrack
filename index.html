@@ -1146,7 +1146,7 @@ function setSyncStatus(state,text){
 }
 function collectAllData(){
   const data={cfg,exercises,cats,templates,days:{},synced:new Date().toISOString()};
-  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&(k.startsWith('w_')||k.startsWith('f_')||k.startsWith('wt_'))){try{data.days[k]=JSON.parse(localStorage.getItem(k))}catch{}}}
+  for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k&&(k.startsWith('w_')||k.startsWith('f_')||k.startsWith('wt_')||k.startsWith('session_'))){try{data.days[k]=JSON.parse(localStorage.getItem(k))}catch{}}}
   return data;
 }
 function applyAllData(data){
