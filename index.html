@@ -1062,9 +1062,40 @@ function saveGHToken(){
   const user=document.getElementById('ghUser').value.trim();
   const repo=document.getElementById('ghRepo').value.trim()||'fittrack';
   if(!token||!user){alert('Please enter both token and username');return}
-  localStorage.setItem('gh_token',token);localStorage.setItem('gh_user',user);localStorage.setItem('gh_repo',repo);
+  localStorage.setItem('gh_token',token);
+  localStorage.setItem('gh_user',user);
+  localStorage.setItem('gh_repo',repo);
   setSyncStatus('syncing','Connecting...');
-  pushToGitHub().then(()=>{updateSettingsSync();alert('GitHub connected! Data will sync automatically.')}).catch(e=>{setSyncStatus('error','Error');alert('Connection failed: '+e.message)});
+  // Always PULL first on connect — restore existing backup before pushing
+  pullFromGitHub().then(remote=>{
+    if(remote){
+      // Remote data exists — restore it to device
+      applyAllData(remote);
+      cfg=ld('cfg5',{weight:79.4,goal:2000,wGoal:2500});
+      exercises=ld('exList5',exercises);
+      cats=ld('catList5',cats);
+      templates=ld('tpls5',templates);
+      // Re-render everything with restored data
+      const c0=gc();
+      document.getElementById('sWeight').value=c0.weight;
+      document.getElementById('sGoal').value=c0.goal;
+      document.getElementById('sWGoal').value=c0.wGoal||2500;
+      popCats();renderW();renderF();renderWater();updStats();renderHome();
+      setSyncStatus('synced','Synced');
+      updateSettingsSync();
+      alert('✓ Connected! Your existing data has been restored from GitHub.');
+    } else {
+      // No remote data yet — push local data as first backup
+      pushToGitHub().then(()=>{
+        setSyncStatus('synced','Synced');
+        updateSettingsSync();
+        alert('✓ Connected! Your data has been backed up to GitHub.');
+      }).catch(e=>{setSyncStatus('error','Error');alert('Push failed: '+e.message)});
+    }
+  }).catch(e=>{
+    setSyncStatus('error','Error');
+    alert('Connection failed: '+e.message);
+  });
 }
 function disconnectGH(){showConfirm('Disconnect GitHub?','Your local data stays safe. You can reconnect anytime.',()=>{['gh_token','gh_user','gh_repo'].forEach(k=>localStorage.removeItem(k));ghSHA='';setSyncStatus('error','No sync');updateSettingsSync();})}
 function syncHeaderState(){
@@ -1155,7 +1186,20 @@ function scheduleSyncPush(){
 async function manualSync(){
   const gh=getGH();if(!gh.token){alert('Set up GitHub sync in Settings first');return}
   setSyncStatus('syncing','Syncing...');
-  try{const remote=await pullFromGitHub();if(remote){applyAllData(remote);renderW();renderF();renderWater();updStats();renderHome()}await pushToGitHub();setSyncStatus('synced','Synced');alert('Sync complete!')}
+  try{
+    const remote=await pullFromGitHub();
+    if(remote){
+      applyAllData(remote);
+      cfg=ld('cfg5',{weight:79.4,goal:2000,wGoal:2500});
+      exercises=ld('exList5',exercises);
+      cats=ld('catList5',cats);
+      templates=ld('tpls5',templates);
+      renderW();renderF();renderWater();updStats();renderHome();
+    }
+    await pushToGitHub();
+    setSyncStatus('synced','Synced');
+    alert('Sync complete! Data restored from GitHub.');
+  }
   catch(e){setSyncStatus('error','Sync failed');alert('Sync failed: '+e.message)}
 }
 function svAndSync(k,v){sv(k,v);scheduleSyncPush()}
