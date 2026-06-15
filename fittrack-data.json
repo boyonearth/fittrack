@@ -128,6 +128,10 @@
     {
       "n": "Machine Single Hand Biceps Curl",
       "c": "Biceps"
+    },
+    {
+      "n": "Machine Lateral Pull",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -361,5 +365,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:39:06.270Z"
+  "synced": "2026-06-15T17:43:05.385Z"
 }
