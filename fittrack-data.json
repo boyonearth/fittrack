@@ -152,6 +152,10 @@
     {
       "n": "Seated Dumbbell Shoulder Press",
       "c": "Shoulders"
+    },
+    {
+      "n": "Cable Crunch",
+      "c": "Abs"
     }
   ],
   "cats": [
@@ -481,5 +485,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:16:31.709Z"
+  "synced": "2026-06-15T18:18:37.545Z"
 }
