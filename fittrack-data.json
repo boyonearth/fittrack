@@ -232,6 +232,18 @@
         "t": "18:33"
       },
       {
+        "name": "Outdoor Cycling",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 11,
+        "calBurn": 33,
+        "notes": "",
+        "t": "19:30"
+      },
+      {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -350,18 +362,6 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:16"
-      },
-      {
-        "name": "Outdoor Cycling",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 11,
-        "calBurn": 33,
-        "notes": "",
-        "t": "19:30"
       },
       {
         "name": "Cable Crunch",
@@ -546,5 +546,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:31:09.585Z"
+  "synced": "2026-06-15T18:31:23.751Z"
 }
