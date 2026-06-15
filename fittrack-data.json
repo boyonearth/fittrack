@@ -140,6 +140,10 @@
     {
       "n": "Alternating Dumbell Curl",
       "c": "Biceps"
+    },
+    {
+      "n": "One-Arm Dumbell Row",
+      "c": "Lateral muscles"
     }
   ],
   "cats": [
@@ -409,5 +413,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:54:22.251Z"
+  "synced": "2026-06-15T18:02:42.856Z"
 }
