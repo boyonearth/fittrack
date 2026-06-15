@@ -222,6 +222,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:39"
+      },
+      {
+        "name": "Machine Lateral Pull",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 7,
+        "kg": 39,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:43"
       }
     ],
     "wt_2026-06-13": 1000,
@@ -365,5 +377,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:43:05.385Z"
+  "synced": "2026-06-15T17:43:19.084Z"
 }
