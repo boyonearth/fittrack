@@ -116,6 +116,10 @@
     {
       "n": "Treadmill",
       "c": "Cardio"
+    },
+    {
+      "n": "Machine Biceps Curl",
+      "c": "Biceps"
     }
   ],
   "cats": [
@@ -301,5 +305,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:22:43.988Z"
+  "synced": "2026-06-15T17:28:53.997Z"
 }
