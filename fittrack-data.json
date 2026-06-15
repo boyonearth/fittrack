@@ -386,6 +386,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:26"
+      },
+      {
+        "name": "Outdoor Cycling",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 11,
+        "calBurn": 33,
+        "notes": "",
+        "t": "19:30"
       }
     ],
     "session_2026-06-15": {
@@ -534,5 +546,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:30:32.063Z"
+  "synced": "2026-06-15T18:31:00.997Z"
 }
