@@ -144,6 +144,10 @@
     {
       "n": "One-Arm Dumbell Row",
       "c": "Lateral muscles"
+    },
+    {
+      "n": "Dumbell Shrugs",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -437,5 +441,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:03:47.340Z"
+  "synced": "2026-06-15T18:04:45.632Z"
 }
