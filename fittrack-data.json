@@ -120,6 +120,10 @@
     {
       "n": "Machine Biceps Curl",
       "c": "Biceps"
+    },
+    {
+      "n": "Machine lateral raise",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -317,5 +321,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:30:17.471Z"
+  "synced": "2026-06-15T17:33:38.239Z"
 }
