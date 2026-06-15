@@ -166,8 +166,8 @@
       {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
-        "sets": 2,
-        "reps": 10,
+        "sets": 1,
+        "reps": 15,
         "kg": 23,
         "dist": 0,
         "dur": 0,
@@ -317,5 +317,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:29:07.342Z"
+  "synced": "2026-06-15T17:30:17.471Z"
 }
