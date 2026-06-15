@@ -370,6 +370,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:20"
+      },
+      {
+        "name": "Back Extension",
+        "cat": "Back",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:26"
       }
     ],
     "session_2026-06-15": {
@@ -518,5 +530,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:25:54.906Z"
+  "synced": "2026-06-15T18:26:02.498Z"
 }
