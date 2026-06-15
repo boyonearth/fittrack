@@ -132,6 +132,10 @@
     {
       "n": "Machine Lateral Pull",
       "c": "Shoulders"
+    },
+    {
+      "n": "Machine Shoulder Press Seated",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -377,5 +381,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T17:43:19.084Z"
+  "synced": "2026-06-15T17:46:38.481Z"
 }
