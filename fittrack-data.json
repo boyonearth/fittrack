@@ -164,6 +164,10 @@
     {
       "n": "Back Extension",
       "c": "Back"
+    },
+    {
+      "n": "Outdoor Cycling",
+      "c": "Cardio"
     }
   ],
   "cats": [
@@ -530,5 +534,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:26:02.498Z"
+  "synced": "2026-06-15T18:30:32.063Z"
 }
