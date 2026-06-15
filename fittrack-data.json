@@ -196,6 +196,18 @@
     },
     "w_2026-06-15": [
       {
+        "name": "Outdoor Cycling",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 11,
+        "calBurn": 33,
+        "notes": "",
+        "t": "19:30"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -230,18 +242,6 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:33"
-      },
-      {
-        "name": "Outdoor Cycling",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 11,
-        "calBurn": 33,
-        "notes": "",
-        "t": "19:30"
       },
       {
         "name": "Machine Biceps Curl",
@@ -546,5 +546,5 @@
       }
     ]
   },
-  "synced": "2026-06-15T18:31:23.751Z"
+  "synced": "2026-06-15T18:31:31.361Z"
 }
