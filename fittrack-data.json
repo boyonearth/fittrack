@@ -184,12 +184,6 @@
   ],
   "templates": [],
   "days": {
-    "wtlog_2026-06-16": [
-      {
-        "ml": 250,
-        "t": "17:34"
-      }
-    ],
     "f_2026-06-16": [
       {
         "name": "Bhendi masala",
@@ -212,21 +206,135 @@
         "t": "17:33"
       }
     ],
-    "wt_2026-06-16": 250,
     "session_2026-06-13": {
       "start": "11:10",
       "end": "12:50",
       "dur": 100
     },
-    "session_2026-06-14": {
-      "start": "10:57",
-      "end": "11:47",
-      "dur": 50
-    },
     "session_2026-06-15": {
       "start": "18:12",
       "end": "19:50",
       "dur": 98
+    },
+    "wt_2026-06-14": 1250,
+    "f_2026-06-13": [
+      {
+        "name": "Brown rice",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Egg bhurji",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Protein shake",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:37"
+      }
+    ],
+    "w_2026-06-13": [
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 2,
+        "reps": 10,
+        "kg": 30,
+        "dur": 0,
+        "t": "14:33"
+      },
+      {
+        "name": "Incline press",
+        "cat": "Chest",
+        "sets": 2,
+        "reps": 10,
+        "kg": 12.5,
+        "dur": 0,
+        "t": "14:33"
+      },
+      {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 2,
+        "reps": 6,
+        "kg": 10,
+        "dur": 0,
+        "t": "14:35"
+      },
+      {
+        "name": "Tricep pushdown",
+        "cat": "Triceps",
+        "sets": 2,
+        "reps": 2,
+        "kg": 30,
+        "dur": 0,
+        "t": "14:36"
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dur": 0,
+        "t": "14:38"
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dur": 30,
+        "t": "14:39"
+      }
+    ],
+    "wtlog_2026-06-16": [
+      {
+        "ml": 250,
+        "t": "17:34"
+      }
+    ],
+    "wt_2026-06-16": 250,
+    "w_2026-06-16": [
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 5,
+        "calBurn": 42,
+        "notes": "",
+        "t": "18:30"
+      }
+    ],
+    "session_2026-06-16": {
+      "start": "18:22",
+      "end": "",
+      "dur": 0
+    },
+    "session_2026-06-14": {
+      "start": "10:57",
+      "end": "11:47",
+      "dur": 50
     },
     "w_2026-06-15": [
       {
@@ -435,7 +543,6 @@
       }
     ],
     "wt_2026-06-13": 1000,
-    "wt_2026-06-14": 1250,
     "wtlog_2026-06-14": [
       {
         "ml": 250,
@@ -486,38 +593,6 @@
         "t": "14:13"
       }
     ],
-    "f_2026-06-13": [
-      {
-        "name": "Brown rice",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Egg bhurji",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Protein shake",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:37"
-      }
-    ],
     "f_2026-06-15": [
       {
         "name": "Chicken curry",
@@ -549,63 +624,7 @@
         "amt": "",
         "t": "17:32"
       }
-    ],
-    "w_2026-06-13": [
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 2,
-        "reps": 10,
-        "kg": 30,
-        "dur": 0,
-        "t": "14:33"
-      },
-      {
-        "name": "Incline press",
-        "cat": "Chest",
-        "sets": 2,
-        "reps": 10,
-        "kg": 12.5,
-        "dur": 0,
-        "t": "14:33"
-      },
-      {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
-        "sets": 2,
-        "reps": 6,
-        "kg": 10,
-        "dur": 0,
-        "t": "14:35"
-      },
-      {
-        "name": "Tricep pushdown",
-        "cat": "Triceps",
-        "sets": 2,
-        "reps": 2,
-        "kg": 30,
-        "dur": 0,
-        "t": "14:36"
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dur": 0,
-        "t": "14:38"
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dur": 30,
-        "t": "14:39"
-      }
     ]
   },
-  "synced": "2026-06-16T16:34:35.276Z"
+  "synced": "2026-06-16T17:30:30.900Z"
 }
