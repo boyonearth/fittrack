@@ -424,6 +424,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:01"
+      },
+      {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 7,
+        "kg": 14,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:03"
       }
     ],
     "session_2026-06-16": {
@@ -726,5 +738,5 @@
       }
     ]
   },
-  "synced": "2026-06-16T18:01:40.011Z"
+  "synced": "2026-06-16T18:03:24.290Z"
 }
