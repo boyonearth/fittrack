@@ -180,6 +180,10 @@
     {
       "n": "Machine Seated Pec Fly",
       "c": "Chest"
+    },
+    {
+      "n": "Pushups",
+      "c": "Full body"
     }
   ],
   "cats": [
@@ -816,5 +820,5 @@
       }
     ]
   },
-  "synced": "2026-06-16T18:24:02.854Z"
+  "synced": "2026-06-16T18:25:38.145Z"
 }
