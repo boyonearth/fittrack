@@ -168,6 +168,10 @@
     {
       "n": "Outdoor Cycling",
       "c": "Cardio"
+    },
+    {
+      "n": "Single Arm Cable Pushdown",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -710,5 +714,5 @@
       }
     ]
   },
-  "synced": "2026-06-16T17:55:00.865Z"
+  "synced": "2026-06-16T18:01:31.763Z"
 }
