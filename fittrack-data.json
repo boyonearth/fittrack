@@ -172,6 +172,10 @@
     {
       "n": "Single Arm Cable Pushdown",
       "c": "Triceps"
+    },
+    {
+      "n": "Converging Chest Press",
+      "c": "Chest"
     }
   ],
   "cats": [
@@ -750,5 +754,5 @@
       }
     ]
   },
-  "synced": "2026-06-16T18:06:11.350Z"
+  "synced": "2026-06-16T18:11:18.210Z"
 }
