@@ -490,6 +490,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:14"
+      },
+      {
+        "name": "Machine Seated Pec Fly",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 15,
+        "kg": 29,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:18"
       }
     ],
     "session_2026-06-16": {
@@ -792,5 +804,5 @@
       }
     ]
   },
-  "synced": "2026-06-16T18:18:49.863Z"
+  "synced": "2026-06-16T18:19:01.478Z"
 }
