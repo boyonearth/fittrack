@@ -460,6 +460,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:16"
+      },
+      {
+        "name": "Reverse Cable Curl on Machine",
+        "cat": "Forearms",
+        "sets": 1,
+        "reps": 10,
+        "kg": 7,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:22"
       }
     ],
     "session_2026-06-13": {
@@ -1151,5 +1163,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:22:38.785Z"
+  "synced": "2026-06-18T18:22:46.998Z"
 }
