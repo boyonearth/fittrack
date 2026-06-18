@@ -208,6 +208,10 @@
     {
       "n": "Concentration Curls",
       "c": "Biceps"
+    },
+    {
+      "n": "Cable Biceps Curl",
+      "c": "Biceps"
     }
   ],
   "cats": [
@@ -1070,5 +1074,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T17:57:37.376Z"
+  "synced": "2026-06-18T18:02:23.058Z"
 }
