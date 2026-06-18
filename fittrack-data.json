@@ -431,6 +431,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:12"
+      },
+      {
+        "name": "Machine Shoulder Press Seated",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 15,
+        "kg": 32,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:13"
       }
     ],
     "session_2026-06-13": {
@@ -1122,5 +1134,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:12:05.018Z"
+  "synced": "2026-06-18T18:13:57.812Z"
 }
