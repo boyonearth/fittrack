@@ -221,7 +221,16 @@
   "templates": [
     {
       "name": "Biceps & Shoulders",
-      "exercises": [],
+      "exercises": [
+        {
+          "name": "Bicep curl",
+          "cat": "Biceps",
+          "sets": 1,
+          "reps": 10,
+          "kg": 12.5,
+          "dur": 0
+        }
+      ],
       "created": "2026-06-18"
     }
   ],
@@ -961,5 +970,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T17:27:39.630Z"
+  "synced": "2026-06-18T17:28:17.047Z"
 }
