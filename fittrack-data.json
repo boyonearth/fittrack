@@ -224,7 +224,8 @@
     "Lateral muscles",
     "Cardio",
     "Full body",
-    "Back"
+    "Back",
+    "Forearms"
   ],
   "templates": [
     {
@@ -1146,5 +1147,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:16:12.628Z"
+  "synced": "2026-06-18T18:19:21.912Z"
 }
