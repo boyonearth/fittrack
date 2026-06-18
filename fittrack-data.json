@@ -212,6 +212,10 @@
     {
       "n": "Cable Biceps Curl",
       "c": "Biceps"
+    },
+    {
+      "n": "Reverse Cable Curl on Machine",
+      "c": "Forearms"
     }
   ],
   "cats": [
@@ -469,38 +473,6 @@
       "dur": 98
     },
     "wt_2026-06-14": 1250,
-    "f_2026-06-13": [
-      {
-        "name": "Brown rice",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Egg bhurji",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Protein shake",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:37"
-      }
-    ],
     "w_2026-06-13": [
       {
         "name": "Bench press",
@@ -555,6 +527,38 @@
         "kg": 0,
         "dur": 30,
         "t": "14:39"
+      }
+    ],
+    "f_2026-06-13": [
+      {
+        "name": "Brown rice",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Egg bhurji",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Protein shake",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:37"
       }
     ],
     "wtlog_2026-06-16": [
@@ -1147,5 +1151,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:19:21.912Z"
+  "synced": "2026-06-18T18:22:38.785Z"
 }
