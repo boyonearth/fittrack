@@ -216,6 +216,10 @@
     {
       "n": "Reverse Cable Curl on Machine",
       "c": "Forearms"
+    },
+    {
+      "n": "Machine Seated Row",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -1175,5 +1179,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:24:27.229Z"
+  "synced": "2026-06-18T18:25:47.906Z"
 }
