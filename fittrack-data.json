@@ -204,6 +204,10 @@
     {
       "n": "Heel Touches",
       "c": "Abs"
+    },
+    {
+      "n": "Concentration Curls",
+      "c": "Biceps"
     }
   ],
   "cats": [
@@ -1018,5 +1022,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T17:43:30.168Z"
+  "synced": "2026-06-18T17:48:28.306Z"
 }
