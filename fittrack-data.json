@@ -488,6 +488,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:24"
+      },
+      {
+        "name": "Machine Seated Row",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 13,
+        "kg": 39,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:27"
       }
     ],
     "session_2026-06-13": {
@@ -1179,5 +1191,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:25:47.906Z"
+  "synced": "2026-06-18T18:27:45.831Z"
 }
