@@ -220,6 +220,10 @@
     {
       "n": "Machine Seated Row",
       "c": "Shoulders"
+    },
+    {
+      "n": "Dumbell Side Bend",
+      "c": "Lateral muscles"
     }
   ],
   "cats": [
@@ -1191,5 +1195,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T18:27:45.831Z"
+  "synced": "2026-06-18T18:33:39.864Z"
 }
