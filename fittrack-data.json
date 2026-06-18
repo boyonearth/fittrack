@@ -218,7 +218,13 @@
     "Full body",
     "Back"
   ],
-  "templates": [],
+  "templates": [
+    {
+      "name": "Biceps & Shoulders",
+      "exercises": [],
+      "created": "2026-06-18"
+    }
+  ],
   "days": {
     "f_2026-06-16": [
       {
@@ -955,5 +961,5 @@
       }
     ]
   },
-  "synced": "2026-06-18T17:27:00.962Z"
+  "synced": "2026-06-18T17:27:39.630Z"
 }
