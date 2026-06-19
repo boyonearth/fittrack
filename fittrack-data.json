@@ -236,6 +236,10 @@
     {
       "n": "Incline Dumbell Press",
       "c": "Chest"
+    },
+    {
+      "n": "Triceps Cable Pushdown",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -698,6 +702,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:10"
+      },
+      {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:12"
       }
     ],
     "session_2026-06-13": {
@@ -1394,5 +1410,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:12:22.180Z"
+  "synced": "2026-06-19T17:17:47.914Z"
 }
