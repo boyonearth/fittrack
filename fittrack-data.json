@@ -926,6 +926,18 @@
         "calBurn": 0,
         "notes": "Seconds",
         "t": "18:48"
+      },
+      {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:50"
       }
     ],
     "session_2026-06-13": {
@@ -1622,5 +1634,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:49:18.734Z"
+  "synced": "2026-06-19T17:50:32.519Z"
 }
