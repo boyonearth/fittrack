@@ -240,6 +240,10 @@
     {
       "n": "Triceps Cable Backpull",
       "c": "Triceps"
+    },
+    {
+      "n": "Side Planks",
+      "c": "Abs"
     }
   ],
   "cats": [
@@ -1602,5 +1606,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:47:13.098Z"
+  "synced": "2026-06-19T17:47:25.201Z"
 }
