@@ -790,6 +790,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:27"
+      },
+      {
+        "name": "Tricep pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:28"
       }
     ],
     "session_2026-06-13": {
@@ -1486,5 +1498,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:27:51.095Z"
+  "synced": "2026-06-19T17:28:46.896Z"
 }
