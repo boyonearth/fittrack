@@ -666,7 +666,7 @@
       {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
-        "sets": 1,
+        "sets": 2,
         "reps": 10,
         "kg": 36,
         "dist": 0,
@@ -1646,5 +1646,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:52:05.410Z"
+  "synced": "2026-06-19T17:52:35.857Z"
 }
