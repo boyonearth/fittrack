@@ -910,6 +910,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:47"
+      },
+      {
+        "name": "Side Planks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 23,
+        "calBurn": 0,
+        "notes": "Seconds",
+        "t": "18:48"
       }
     ],
     "session_2026-06-13": {
@@ -1606,5 +1618,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:47:25.201Z"
+  "synced": "2026-06-19T17:48:58.232Z"
 }
