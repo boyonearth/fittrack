@@ -950,6 +950,18 @@
         "calBurn": 0,
         "notes": "Seconds",
         "t": "18:52"
+      },
+      {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:53"
       }
     ],
     "session_2026-06-13": {
@@ -1646,5 +1658,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:52:46.407Z"
+  "synced": "2026-06-19T17:53:57.158Z"
 }
