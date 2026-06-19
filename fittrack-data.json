@@ -240,6 +240,10 @@
     {
       "n": "Triceps Cable Pushdown",
       "c": "Triceps"
+    },
+    {
+      "n": "Triceps Cable Backpull",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -1434,5 +1438,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:20:00.787Z"
+  "synced": "2026-06-19T17:22:08.762Z"
 }
