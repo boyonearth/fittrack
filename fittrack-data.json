@@ -682,6 +682,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "18:05"
+      },
+      {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:10"
       }
     ],
     "session_2026-06-13": {
@@ -1378,5 +1390,5 @@
       }
     ]
   },
-  "synced": "2026-06-19T17:05:22.115Z"
+  "synced": "2026-06-19T17:10:04.817Z"
 }
