@@ -280,6 +280,11 @@
     }
   ],
   "days": {
+    "session_2026-06-24": {
+      "start": "17:54",
+      "end": "18:43",
+      "dur": 49
+    },
     "f_2026-06-16": [
       {
         "name": "Bhendi masala",
@@ -324,6 +329,20 @@
         "calBurn": 277,
         "notes": "",
         "t": "11:32"
+      }
+    ],
+    "w_2026-06-24": [
+      {
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 3.88,
+        "dur": 49,
+        "calBurn": 274,
+        "notes": "",
+        "t": "18:51"
       }
     ],
     "w_2026-06-18": [
@@ -999,6 +1018,38 @@
       "dur": 71
     },
     "wt_2026-06-14": 1250,
+    "f_2026-06-13": [
+      {
+        "name": "Brown rice",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Egg bhurji",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:36"
+      },
+      {
+        "name": "Protein shake",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "meal": "Other",
+        "amt": "",
+        "t": "14:37"
+      }
+    ],
     "w_2026-06-13": [
       {
         "name": "Bench press",
@@ -1053,38 +1104,6 @@
         "kg": 0,
         "dur": 30,
         "t": "14:39"
-      }
-    ],
-    "f_2026-06-13": [
-      {
-        "name": "Brown rice",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Egg bhurji",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:36"
-      },
-      {
-        "name": "Protein shake",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "meal": "Other",
-        "amt": "",
-        "t": "14:37"
       }
     ],
     "session_2026-06-21": {
@@ -1696,5 +1715,5 @@
       }
     ]
   },
-  "synced": "2026-06-23T20:20:32.858Z"
+  "synced": "2026-06-24T17:51:58.041Z"
 }
