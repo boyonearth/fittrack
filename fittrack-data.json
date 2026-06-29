@@ -280,6 +280,20 @@
     }
   ],
   "days": {
+    "w_2026-06-29": [
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 6,
+        "calBurn": 43,
+        "notes": "",
+        "t": "18:58"
+      }
+    ],
     "f_2026-06-16": [
       {
         "name": "Bhendi masala",
@@ -1013,6 +1027,11 @@
       "dur": 71
     },
     "wt_2026-06-14": 1250,
+    "session_2026-06-29": {
+      "start": "18:47",
+      "end": "",
+      "dur": 0
+    },
     "f_2026-06-13": [
       {
         "name": "Brown rice",
@@ -1043,62 +1062,6 @@
         "meal": "Other",
         "amt": "",
         "t": "14:37"
-      }
-    ],
-    "w_2026-06-13": [
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 2,
-        "reps": 10,
-        "kg": 30,
-        "dur": 0,
-        "t": "14:33"
-      },
-      {
-        "name": "Incline press",
-        "cat": "Chest",
-        "sets": 2,
-        "reps": 10,
-        "kg": 12.5,
-        "dur": 0,
-        "t": "14:33"
-      },
-      {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
-        "sets": 2,
-        "reps": 6,
-        "kg": 10,
-        "dur": 0,
-        "t": "14:35"
-      },
-      {
-        "name": "Tricep pushdown",
-        "cat": "Triceps",
-        "sets": 2,
-        "reps": 2,
-        "kg": 30,
-        "dur": 0,
-        "t": "14:36"
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dur": 0,
-        "t": "14:38"
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dur": 30,
-        "t": "14:39"
       }
     ],
     "session_2026-06-21": {
@@ -1415,6 +1378,62 @@
       "end": "22:40",
       "dur": 72
     },
+    "w_2026-06-13": [
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 2,
+        "reps": 10,
+        "kg": 30,
+        "dur": 0,
+        "t": "14:33"
+      },
+      {
+        "name": "Incline press",
+        "cat": "Chest",
+        "sets": 2,
+        "reps": 10,
+        "kg": 12.5,
+        "dur": 0,
+        "t": "14:33"
+      },
+      {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 2,
+        "reps": 6,
+        "kg": 10,
+        "dur": 0,
+        "t": "14:35"
+      },
+      {
+        "name": "Tricep pushdown",
+        "cat": "Triceps",
+        "sets": 2,
+        "reps": 2,
+        "kg": 30,
+        "dur": 0,
+        "t": "14:36"
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dur": 0,
+        "t": "14:38"
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dur": 30,
+        "t": "14:39"
+      }
+    ],
     "w_2026-06-28": [
       {
         "name": "Outdoor Walk",
@@ -1734,5 +1753,5 @@
       }
     ]
   },
-  "synced": "2026-06-28T22:08:07.495Z"
+  "synced": "2026-06-29T17:59:01.184Z"
 }
