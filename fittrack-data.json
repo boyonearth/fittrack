@@ -400,6 +400,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:25"
+      },
+      {
+        "name": "Machine Single Hand Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 12,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:28"
       }
     ],
     "f_2026-06-16": [
@@ -1861,5 +1873,5 @@
       }
     ]
   },
-  "synced": "2026-06-29T18:25:25.530Z"
+  "synced": "2026-06-29T18:29:00.241Z"
 }
