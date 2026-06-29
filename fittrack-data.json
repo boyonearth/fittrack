@@ -328,6 +328,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:06"
+      },
+      {
+        "name": "Seated Dumbbell Shoulder Press",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 5,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:09"
       }
     ],
     "f_2026-06-16": [
@@ -1789,5 +1801,5 @@
       }
     ]
   },
-  "synced": "2026-06-29T18:06:52.476Z"
+  "synced": "2026-06-29T18:09:58.741Z"
 }
