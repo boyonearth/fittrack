@@ -412,6 +412,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:28"
+      },
+      {
+        "name": "Machine lateral raise",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 5,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:32"
       }
     ],
     "f_2026-06-16": [
@@ -1873,5 +1885,5 @@
       }
     ]
   },
-  "synced": "2026-06-29T18:29:00.241Z"
+  "synced": "2026-06-29T18:32:28.696Z"
 }
