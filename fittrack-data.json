@@ -316,6 +316,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:04"
+      },
+      {
+        "name": "Alternating Dumbell Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 9,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:06"
       }
     ],
     "f_2026-06-16": [
@@ -1777,5 +1789,5 @@
       }
     ]
   },
-  "synced": "2026-06-29T18:04:50.220Z"
+  "synced": "2026-06-29T18:06:44.053Z"
 }
