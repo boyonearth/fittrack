@@ -605,18 +605,6 @@
         "secs": 0
       },
       {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 35,
-        "calBurn": 0,
-        "notes": "Seconds",
-        "t": ""
-      },
-      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
@@ -628,6 +616,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "20:07"
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 35,
+        "calBurn": 0,
+        "notes": "Seconds",
+        "t": ""
       },
       {
         "name": "Leg Raises",
@@ -2432,5 +2432,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T19:07:55.691Z"
+  "synced": "2026-06-30T19:08:00.751Z"
 }
