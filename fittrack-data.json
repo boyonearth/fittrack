@@ -617,18 +617,6 @@
         "t": ""
       },
       {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
@@ -640,6 +628,18 @@
         "calBurn": 0,
         "notes": "",
         "t": "20:07"
+      },
+      {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
       }
     ],
     "f_2026-06-16": [
@@ -2432,5 +2432,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T19:07:53.164Z"
+  "synced": "2026-06-30T19:07:55.691Z"
 }
