@@ -256,6 +256,10 @@
     {
       "n": "Dumbell Overhead Triceps Extension",
       "c": "Triceps"
+    },
+    {
+      "n": "Cable Crunch One Side",
+      "c": "Abs"
     }
   ],
   "cats": [
@@ -2426,5 +2430,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:41:04.500Z"
+  "synced": "2026-06-30T18:43:13.829Z"
 }
