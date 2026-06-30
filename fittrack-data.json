@@ -436,19 +436,6 @@
         "secs": 0
       },
       {
-        "name": "Reverse Cable Curl on Machine",
-        "cat": "Forearms",
-        "sets": 1,
-        "reps": 10,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:46",
-        "secs": 0
-      },
-      {
         "name": "Cable Crunch One Side",
         "cat": "Abs",
         "sets": 1,
@@ -460,6 +447,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:43"
+      },
+      {
+        "name": "Reverse Cable Curl on Machine",
+        "cat": "Forearms",
+        "sets": 1,
+        "reps": 10,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:46",
+        "secs": 0
       },
       {
         "name": "Leg press",
@@ -2397,5 +2397,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:50:00.551Z"
+  "synced": "2026-06-30T18:50:02.570Z"
 }
