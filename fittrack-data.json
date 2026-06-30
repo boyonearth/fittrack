@@ -367,11 +367,11 @@
         "t": "19:24"
       },
       {
-        "name": "Machine Seated Pec Fly",
+        "name": "Converging Chest Press",
         "cat": "Chest",
         "sets": 1,
         "reps": 10,
-        "kg": 36,
+        "kg": 32,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -379,11 +379,11 @@
         "t": ""
       },
       {
-        "name": "Converging Chest Press",
+        "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
         "reps": 10,
-        "kg": 32,
+        "kg": 36,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2421,5 +2421,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:27:38.743Z"
+  "synced": "2026-06-30T18:27:41.081Z"
 }
