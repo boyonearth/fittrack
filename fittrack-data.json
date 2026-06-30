@@ -371,12 +371,13 @@
         "cat": "Chest",
         "sets": 1,
         "reps": 10,
-        "kg": 32,
+        "kg": 39,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:28",
+        "secs": 0
       },
       {
         "name": "Machine Seated Pec Fly",
@@ -2421,5 +2422,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:27:41.081Z"
+  "synced": "2026-06-30T18:28:54.941Z"
 }
