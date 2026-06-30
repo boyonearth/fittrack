@@ -406,18 +406,6 @@
         "secs": 0
       },
       {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 20,
-        "kg": 57,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
@@ -429,6 +417,18 @@
         "notes": "",
         "t": "19:37",
         "secs": 0
+      },
+      {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 57,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
       },
       {
         "name": "Tricpes back pull",
@@ -2425,5 +2425,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:40:50.830Z"
+  "synced": "2026-06-30T18:40:53.204Z"
 }
