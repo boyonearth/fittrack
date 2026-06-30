@@ -529,7 +529,11 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
         </div>
         <div class="fr">
           <div class="fg"><label>DURATION (MIN)</label><input id="dDur" type="number" placeholder="e.g. 30" inputmode="numeric"></div>
+          <div class="fg"><label>HOLD (SECONDS)</label><input id="dSecs" type="number" placeholder="e.g. 45" inputmode="numeric"></div>
+        </div>
+        <div class="fr">
           <div class="fg"><label>CALORIES BURNED</label><input id="dCalBurn" type="number" placeholder="e.g. 250" inputmode="numeric"></div>
+          <div class="fg"></div>
         </div>
         <div class="fr full">
           <div class="fg"><label>NOTES</label><input id="dNotes" type="text" placeholder="e.g. felt strong, new PB"></div>
@@ -1276,12 +1280,13 @@ function confirmAddEx(){
   const kg=parseFloat(document.getElementById('dKg').value)||0;
   const dist=parseFloat(document.getElementById('dDist').value)||0;
   const dur=parseInt(document.getElementById('dDur').value)||0;
+  const secs=parseInt(document.getElementById('dSecs').value)||0;
   const calBurn=parseInt(document.getElementById('dCalBurn').value)||0;
   const notes=document.getElementById('dNotes').value.trim();
   const l=ld('w_'+TODAYK,[]);
-  l.push({name:addState.ex,cat:addState.cat,sets,reps,kg,dist,dur,calBurn,notes,t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
+  l.push({name:addState.ex,cat:addState.cat,sets,reps,kg,dist,dur,secs,calBurn,notes,t:new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'})});
   svAndSync('w_'+TODAYK,l);
-  ['dSets','dReps','dKg','dDist','dDur','dCalBurn','dNotes'].forEach(id=>document.getElementById(id).value='');
+  ['dSets','dReps','dKg','dDist','dDur','dSecs','dCalBurn','dNotes'].forEach(id=>document.getElementById(id).value='');
   hideAddFlow();renderW();updStats();renderHome();
 }
 
@@ -1342,7 +1347,7 @@ function renderW(){
   el.innerHTML=l.map((w,i)=>{
     const col=CCAT[w.cat]||'var(--ac2)';
     const svg=CAT_SVG[w.cat]||CAT_SVG.Chest;
-    const meta=[w.sets?w.sets+'×'+w.reps:'',w.kg?w.kg+'kg':'',w.dist?w.dist+'km':'',w.dur?w.dur+'min':'',w.calBurn?w.calBurn+' kcal':''].filter(Boolean).join(' · ');
+    const meta=[w.sets?w.sets+'×'+w.reps:'',w.kg?w.kg+'kg':'',w.dist?w.dist+'km':'',w.dur?w.dur+'min':'',w.secs?w.secs+'s':'',w.calBurn?w.calBurn+' kcal':''].filter(Boolean).join(' · ');
     return`<div class="ei" id="ei_${i}">
       <div class="ei-row" onclick="toggleEi(${i})">
         <div class="eico" style="background:${col}20;color:${col}">${svg}</div>
@@ -1376,7 +1381,11 @@ function renderW(){
           </div>
           <div class="fr">
             <div class="fg"><label>DURATION (MIN)</label><input type="number" id="ew-dur-${i}" value="${w.dur||''}" inputmode="numeric"></div>
+            <div class="fg"><label>HOLD (SECONDS)</label><input type="number" id="ew-secs-${i}" value="${w.secs||''}" inputmode="numeric"></div>
+          </div>
+          <div class="fr">
             <div class="fg"><label>CALORIES BURNED</label><input type="number" id="ew-calburn-${i}" value="${w.calBurn||''}" inputmode="numeric"></div>
+            <div class="fg"></div>
           </div>
           <div class="fr full">
             <div class="fg"><label>NOTES</label><input type="text" id="ew-notes-${i}" value="${w.notes||''}" placeholder="e.g. new PB, felt strong"></div>
@@ -1408,6 +1417,7 @@ function saveEditW(i){
   l[i].kg=parseFloat(document.getElementById('ew-kg-'+i).value)||0;
   l[i].dist=parseFloat(document.getElementById('ew-dist-'+i).value)||0;
   l[i].dur=parseInt(document.getElementById('ew-dur-'+i).value)||0;
+  l[i].secs=parseInt(document.getElementById('ew-secs-'+i).value)||0;
   l[i].calBurn=parseInt(document.getElementById('ew-calburn-'+i).value)||0;
   l[i].notes=document.getElementById('ew-notes-'+i).value.trim();
   svAndSync('w_'+TODAYK,l);renderW();updStats();renderHome();
@@ -2033,9 +2043,10 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
         </div>
       </div>
       <div id="cal-sec-w-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
-        <div style="display:flex;gap:6px;margin-bottom:8px">
+        <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap">
           <button onclick="addCalExercise('${k}')" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>
           ${wl.length?`<button onclick="toggleCalEdit('${k}','w')" id="cal-edit-toggle-w-${k}" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:''}
+          ${(wl.length&&k!==TODAYK)?`<button onclick="copyWorkoutToToday('${k}')" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.4);color:#34D399;cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">⎘ Copy to today</button>`:''}
         </div>`;
     if(wl.length){
       html+=wl.map((w,wi)=>{
@@ -2049,9 +2060,12 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
               <button onclick="delCalW('${k}',${wi})" class="cal-edit-btn-w-${k}" style="display:none;background:none;border:none;color:var(--rd);cursor:pointer;font-size:12px;padding:2px 5px;font-weight:700;font-family:'Inter',sans-serif">✕</button>
             </div>
           </div>
-          ${w.notes?`<div style="font-size:11px;color:var(--tx3);padding-top:2px;font-style:italic">${w.notes}</div>`:''}
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:2px">
+            ${w.t?`<span style="font-size:10px;color:var(--tx3);font-weight:600">${w.t}</span>`:'<span></span>'}
+            ${w.notes?`<span style="font-size:11px;color:var(--tx3);font-style:italic">${w.notes}</span>`:''}
+          </div>
         </div>`;
-      }).join('');;
+      }).join('');
     } else {
       html+=`<div style="font-size:16px;color:var(--tx3);padding:8px 0;font-weight:500">No exercises logged</div>`;
     }
@@ -2133,6 +2147,19 @@ function editCalSession(k){
   const sessDiv=document.createElement('div');sessDiv.id='cal-sess-edit-form';sessDiv.innerHTML=html;
   const card=document.getElementById('cal-day-card-'+k);
   if(card)card.prepend(sessDiv.firstElementChild);
+}
+function copyWorkoutToToday(k){
+  const wl=ld('w_'+k,[]);
+  if(!wl.length){alert('No exercises to copy');return;}
+  showConfirm('Copy '+wl.length+' exercise'+(wl.length>1?'s':'')+' to today?','Saved with today\'s date and current time.',()=>{
+    const today=ld('w_'+TODAYK,[]);
+    const now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});
+    const copied=wl.map(w=>({...w,t:now}));
+    const merged=[...today,...copied];
+    svAndSync('w_'+TODAYK,merged);
+    renderW();updStats();renderHome();
+    alert('✓ Copied '+wl.length+' exercise(s) to today with current timestamp.');
+  });
 }
 function toggleCalSection(secId,chevId){
   const sec=document.getElementById(secId);
