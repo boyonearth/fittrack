@@ -449,18 +449,6 @@
         "t": "19:43"
       },
       {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Triceps Cable Backpull",
         "cat": "Triceps",
         "sets": 1,
@@ -2431,5 +2419,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:45:18.903Z"
+  "synced": "2026-06-30T18:45:22.284Z"
 }
