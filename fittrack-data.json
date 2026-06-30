@@ -452,13 +452,14 @@
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
-        "reps": 16,
-        "kg": 7,
+        "reps": 10,
+        "kg": 9,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:46",
+        "secs": 0
       },
       {
         "name": "Tricep pushdown",
@@ -2407,5 +2408,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:45:25.908Z"
+  "synced": "2026-06-30T18:46:48.779Z"
 }
