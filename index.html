@@ -604,6 +604,11 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
     </button>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
       <div class="stitle" style="margin:0">Today's workout</div>
+      <button id="wSelectBtn" onclick="toggleWSelectMode()" style="background:var(--sur2);border:1px solid var(--bor2);color:var(--tx2);cursor:pointer;font-size:12px;font-family:'Inter',sans-serif;font-weight:700;padding:6px 12px;border-radius:20px">Select</button>
+    </div>
+    <div id="wSelectBar" style="display:none;align-items:center;justify-content:space-between;margin-bottom:10px;padding:10px 12px;background:var(--sur2);border-radius:var(--rs);border:1px solid var(--bor2)">
+      <button onclick="toggleWSelectAll()" id="wSelectAllBtn" style="background:none;border:none;color:var(--ac2);cursor:pointer;font-size:12px;font-family:'Inter',sans-serif;font-weight:700">☐ Select all</button>
+      <button onclick="deleteSelectedW()" style="background:var(--rd);border:none;color:#fff;cursor:pointer;font-size:12px;font-family:'Inter',sans-serif;font-weight:700;padding:6px 14px;border-radius:20px">🗑 Delete</button>
     </div>
     <div id="wList" class="elist"></div>
   </div>
@@ -894,7 +899,8 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 <script>
 const DN=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 const MN=['January','February','March','April','May','June','July','August','September','October','November','December'];
-const TODAY=new Date();let TODAYK=TODAY.toISOString().slice(0,10);
+const TODAY=new Date();let wSelectMode=false;
+let TODAYK=TODAY.toISOString().slice(0,10);
 // Refresh TODAYK on focus in case day changed
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){const newKey=new Date().toISOString().slice(0,10);if(newKey!==TODAYK){TODAYK=newKey;renderW();renderF();renderWater();updStats();renderHome();}}});
 const CCAT={Chest:'#8B5CF6',Triceps:'#3B82F6',Biceps:'#10B981',Shoulders:'#F59E0B','Legs/Calves':'#EF4444',Abs:'#EC4899','Lateral muscles':'#14B8A6',Cardio:'#F97316','Full body':'#6366F1'};
@@ -1338,6 +1344,44 @@ function addCat(){const n=document.getElementById('newCatName').value.trim();if(
 function delCat(i){showConfirm('Delete category?','This will remove the category.',()=>{cats.splice(i,1);svAndSync('catList5',cats);renderManage();})}
 
 // ── WORKOUT RENDER (expandable + edit + reorder) ─────────────────────────────
+function toggleWSelectMode(){
+  wSelectMode=!wSelectMode;
+  const bar=document.getElementById('wSelectBar');
+  const btn=document.getElementById('wSelectBtn');
+  if(bar)bar.style.display=wSelectMode?'flex':'none';
+  if(btn){
+    btn.textContent=wSelectMode?'Cancel':'Select';
+    btn.style.background=wSelectMode?'rgba(139,92,246,.2)':'var(--sur2)';
+    btn.style.borderColor=wSelectMode?'var(--ac2)':'var(--bor2)';
+    btn.style.color=wSelectMode?'var(--ac2)':'var(--tx2)';
+  }
+  renderW();
+}
+function toggleWCheck(i){
+  const cb=document.querySelector('.w-check[data-wi="'+i+'"]');
+  if(cb)cb.checked=!cb.checked;
+}
+function toggleWSelectAll(){
+  const cbs=document.querySelectorAll('.w-check');
+  const allChecked=Array.from(cbs).every(c=>c.checked);
+  cbs.forEach(c=>c.checked=!allChecked);
+  const btn=document.getElementById('wSelectAllBtn');
+  if(btn)btn.textContent=allChecked?'☐ Select all':'☑ Deselect all';
+}
+function deleteSelectedW(){
+  const cbs=document.querySelectorAll('.w-check:checked');
+  if(!cbs.length){alert('Select at least one exercise');return;}
+  const indices=Array.from(cbs).map(c=>parseInt(c.dataset.wi)).sort((a,b)=>b-a);
+  showConfirm('Delete '+indices.length+' exercise'+(indices.length>1?'s':'')+'?','This cannot be undone.',()=>{
+    const l=ld('w_'+TODAYK,[]);
+    indices.forEach(idx=>l.splice(idx,1));
+    svAndSync('w_'+TODAYK,l);
+    wSelectMode=false;
+    const bar=document.getElementById('wSelectBar');if(bar)bar.style.display='none';
+    const btn=document.getElementById('wSelectBtn');if(btn){btn.textContent='Select';btn.style.background='var(--sur2)';btn.style.borderColor='var(--bor2)';btn.style.color='var(--tx2)';}
+    renderW();updStats();renderHome();
+  });
+}
 function renderW(){
   const l=ld('w_'+TODAYK,[]),el=document.getElementById('wList');
   if(!l.length){
@@ -1349,7 +1393,8 @@ function renderW(){
     const svg=CAT_SVG[w.cat]||CAT_SVG.Chest;
     const meta=[w.sets?w.sets+'×'+w.reps:'',w.kg?w.kg+'kg':'',w.dist?w.dist+'km':'',w.dur?w.dur+'min':'',w.secs?w.secs+'s':'',w.calBurn?w.calBurn+' kcal':''].filter(Boolean).join(' · ');
     return`<div class="ei" id="ei_${i}">
-      <div class="ei-row" onclick="toggleEi(${i})">
+      <div class="ei-row" onclick="wSelectMode?toggleWCheck(${i}):toggleEi(${i})">
+        <input type="checkbox" class="w-check" data-wi="${i}" onclick="event.stopPropagation();toggleWCheck(${i})" style="display:${wSelectMode?'block':'none'};width:20px;height:20px;accent-color:var(--ac2);margin-right:10px;flex-shrink:0;cursor:pointer">
         <div class="eico" style="background:${col}20;color:${col}">${svg}</div>
         <div class="ebody">
           <div class="en">${w.name}</div>
@@ -1420,6 +1465,7 @@ function saveEditW(i){
   l[i].secs=parseInt(document.getElementById('ew-secs-'+i).value)||0;
   l[i].calBurn=parseInt(document.getElementById('ew-calburn-'+i).value)||0;
   l[i].notes=document.getElementById('ew-notes-'+i).value.trim();
+  l[i].t=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});
   svAndSync('w_'+TODAYK,l);renderW();updStats();renderHome();
 }
 function moveW(i,dir){
@@ -1881,10 +1927,15 @@ function openDetail(type){
 function closeDetail(){document.getElementById('detailModal').classList.remove('open')}
 
 let _confirmCallback=null;
-function showConfirm(title,msg,cb){
+function showConfirm(title,msg,cb,okLabel,okClass){
   _confirmCallback=cb;
   document.getElementById('confirmTitle').textContent=title;
   document.getElementById('confirmMsg').textContent=msg;
+  const okBtn=document.getElementById('confirmOkBtn');
+  if(okBtn){
+    okBtn.textContent=okLabel||'Delete';
+    okBtn.className='btn '+(okClass||'danger')+' full';
+  }
   document.getElementById('confirmOverlay').classList.add('open');
 }
 function confirmOk(){
@@ -2047,6 +2098,7 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
           <button onclick="addCalExercise('${k}')" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>
           ${wl.length?`<button onclick="toggleCalEdit('${k}','w')" id="cal-edit-toggle-w-${k}" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:''}
           ${(wl.length&&k!==TODAYK)?`<button onclick="copyWorkoutToToday('${k}')" style="background:rgba(16,185,129,.1);border:1px solid rgba(16,185,129,.4);color:#34D399;cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">⎘ Copy to today</button>`:''}
+          ${wl.length?`<button onclick="deleteAllCalW('${k}')" style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);color:var(--rd);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">🗑 Delete all</button>`:''}
         </div>`;
     if(wl.length){
       html+=wl.map((w,wi)=>{
@@ -2081,9 +2133,10 @@ function buildCalDayHTML(k,wl,fl,wt,calIn,dt){
         </div>
       </div>
       <div id="cal-sec-f-${k}" style="overflow:hidden;max-height:0;transition:max-height .35s cubic-bezier(.4,0,.2,1)">
-        <div style="display:flex;gap:6px;margin-bottom:8px">
+        <div style="display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap">
           <button onclick="addCalFood('${k}')" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">+ Add</button>
           ${fl.length?`<button onclick="toggleCalEdit('${k}','f')" id="cal-edit-toggle-f-${k}" style="background:var(--sur2);border:1px solid rgba(139,92,246,.35);color:var(--ac2);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">✏ Edit</button>`:''}
+          ${fl.length?`<button onclick="deleteAllCalF('${k}')" style="background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4);color:var(--rd);cursor:pointer;font-size:11px;font-family:'Inter',sans-serif;font-weight:700;padding:4px 10px;border-radius:20px">🗑 Delete all</button>`:''}
         </div>`;
     if(fl.length){
       html+=fl.map((f,fi)=>`<div style="border-bottom:1px solid var(--bor);padding:7px 0">
@@ -2151,10 +2204,9 @@ function editCalSession(k){
 function copyWorkoutToToday(k){
   const wl=ld('w_'+k,[]);
   if(!wl.length){alert('No exercises to copy');return;}
-  showConfirm('Copy '+wl.length+' exercise'+(wl.length>1?'s':'')+' to today?','They will appear in your Workout tab with the current time.',()=>{
+  showConfirm('Copy '+wl.length+' exercise'+(wl.length>1?'s':'')+' to today?','They will appear in your Workout tab. Edit and save each one to log it with the current time.',()=>{
     const today=ld('w_'+TODAYK,[]);
-    const now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});
-    const copied=wl.map(w=>({...w,t:now}));
+    const copied=wl.map(w=>({...w,t:''}));
     const merged=[...today,...copied];
     svAndSync('w_'+TODAYK,merged);
     renderW();updStats();renderHome();
@@ -2163,7 +2215,7 @@ function copyWorkoutToToday(k){
     if(detail)detail.classList.remove('open');
     activeCalDay=null;
     navTo(1);
-  });
+  },'⎘ Copy','ac');
 }
 function toggleCalSection(secId,chevId){
   const sec=document.getElementById(secId);
@@ -2249,6 +2301,20 @@ function saveCalW(k,wi){
   svAndSync('w_'+k,wl);
   document.getElementById('cal-w-edit-form')&&document.getElementById('cal-w-edit-form').remove();
   renderCalDay(k);
+}
+function deleteAllCalW(k){
+  const wl=ld('w_'+k,[]);
+  if(!wl.length)return;
+  showConfirm('Delete all '+wl.length+' exercises?','This removes every workout entry for this day. Cannot be undone.',()=>{
+    sv('w_'+k,[]);scheduleSyncPush();renderCalDay(k);renderCalendar();
+  });
+}
+function deleteAllCalF(k){
+  const fl=ld('f_'+k,[]);
+  if(!fl.length)return;
+  showConfirm('Delete all '+fl.length+' food entries?','This removes every food entry for this day. Cannot be undone.',()=>{
+    sv('f_'+k,[]);scheduleSyncPush();renderCalDay(k);
+  });
 }
 function delCalW(k,wi){
   showConfirm('Delete exercise?','Remove this exercise from '+k+'.',()=>{
