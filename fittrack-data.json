@@ -325,6 +325,18 @@
         "secs": 0
       },
       {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
@@ -342,18 +354,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Incline Dumbell Press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2391,5 +2391,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:08:09.929Z"
+  "synced": "2026-06-30T18:08:29.208Z"
 }
