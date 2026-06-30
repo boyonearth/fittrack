@@ -409,13 +409,14 @@
         "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 15,
-        "kg": 23,
+        "reps": 12,
+        "kg": 36,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:37",
+        "secs": 0
       },
       {
         "name": "Tricpes back pull",
@@ -2424,5 +2425,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:37:38.169Z"
+  "synced": "2026-06-30T18:37:56.453Z"
 }
