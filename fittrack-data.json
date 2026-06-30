@@ -449,18 +449,6 @@
         "t": "19:43"
       },
       {
-        "name": "Triceps Cable Backpull",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
@@ -2419,5 +2407,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:45:22.284Z"
+  "synced": "2026-06-30T18:45:25.908Z"
 }
