@@ -425,6 +425,19 @@
         "t": ""
       },
       {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:18"
+      },
+      {
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
@@ -495,19 +508,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Dumbell Overhead Triceps Extension",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:18"
       },
       {
         "name": "Leg raise",
@@ -2408,5 +2408,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:18:42.268Z"
+  "synced": "2026-06-30T18:18:47.237Z"
 }
