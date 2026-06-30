@@ -315,13 +315,14 @@
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 10,
-        "kg": 10,
+        "reps": 15,
+        "kg": 7.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:00",
+        "secs": 0
       },
       {
         "name": "Machine Seated Pec Fly",
@@ -2390,5 +2391,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T17:57:56.361Z"
+  "synced": "2026-06-30T18:00:14.760Z"
 }
