@@ -2151,14 +2151,18 @@ function editCalSession(k){
 function copyWorkoutToToday(k){
   const wl=ld('w_'+k,[]);
   if(!wl.length){alert('No exercises to copy');return;}
-  showConfirm('Copy '+wl.length+' exercise'+(wl.length>1?'s':'')+' to today?','Saved with today\'s date and current time.',()=>{
+  showConfirm('Copy '+wl.length+' exercise'+(wl.length>1?'s':'')+' to today?','They will appear in your Workout tab with the current time.',()=>{
     const today=ld('w_'+TODAYK,[]);
     const now=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});
     const copied=wl.map(w=>({...w,t:now}));
     const merged=[...today,...copied];
     svAndSync('w_'+TODAYK,merged);
     renderW();updStats();renderHome();
-    alert('✓ Copied '+wl.length+' exercise(s) to today with current timestamp.');
+    // Close calendar detail and jump to Workout tab
+    const detail=document.getElementById('calDetail');
+    if(detail)detail.classList.remove('open');
+    activeCalDay=null;
+    navTo(1);
   });
 }
 function toggleCalSection(secId,chevId){
