@@ -406,11 +406,11 @@
         "secs": 0
       },
       {
-        "name": "Tricpes back pull",
+        "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 10,
-        "kg": 10,
+        "reps": 15,
+        "kg": 23,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -418,11 +418,11 @@
         "t": ""
       },
       {
-        "name": "Triceps Cable Pushdown",
+        "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 15,
-        "kg": 23,
+        "reps": 10,
+        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2424,5 +2424,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:35:03.597Z"
+  "synced": "2026-06-30T18:37:38.169Z"
 }
