@@ -379,6 +379,18 @@
         "t": ""
       },
       {
+        "name": "Converging Chest Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 32,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -396,18 +408,6 @@
         "sets": 1,
         "reps": 15,
         "kg": 23,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Converging Chest Press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 32,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2421,5 +2421,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:27:34.002Z"
+  "synced": "2026-06-30T18:27:38.743Z"
 }
