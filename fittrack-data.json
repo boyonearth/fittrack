@@ -444,13 +444,14 @@
         "name": "Single Arm Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 10,
+        "reps": 15,
         "kg": 9,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:34",
+        "secs": 0
       },
       {
         "name": "Single Arm Cable Pushdown",
@@ -2423,5 +2424,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:32:35.933Z"
+  "synced": "2026-06-30T18:34:51.540Z"
 }
