@@ -486,6 +486,19 @@
         "t": ""
       },
       {
+        "name": "Leg press",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 10,
+        "kg": 52,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:49"
+      },
+      {
         "name": "Leg raise",
         "cat": "Abs",
         "sets": 1,
@@ -544,19 +557,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 10,
-        "kg": 52,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:49"
       },
       {
         "name": "Side Planks",
@@ -2397,5 +2397,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:49:27.331Z"
+  "synced": "2026-06-30T18:49:33.338Z"
 }
