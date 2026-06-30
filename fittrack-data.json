@@ -252,6 +252,10 @@
     {
       "n": "Hanging Leg Raises",
       "c": "Abs"
+    },
+    {
+      "n": "Dumbell Overhead Triceps Extension",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -2391,5 +2395,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:08:29.208Z"
+  "synced": "2026-06-30T18:18:20.427Z"
 }
