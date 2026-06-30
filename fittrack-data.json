@@ -449,19 +449,6 @@
         "t": "19:49"
       },
       {
-        "name": "Cable Crunch One Side",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 14,
-        "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:43"
-      },
-      {
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
@@ -473,6 +460,19 @@
         "notes": "",
         "t": "19:46",
         "secs": 0
+      },
+      {
+        "name": "Cable Crunch One Side",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 14,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:43"
       },
       {
         "name": "Back Extension",
@@ -2397,5 +2397,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:49:37.544Z"
+  "synced": "2026-06-30T18:49:43.399Z"
 }
