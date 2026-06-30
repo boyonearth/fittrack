@@ -312,11 +312,11 @@
         "secs": 0
       },
       {
-        "name": "Machine Seated Pec Fly",
-        "cat": "Chest",
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
         "sets": 1,
         "reps": 10,
-        "kg": 36,
+        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -324,11 +324,11 @@
         "t": ""
       },
       {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
+        "name": "Machine Seated Pec Fly",
+        "cat": "Chest",
         "sets": 1,
         "reps": 10,
-        "kg": 10,
+        "kg": 36,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2390,5 +2390,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T17:57:46.615Z"
+  "synced": "2026-06-30T17:57:56.361Z"
 }
