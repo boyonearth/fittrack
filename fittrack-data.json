@@ -436,6 +436,19 @@
         "secs": 0
       },
       {
+        "name": "Cable Crunch One Side",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 14,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:43"
+      },
+      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -506,19 +519,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Cable Crunch One Side",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 14,
-        "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:43"
       },
       {
         "name": "Back Extension",
@@ -2443,5 +2443,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:43:33.083Z"
+  "synced": "2026-06-30T18:43:43.725Z"
 }
