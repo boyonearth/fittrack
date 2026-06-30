@@ -422,13 +422,14 @@
         "name": "Cable Crunch",
         "cat": "Abs",
         "sets": 1,
-        "reps": 20,
+        "reps": 15,
         "kg": 57,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:41",
+        "secs": 0
       },
       {
         "name": "Tricpes back pull",
@@ -2425,5 +2426,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:40:53.204Z"
+  "synced": "2026-06-30T18:41:04.500Z"
 }
