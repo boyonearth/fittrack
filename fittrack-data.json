@@ -383,13 +383,14 @@
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
-        "reps": 10,
-        "kg": 36,
+        "reps": 15,
+        "kg": 23,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:32",
+        "secs": 0
       },
       {
         "name": "Tricpes back pull",
@@ -2422,5 +2423,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:28:54.941Z"
+  "synced": "2026-06-30T18:32:35.933Z"
 }
