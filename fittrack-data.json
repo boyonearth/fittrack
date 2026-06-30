@@ -286,6 +286,19 @@
   "days": {
     "w_2026-06-30": [
       {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:34"
+      },
+      {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
@@ -488,19 +501,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "18:34"
       },
       {
         "name": "Russian Twists",
@@ -2389,5 +2389,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T17:34:50.216Z"
+  "synced": "2026-06-30T17:35:06.749Z"
 }
