@@ -473,18 +473,6 @@
         "t": ""
       },
       {
-        "name": "Single Arm Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 6,
-        "kg": 14,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
@@ -2443,5 +2431,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:43:43.725Z"
+  "synced": "2026-06-30T18:45:18.903Z"
 }
