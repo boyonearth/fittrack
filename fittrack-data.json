@@ -638,6 +638,19 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
+      },
+      {
+        "name": "Cable Crunch One Side",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 14,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:43"
       }
     ],
     "f_2026-06-16": [
@@ -2430,5 +2443,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:43:13.829Z"
+  "synced": "2026-06-30T18:43:21.424Z"
 }
