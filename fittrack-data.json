@@ -465,18 +465,6 @@
         "name": "Tricep pushdown",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 10,
-        "kg": 36,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Tricep pushdown",
-        "cat": "Triceps",
-        "sets": 1,
         "reps": 6,
         "kg": 36,
         "dist": 0,
@@ -2408,5 +2396,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:46:48.779Z"
+  "synced": "2026-06-30T18:47:03.351Z"
 }
