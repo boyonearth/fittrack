@@ -497,6 +497,19 @@
         "t": ""
       },
       {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:18"
+      },
+      {
         "name": "Leg raise",
         "cat": "Abs",
         "sets": 1,
@@ -603,19 +616,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Dumbell Overhead Triceps Extension",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:18"
       }
     ],
     "f_2026-06-16": [
@@ -2408,5 +2408,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:18:33.063Z"
+  "synced": "2026-06-30T18:18:42.268Z"
 }
