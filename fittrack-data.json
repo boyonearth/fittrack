@@ -449,19 +449,6 @@
         "secs": 0
       },
       {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 10,
-        "kg": 52,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:49"
-      },
-      {
         "name": "Cable Crunch One Side",
         "cat": "Abs",
         "sets": 1,
@@ -473,6 +460,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:43"
+      },
+      {
+        "name": "Leg press",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 10,
+        "kg": 52,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:49"
       },
       {
         "name": "Back Extension",
@@ -2397,5 +2397,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:49:53.714Z"
+  "synced": "2026-06-30T18:50:00.551Z"
 }
