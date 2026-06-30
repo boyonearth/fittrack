@@ -543,13 +543,14 @@
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
-        "reps": 16,
+        "reps": 15,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "20:00",
+        "secs": 0
       },
       {
         "name": "Flutter Kicks",
@@ -2414,5 +2415,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T18:59:35.391Z"
+  "synced": "2026-06-30T19:00:42.861Z"
 }
