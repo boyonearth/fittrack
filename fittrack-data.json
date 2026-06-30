@@ -286,31 +286,6 @@
   "days": {
     "w_2026-06-30": [
       {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 7,
-        "calBurn": 47,
-        "notes": "",
-        "t": "17:48",
-        "secs": 0
-      },
-      {
-        "name": "Machine Seated Pec Fly",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 36,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "17:48"
-      },
-      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -2384,5 +2359,5 @@
       }
     ]
   },
-  "synced": "2026-06-30T16:53:42.356Z"
+  "synced": "2026-06-30T16:54:04.942Z"
 }
