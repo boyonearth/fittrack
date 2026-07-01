@@ -264,7 +264,7 @@ body{font-family:'Inter',-apple-system,sans-serif;padding-bottom:calc(80px + var
 
 /* CAL DETAIL */
 .cal-detail{overflow:hidden;max-height:0;transition:max-height .5s cubic-bezier(.25,0,.1,1),opacity .3s ease,transform .3s ease;margin-bottom:0;opacity:0;transform:translateY(-8px)}
-.cal-detail.open{max-height:1200px;margin-bottom:12px;opacity:1;transform:translateY(0)}
+.cal-detail.open{max-height:100000px;margin-bottom:12px;opacity:1;transform:translateY(0)}
 .cal-detail-inner{padding-top:2px}
 .detail-day-title{font-size:15px;font-weight:800;color:var(--tx);margin-bottom:12px}
 .detail-section{margin-bottom:14px}
@@ -1466,7 +1466,20 @@ function saveEditW(i){
   l[i].calBurn=parseInt(document.getElementById('ew-calburn-'+i).value)||0;
   l[i].notes=document.getElementById('ew-notes-'+i).value.trim();
   l[i].t=new Date().toLocaleTimeString('en-IE',{hour:'2-digit',minute:'2-digit'});
-  svAndSync('w_'+TODAYK,l);renderW();updStats();renderHome();
+  // Auto-sort: completed (timestamped) exercises rise to top in time order;
+  // not-yet-done (no timestamp) stay below in their original order.
+  const withStamp=l.filter(w=>w.t&&w.t.trim());
+  const noStamp=l.filter(w=>!w.t||!w.t.trim());
+  withStamp.sort((a,b)=>toMin(a.t)-toMin(b.t));
+  const sorted=[...withStamp,...noStamp];
+  svAndSync('w_'+TODAYK,sorted);renderW();updStats();renderHome();
+}
+// Convert "HH:MM" (24h) to minutes for sorting
+function toMin(t){
+  if(!t)return 99999;
+  const m=t.match(/(\d{1,2}):(\d{2})/);
+  if(!m)return 99999;
+  return parseInt(m[1])*60+parseInt(m[2]);
 }
 function moveW(i,dir){
   const l=ld('w_'+TODAYK,[]);
@@ -2222,8 +2235,16 @@ function toggleCalSection(secId,chevId){
   const chev=document.getElementById(chevId);
   if(!sec)return;
   const isOpen=sec.style.maxHeight&&sec.style.maxHeight!=='0px';
-  sec.style.maxHeight=isOpen?'0px':'1000px';
-  if(chev)chev.style.transform=isOpen?'':'rotate(180deg)';
+  if(isOpen){
+    sec.style.maxHeight='0px';
+    if(chev)chev.style.transform='';
+  } else {
+    // Expand to full content height (fits any number of items)
+    sec.style.maxHeight=sec.scrollHeight+'px';
+    if(chev)chev.style.transform='rotate(180deg)';
+    // After the transition, remove the cap so nothing gets clipped if content changes
+    setTimeout(()=>{if(sec.style.maxHeight!=='0px')sec.style.maxHeight='none';},350);
+  }
 }
 function toggleCalEdit(k,type){
   let btns=[];
