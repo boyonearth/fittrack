@@ -676,36 +676,18 @@
         "t": "19:15"
       }
     ],
-    "f_2026-06-15": [
+    "w_2026-06-14": [
       {
-        "name": "Chicken curry",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
-      },
-      {
-        "name": "Bagara rice",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
-      },
-      {
-        "name": "Protein Oats",
-        "meal": "Dinner",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 3.77,
+        "dur": 50,
+        "calBurn": 0,
+        "notes": "",
+        "t": "14:13"
       }
     ],
     "w_2026-06-24": [
@@ -2076,6 +2058,38 @@
         "t": "14:46"
       }
     ],
+    "f_2026-06-15": [
+      {
+        "name": "Chicken curry",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      },
+      {
+        "name": "Bagara rice",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      },
+      {
+        "name": "Protein Oats",
+        "meal": "Dinner",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      }
+    ],
     "w_2026-06-29": [
       {
         "name": "Treadmill",
@@ -2416,23 +2430,9 @@
     ],
     "session_2026-06-30": {
       "start": "18:34",
-      "end": "",
-      "dur": 0
-    },
-    "w_2026-06-14": [
-      {
-        "name": "Outdoor Walk",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 3.77,
-        "dur": 50,
-        "calBurn": 0,
-        "notes": "",
-        "t": "14:13"
-      }
-    ]
+      "end": "20:13",
+      "dur": 99
+    }
   },
-  "synced": "2026-06-30T19:13:20.639Z"
+  "synced": "2026-07-01T16:57:28.801Z"
 }
