@@ -1373,6 +1373,19 @@
         "secs": 0
       },
       {
+        "name": "Concentration Curls",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:58",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -1414,18 +1427,6 @@
         "sets": 1,
         "reps": 5,
         "kg": 15,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Concentration Curls",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2773,5 +2774,5 @@
       "dur": 99
     }
   },
-  "synced": "2026-07-01T16:57:53.536Z"
+  "synced": "2026-07-01T16:58:03.623Z"
 }
