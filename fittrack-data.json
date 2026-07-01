@@ -260,6 +260,10 @@
     {
       "n": "Cable Crunch One Side",
       "c": "Abs"
+    },
+    {
+      "n": "Indoor Swimming",
+      "c": "Cardio"
     }
   ],
   "cats": [
@@ -676,18 +680,342 @@
         "t": "19:15"
       }
     ],
-    "w_2026-06-14": [
+    "w_2026-06-29": [
       {
-        "name": "Outdoor Walk",
+        "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
         "reps": 0,
         "kg": 0,
-        "dist": 3.77,
-        "dur": 50,
+        "dist": 0,
+        "dur": 6,
+        "calBurn": 43,
+        "notes": "",
+        "t": "18:58"
+      },
+      {
+        "name": "Alternating Dumbell Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 5,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "14:13"
+        "t": "19:04"
+      },
+      {
+        "name": "Seated Dumbbell Shoulder Press",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 6,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:04"
+      },
+      {
+        "name": "Alternating Dumbell Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 9,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:06"
+      },
+      {
+        "name": "Seated Dumbbell Shoulder Press",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 5,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:09"
+      },
+      {
+        "name": "Concentration Curls",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:13"
+      },
+      {
+        "name": "Dumbell Shrugs",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 15,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:15"
+      },
+      {
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:21"
+      },
+      {
+        "name": "Hammer curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 8,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:22"
+      },
+      {
+        "name": "Machine Lateral Pull",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 10,
+        "kg": 39,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:25"
+      },
+      {
+        "name": "Machine Single Hand Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 12,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:28"
+      },
+      {
+        "name": "Machine lateral raise",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 5,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:32"
+      },
+      {
+        "name": "Machine Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 30,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:34"
+      },
+      {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 57,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:37"
+      },
+      {
+        "name": "Machine Shoulder Press Seated",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 11,
+        "kg": 32,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:39"
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:45"
+      },
+      {
+        "name": "Russian Twists",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 8,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:45"
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:47"
+      },
+      {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 17,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:48"
+      },
+      {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:50"
+      },
+      {
+        "name": "Flutter Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:51"
+      },
+      {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 12,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:52"
+      },
+      {
+        "name": "Scissors",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:54"
+      },
+      {
+        "name": "Side Planks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 10,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:56"
+      },
+      {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:57"
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 30,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:59"
+      },
+      {
+        "name": "Hanging Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 7,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:01"
+      },
+      {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:02"
       }
     ],
     "w_2026-06-24": [
@@ -718,6 +1046,11 @@
         "t": "11:32"
       }
     ],
+    "session_2026-07-01": {
+      "start": "19:15",
+      "end": "19:40",
+      "dur": 25
+    },
     "w_2026-06-19": [
       {
         "name": "Machine Seated Pec Fly",
@@ -1358,7 +1691,6 @@
         "t": "19:51"
       }
     ],
-    "w_2026-07-01": [],
     "session_2026-06-13": {
       "start": "11:10",
       "end": "12:50",
@@ -1428,7 +1760,7 @@
         "t": "17:34"
       }
     ],
-    "wt_2026-06-16": 250,
+    "w_2026-07-01": [],
     "w_2026-06-23": [
       {
         "name": "Outdoor Walk",
@@ -1721,6 +2053,17 @@
         "t": "19:40"
       }
     ],
+    "wt_2026-06-16": 250,
+    "session_2026-06-16": {
+      "start": "18:22",
+      "end": "19:37",
+      "dur": 75
+    },
+    "session_2026-06-28": {
+      "start": "21:28",
+      "end": "22:40",
+      "dur": 72
+    },
     "w_2026-06-13": [
       {
         "name": "Bench press",
@@ -1777,16 +2120,6 @@
         "t": "14:39"
       }
     ],
-    "session_2026-06-16": {
-      "start": "18:22",
-      "end": "19:37",
-      "dur": 75
-    },
-    "session_2026-06-28": {
-      "start": "21:28",
-      "end": "22:40",
-      "dur": 72
-    },
     "w_2026-06-28": [
       {
         "name": "Outdoor Walk",
@@ -2091,349 +2424,25 @@
         "t": "17:32"
       }
     ],
-    "w_2026-06-29": [
-      {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 6,
-        "calBurn": 43,
-        "notes": "",
-        "t": "18:58"
-      },
-      {
-        "name": "Alternating Dumbell Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 5,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:04"
-      },
-      {
-        "name": "Seated Dumbbell Shoulder Press",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 6,
-        "kg": 15,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:04"
-      },
-      {
-        "name": "Alternating Dumbell Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 9,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:06"
-      },
-      {
-        "name": "Seated Dumbbell Shoulder Press",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 5,
-        "kg": 15,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:09"
-      },
-      {
-        "name": "Concentration Curls",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:13"
-      },
-      {
-        "name": "Dumbell Shrugs",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 15,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:15"
-      },
-      {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 15,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:21"
-      },
-      {
-        "name": "Hammer curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 8,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:22"
-      },
-      {
-        "name": "Machine Lateral Pull",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 10,
-        "kg": 39,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:25"
-      },
-      {
-        "name": "Machine Single Hand Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 12,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:28"
-      },
-      {
-        "name": "Machine lateral raise",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 5,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:32"
-      },
-      {
-        "name": "Machine Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:34"
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 57,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:37"
-      },
-      {
-        "name": "Machine Shoulder Press Seated",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 11,
-        "kg": 32,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:39"
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:45"
-      },
-      {
-        "name": "Russian Twists",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 8,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:45"
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 20,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:47"
-      },
-      {
-        "name": "Crunch Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 17,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:48"
-      },
-      {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:50"
-      },
-      {
-        "name": "Flutter Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:51"
-      },
-      {
-        "name": "Heel Touches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 12,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:52"
-      },
-      {
-        "name": "Scissors",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:54"
-      },
-      {
-        "name": "Side Planks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 10,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:56"
-      },
-      {
-        "name": "Side Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:57"
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 30,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:59"
-      },
-      {
-        "name": "Hanging Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 7,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "20:01"
-      },
-      {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "20:02"
-      }
-    ],
     "session_2026-06-30": {
       "start": "18:34",
       "end": "20:13",
       "dur": 99
-    }
+    },
+    "w_2026-06-14": [
+      {
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 3.77,
+        "dur": 50,
+        "calBurn": 0,
+        "notes": "",
+        "t": "14:13"
+      }
+    ]
   },
-  "synced": "2026-07-01T16:58:11.020Z"
+  "synced": "2026-07-01T19:23:23.809Z"
 }
