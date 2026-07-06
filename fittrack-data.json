@@ -2043,11 +2043,11 @@
         "secs": 0
       },
       {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
+        "name": "Hammer curl",
+        "cat": "Biceps",
         "sets": 1,
-        "reps": 10,
-        "kg": 15,
+        "reps": 8,
+        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2055,11 +2055,11 @@
         "t": ""
       },
       {
-        "name": "Hammer curl",
-        "cat": "Biceps",
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 8,
-        "kg": 10,
+        "reps": 10,
+        "kg": 15,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -2856,5 +2856,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:39:28.204Z"
+  "synced": "2026-07-06T17:39:45.682Z"
 }
