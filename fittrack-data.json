@@ -2206,13 +2206,14 @@
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
-        "reps": 20,
+        "reps": 15,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:10",
+        "secs": 0
       },
       {
         "name": "Crunch Kicks",
@@ -2896,5 +2897,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:09:09.253Z"
+  "synced": "2026-07-06T18:11:00.520Z"
 }
