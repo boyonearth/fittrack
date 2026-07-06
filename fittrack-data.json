@@ -2046,13 +2046,14 @@
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 8,
+        "reps": 10,
         "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:40",
+        "secs": 0
       },
       {
         "name": "One-Arm Dumbell Row",
@@ -2856,5 +2857,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:39:45.682Z"
+  "synced": "2026-07-06T17:40:48.999Z"
 }
