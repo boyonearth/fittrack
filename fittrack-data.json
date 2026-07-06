@@ -2305,6 +2305,19 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
+      },
+      {
+        "name": "Machine Seated Leg Extension",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 10,
+        "kg": 18,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:01"
       }
     ],
     "session_2026-06-14": {
@@ -2868,5 +2881,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:01:46.090Z"
+  "synced": "2026-07-06T18:01:57.695Z"
 }
