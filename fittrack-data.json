@@ -2180,13 +2180,14 @@
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 20,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:07",
+        "secs": 0
       },
       {
         "name": "Russian Twists",
@@ -2894,5 +2895,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:06:05.250Z"
+  "synced": "2026-07-06T18:07:47.403Z"
 }
