@@ -1981,13 +1981,14 @@
         "name": "Seated Dumbbell Shoulder Press",
         "cat": "Shoulders",
         "sets": 1,
-        "reps": 6,
-        "kg": 15,
+        "reps": 8,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:28",
+        "secs": 0
       },
       {
         "name": "Alternating Dumbell Curl",
@@ -2851,5 +2852,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:26:49.778Z"
+  "synced": "2026-07-06T17:28:37.172Z"
 }
