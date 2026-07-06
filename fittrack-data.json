@@ -1994,13 +1994,14 @@
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 9,
+        "reps": 10,
         "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:31",
+        "secs": 0
       },
       {
         "name": "Seated Dumbbell Shoulder Press",
@@ -2852,5 +2853,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:28:37.172Z"
+  "synced": "2026-07-06T17:31:05.707Z"
 }
