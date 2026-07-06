@@ -2331,18 +2331,6 @@
         "notes": "",
         "t": "19:22",
         "secs": 0
-      },
-      {
-        "name": "Hanging Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 7,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       }
     ],
     "session_2026-06-14": {
@@ -2906,5 +2894,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:22:44.321Z"
+  "synced": "2026-07-06T18:22:49.256Z"
 }
