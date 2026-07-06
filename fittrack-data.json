@@ -2059,13 +2059,14 @@
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 10,
-        "kg": 15,
+        "reps": 15,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:43",
+        "secs": 0
       },
       {
         "name": "Machine Lateral Pull",
@@ -2857,5 +2858,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:40:48.999Z"
+  "synced": "2026-07-06T17:43:34.941Z"
 }
