@@ -2130,7 +2130,8 @@
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:57",
+        "secs": 0
       },
       {
         "name": "Machine Shoulder Press Seated",
@@ -2862,5 +2863,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:54:52.160Z"
+  "synced": "2026-07-06T17:57:50.479Z"
 }
