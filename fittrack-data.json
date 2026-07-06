@@ -264,6 +264,10 @@
     {
       "n": "Indoor Swimming",
       "c": "Cardio"
+    },
+    {
+      "n": "Machine Seated Leg Extension",
+      "c": "Legs/Calves"
     }
   ],
   "cats": [
@@ -2864,5 +2868,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:59:41.640Z"
+  "synced": "2026-07-06T18:01:46.090Z"
 }
