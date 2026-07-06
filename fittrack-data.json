@@ -2219,13 +2219,14 @@
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
-        "reps": 17,
+        "reps": 15,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:11",
+        "secs": 0
       },
       {
         "name": "Leg Raises",
@@ -2897,5 +2898,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:11:00.520Z"
+  "synced": "2026-07-06T18:11:39.589Z"
 }
