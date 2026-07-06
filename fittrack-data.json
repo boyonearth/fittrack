@@ -2008,12 +2008,13 @@
         "cat": "Shoulders",
         "sets": 1,
         "reps": 5,
-        "kg": 15,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:34",
+        "secs": 0
       },
       {
         "name": "Concentration Curls",
@@ -2853,5 +2854,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:31:05.707Z"
+  "synced": "2026-07-06T17:34:22.019Z"
 }
