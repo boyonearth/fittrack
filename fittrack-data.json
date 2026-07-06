@@ -2320,22 +2320,23 @@
         "secs": 35
       },
       {
-        "name": "Hanging Leg Raises",
+        "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
-        "reps": 7,
+        "reps": 10,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:22",
+        "secs": 0
       },
       {
-        "name": "Knee Raises",
+        "name": "Hanging Leg Raises",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 7,
         "kg": 0,
         "dist": 0,
         "dur": 0,
@@ -2905,5 +2906,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T18:20:56.963Z"
+  "synced": "2026-07-06T18:22:44.321Z"
 }
