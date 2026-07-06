@@ -1952,19 +1952,6 @@
     ],
     "w_2026-07-06": [
       {
-        "name": "Alternating Dumbell Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 5,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "17:55",
-        "secs": 0
-      },
-      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -1975,6 +1962,19 @@
         "calBurn": 43,
         "notes": "",
         "t": "18:05",
+        "secs": 0
+      },
+      {
+        "name": "Alternating Dumbell Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 5,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:26",
         "secs": 0
       },
       {
@@ -2851,5 +2851,5 @@
       }
     ]
   },
-  "synced": "2026-07-06T17:05:34.837Z"
+  "synced": "2026-07-06T17:26:49.778Z"
 }
