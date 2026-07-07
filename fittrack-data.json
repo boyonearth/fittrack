@@ -268,6 +268,10 @@
     {
       "n": "Machine Seated Leg Extension",
       "c": "Legs/Calves"
+    },
+    {
+      "n": "Rod Pushdown",
+      "c": "Triceps"
     }
   ],
   "cats": [
@@ -3317,5 +3321,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:17:05.449Z"
+  "synced": "2026-07-07T19:18:44.258Z"
 }
