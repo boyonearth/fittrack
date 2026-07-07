@@ -1981,6 +1981,19 @@
         "secs": 0
       },
       {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:41"
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 2,
@@ -2291,19 +2304,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:41"
       }
     ],
     "session_2026-06-28": {
@@ -3265,5 +3265,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T18:41:38.304Z"
+  "synced": "2026-07-07T18:41:47.656Z"
 }
