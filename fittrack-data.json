@@ -2170,14 +2170,14 @@
         "name": "Leg press",
         "cat": "Legs/Calves",
         "sets": 1,
-        "reps": 10,
+        "reps": 7,
         "kg": 52,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "20:23"
       },
       {
         "name": "Back Extension",
@@ -3308,5 +3308,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:22:20.164Z"
+  "synced": "2026-07-07T19:23:56.047Z"
 }
