@@ -2046,6 +2046,19 @@
         "t": "19:55"
       },
       {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 22.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:58"
+      },
+      {
         "name": "Converging Chest Press",
         "cat": "Chest",
         "sets": 1,
@@ -2317,19 +2330,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 22.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:58"
       }
     ],
     "session_2026-06-28": {
@@ -3291,5 +3291,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T18:58:21.386Z"
+  "synced": "2026-07-07T18:58:27.485Z"
 }
