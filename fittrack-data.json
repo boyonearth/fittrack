@@ -2167,19 +2167,6 @@
         "secs": 0
       },
       {
-        "name": "Reverse Cable Curl on Machine",
-        "cat": "Forearms",
-        "sets": 1,
-        "reps": 10,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Leg press",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -3321,5 +3308,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:22:10.221Z"
+  "synced": "2026-07-07T19:22:20.164Z"
 }
