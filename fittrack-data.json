@@ -2304,6 +2304,19 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
+      },
+      {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 13,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:44"
       }
     ],
     "session_2026-06-28": {
@@ -3265,5 +3278,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T18:41:47.656Z"
+  "synced": "2026-07-07T18:44:08.575Z"
 }
