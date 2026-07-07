@@ -2141,6 +2141,19 @@
         "t": "20:17"
       },
       {
+        "name": "Rod Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:18"
+      },
+      {
         "name": "Cable Crunch",
         "cat": "Abs",
         "sets": 1,
@@ -2360,19 +2373,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Rod Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 36,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "20:18"
       }
     ],
     "session_2026-06-28": {
@@ -3334,5 +3334,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:18:53.373Z"
+  "synced": "2026-07-07T19:19:01.946Z"
 }
