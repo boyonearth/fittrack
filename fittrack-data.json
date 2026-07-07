@@ -2360,6 +2360,19 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
+      },
+      {
+        "name": "Rod Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:18"
       }
     ],
     "session_2026-06-28": {
@@ -3321,5 +3334,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:18:44.258Z"
+  "synced": "2026-07-07T19:18:53.373Z"
 }
