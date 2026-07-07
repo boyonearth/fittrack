@@ -2245,6 +2245,19 @@
         "secs": 0
       },
       {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:32"
+      },
+      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -2321,19 +2334,6 @@
         "notes": "",
         "t": "",
         "secs": 45
-      },
-      {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       }
     ],
     "session_2026-06-28": {
@@ -3295,5 +3295,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:30:42.044Z"
+  "synced": "2026-07-07T19:32:33.739Z"
 }
