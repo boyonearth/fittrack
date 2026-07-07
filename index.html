@@ -963,7 +963,7 @@ function saveSession(){
   const s=document.getElementById('sessionStart').value;
   if(!s){alert('Enter at least a start time');return}
   const result=calcSessionDur()||{start:s,end:'',dur:0};
-  sv('session_'+TODAYK,result);
+  svAndSync('session_'+TODAYK,result);
   updateSessionBadge(result);
   // Hide the card
   const card=document.getElementById('sessionCard');
@@ -2270,8 +2270,7 @@ function saveCalSession(k){
   if(!s){renderCalDay(k);return;}
   let dur=0;
   if(s&&e){const[sh,sm]=s.split(':').map(Number);const[eh,em]=e.split(':').map(Number);dur=(eh*60+em)-(sh*60+sm);if(dur<0)dur+=1440;}
-  sv('session_'+k,{start:s,end:e,dur});
-  scheduleSyncPush();
+  svAndSync('session_'+k,{start:s,end:e,dur});
   renderCalDay(k);
 }
 
