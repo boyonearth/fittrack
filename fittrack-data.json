@@ -2072,6 +2072,19 @@
         "secs": 0
       },
       {
+        "name": "Triceps Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 23,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:08",
+        "secs": 0
+      },
+      {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
@@ -2090,19 +2103,6 @@
         "sets": 1,
         "reps": 15,
         "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Triceps Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 12,
-        "kg": 36,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -3291,5 +3291,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T19:06:07.979Z"
+  "synced": "2026-07-07T19:08:41.835Z"
 }
