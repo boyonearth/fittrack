@@ -2007,6 +2007,19 @@
         "t": "19:44"
       },
       {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:46"
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 2,
@@ -2018,19 +2031,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell Overhead Triceps Extension",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "One-Arm Dumbell Row",
@@ -3278,5 +3278,5 @@
       }
     ]
   },
-  "synced": "2026-07-07T18:44:15.215Z"
+  "synced": "2026-07-07T18:46:34.551Z"
 }
