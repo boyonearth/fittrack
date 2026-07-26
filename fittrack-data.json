@@ -1583,24 +1583,24 @@
         "secs": 0
       },
       {
+        "name": "Machine Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:02",
+        "secs": 0
+      },
+      {
         "name": "Machine Lateral Pull",
         "cat": "Shoulders",
         "sets": 1,
         "reps": 10,
         "kg": 39,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Machine Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -3779,5 +3779,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T09:55:06.162Z"
+  "synced": "2026-07-26T10:02:42.414Z"
 }
