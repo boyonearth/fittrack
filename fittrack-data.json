@@ -1687,19 +1687,6 @@
         "secs": 0
       },
       {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -3779,5 +3766,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T10:19:35.515Z"
+  "synced": "2026-07-26T10:27:49.527Z"
 }
