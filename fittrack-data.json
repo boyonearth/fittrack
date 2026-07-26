@@ -1453,19 +1453,6 @@
         "t": "10:26"
       },
       {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0.73,
-        "dur": 7,
-        "calBurn": 43,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3792,5 +3779,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T09:26:17.550Z"
+  "synced": "2026-07-26T09:26:26.040Z"
 }
