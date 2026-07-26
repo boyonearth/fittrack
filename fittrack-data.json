@@ -1652,13 +1652,13 @@
         "cat": "Lateral muscles",
         "sets": 1,
         "reps": 10,
-        "kg": 14,
+        "kg": 12,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "11:17"
       },
       {
         "name": "Crunches",
@@ -3779,5 +3779,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T10:12:58.891Z"
+  "synced": "2026-07-26T10:17:50.431Z"
 }
