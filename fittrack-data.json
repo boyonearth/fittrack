@@ -1674,6 +1674,19 @@
         "secs": 0
       },
       {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:28",
+        "secs": 0
+      },
+      {
         "name": "Russian Twists",
         "cat": "Abs",
         "sets": 1,
@@ -1691,19 +1704,6 @@
         "cat": "Abs",
         "sets": 1,
         "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
         "kg": 0,
         "dist": 0,
         "dur": 0,
@@ -3766,5 +3766,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T10:27:49.527Z"
+  "synced": "2026-07-26T10:28:47.416Z"
 }
