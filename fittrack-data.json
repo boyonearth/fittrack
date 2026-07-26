@@ -1612,13 +1612,13 @@
         "name": "Machine Lateral Pull",
         "cat": "Shoulders",
         "sets": 1,
-        "reps": 10,
+        "reps": 7,
         "kg": 39,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "11:08",
         "secs": 0
       },
       {
@@ -3779,5 +3779,5 @@
       "dur": 0
     }
   },
-  "synced": "2026-07-26T10:06:23.092Z"
+  "synced": "2026-07-26T10:08:35.632Z"
 }
