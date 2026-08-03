@@ -2366,24 +2366,24 @@
         "t": "12:55"
       },
       {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 7,
-        "kg": 52,
+        "reps": 10,
+        "kg": 12,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "13:00"
       },
       {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
+        "name": "Leg press",
+        "cat": "Legs/Calves",
         "sets": 1,
-        "reps": 10,
-        "kg": 14,
+        "reps": 7,
+        "kg": 52,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -4177,5 +4177,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:55:12.513Z"
+  "synced": "2026-08-03T12:00:27.680Z"
 }
