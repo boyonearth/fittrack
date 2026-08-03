@@ -2483,6 +2483,19 @@
         "secs": 30
       },
       {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "13:12",
+        "secs": 30
+      },
+      {
         "name": "Side Leg Raises",
         "cat": "Abs",
         "sets": 1,
@@ -2494,19 +2507,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 45
       }
     ],
     "session_2026-07-07": {
@@ -4151,5 +4151,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:11:34.637Z"
+  "synced": "2026-08-03T12:12:33.801Z"
 }
