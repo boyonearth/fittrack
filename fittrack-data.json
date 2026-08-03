@@ -2236,24 +2236,24 @@
         "secs": 0
       },
       {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
         "sets": 1,
         "reps": 10,
-        "kg": 10,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "12:27"
       },
       {
-        "name": "Incline Dumbell Press",
-        "cat": "Chest",
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
         "sets": 1,
-        "reps": 13,
-        "kg": 12.5,
+        "reps": 10,
+        "kg": 10,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -4216,5 +4216,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:27:46.030Z"
+  "synced": "2026-08-03T11:27:56.521Z"
 }
