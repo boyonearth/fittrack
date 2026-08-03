@@ -2200,13 +2200,13 @@
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 17,
+        "reps": 15,
         "kg": 7.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "12:21",
         "secs": 0
       },
       {
@@ -4203,5 +4203,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:19:08.675Z"
+  "synced": "2026-08-03T11:21:56.483Z"
 }
