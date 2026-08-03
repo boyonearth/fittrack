@@ -2379,6 +2379,19 @@
         "t": "13:00"
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "13:05",
+        "secs": 0
+      },
+      {
         "name": "Leg press",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -2390,19 +2403,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Leg raise",
@@ -4177,5 +4177,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:00:27.680Z"
+  "synced": "2026-08-03T12:05:22.928Z"
 }
