@@ -2169,10 +2169,420 @@
       "end": "19:37",
       "dur": 75
     },
+    "w_2026-08-03": [
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0.72,
+        "dur": 12,
+        "secs": 0,
+        "calBurn": 64,
+        "notes": "",
+        "t": "12:07"
+      },
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0.35,
+        "dur": 5,
+        "secs": 0,
+        "calBurn": 35,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 17,
+        "kg": 7.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 15,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 13,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 22.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Converging Chest Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 39,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Triceps Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 23,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Triceps Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 30,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Machine Seated Pec Fly",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 15,
+        "kg": 23,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 14,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Rod Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 57,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Leg press",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 7,
+        "kg": 52,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 14,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Leg raise",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Russian Twists",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Flutter Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Side Planks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 30
+      },
+      {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 45
+      }
+    ],
     "session_2026-07-07": {
       "start": "19:20",
       "end": "20:32",
       "dur": 72
+    },
+    "session_2026-07-17": {
+      "start": "18:08",
+      "end": "18:50",
+      "dur": 42
     },
     "w_2026-07-30": [
       {
@@ -2189,10 +2599,10 @@
         "t": "23:00"
       }
     ],
-    "session_2026-07-17": {
-      "start": "18:08",
-      "end": "18:50",
-      "dur": 42
+    "session_2026-07-15": {
+      "start": "07:15",
+      "end": "08:17",
+      "dur": 62
     },
     "w_2026-07-28": [
       {
@@ -2209,26 +2619,6 @@
         "t": "20:07"
       }
     ],
-    "w_2026-08-03": [
-      {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0.72,
-        "dur": 12,
-        "secs": 0,
-        "calBurn": 64,
-        "notes": "",
-        "t": "12:07"
-      }
-    ],
-    "session_2026-07-15": {
-      "start": "07:15",
-      "end": "08:17",
-      "dur": 62
-    },
     "wtlog_2026-06-14": [
       {
         "ml": 250,
@@ -2382,6 +2772,11 @@
       "end": "20:00",
       "dur": 28
     },
+    "session_2026-06-29": {
+      "start": "18:47",
+      "end": "19:50",
+      "dur": 63
+    },
     "f_2026-06-13": [
       {
         "name": "Brown rice",
@@ -2414,11 +2809,6 @@
         "t": "14:37"
       }
     ],
-    "session_2026-06-29": {
-      "start": "18:47",
-      "end": "19:50",
-      "dur": 63
-    },
     "session_2026-07-06": {
       "start": "17:54",
       "end": "19:22",
@@ -3826,5 +4216,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:07:18.177Z"
+  "synced": "2026-08-03T11:15:19.524Z"
 }
