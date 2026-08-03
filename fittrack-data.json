@@ -2457,6 +2457,19 @@
         "secs": 0
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 8,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "13:10"
+      },
+      {
         "name": "Side Planks",
         "cat": "Abs",
         "sets": 1,
@@ -2481,19 +2494,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Plank",
@@ -4151,5 +4151,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:09:21.467Z"
+  "synced": "2026-08-03T12:10:13.445Z"
 }
