@@ -2431,19 +2431,6 @@
         "secs": 0
       },
       {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -4164,5 +4151,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:07:54.956Z"
+  "synced": "2026-08-03T12:08:00.243Z"
 }
