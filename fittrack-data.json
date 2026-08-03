@@ -2184,6 +2184,19 @@
         "t": "12:07"
       },
       {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 10,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:19"
+      },
+      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -2267,19 +2280,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 22.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -4203,5 +4203,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:15:24.719Z"
+  "synced": "2026-08-03T11:19:08.675Z"
 }
