@@ -2496,19 +2496,6 @@
         "secs": 30
       },
       {
-        "name": "Side Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 0,
@@ -2520,6 +2507,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "13:14"
+      },
+      {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "",
+        "secs": 0
       }
     ],
     "session_2026-07-07": {
@@ -4164,5 +4164,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:14:41.555Z"
+  "synced": "2026-08-03T12:14:50.490Z"
 }
