@@ -2210,6 +2210,19 @@
         "secs": 0
       },
       {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 8,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:25"
+      },
+      {
         "name": "Incline Dumbell Press",
         "cat": "Chest",
         "sets": 1,
@@ -2219,7 +2232,7 @@
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "12:27",
         "secs": 0
       },
       {
@@ -2559,19 +2572,6 @@
         "notes": "",
         "t": "",
         "secs": 45
-      },
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 8,
-        "kg": 20,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "12:24"
       }
     ],
     "session_2026-07-07": {
@@ -4216,5 +4216,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:24:58.292Z"
+  "synced": "2026-08-03T11:27:46.030Z"
 }
