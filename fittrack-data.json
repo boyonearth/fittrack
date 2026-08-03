@@ -2327,6 +2327,19 @@
         "secs": 0
       },
       {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 57,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:51",
+        "secs": 0
+      },
+      {
         "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
@@ -2364,19 +2377,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 57,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Leg press",
@@ -4190,5 +4190,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:49:56.535Z"
+  "synced": "2026-08-03T11:51:18.827Z"
 }
