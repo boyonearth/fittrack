@@ -2236,19 +2236,6 @@
         "secs": 0
       },
       {
-        "name": "Incline Dumbell Press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "12:27"
-      },
-      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -2260,6 +2247,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "12:30"
+      },
+      {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 12,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:34"
       },
       {
         "name": "Dumbell Overhead Triceps Extension",
@@ -4216,5 +4216,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:30:28.858Z"
+  "synced": "2026-08-03T11:34:17.145Z"
 }
