@@ -2301,6 +2301,19 @@
         "secs": 0
       },
       {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 14,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:48"
+      },
+      {
         "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
@@ -2351,19 +2364,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Single Arm Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 14,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Rod Pushdown",
@@ -4203,5 +4203,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T11:45:29.969Z"
+  "synced": "2026-08-03T11:48:19.150Z"
 }
