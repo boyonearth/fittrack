@@ -2392,19 +2392,6 @@
         "secs": 0
       },
       {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 7,
-        "kg": 52,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Leg raise",
         "cat": "Abs",
         "sets": 1,
@@ -4177,5 +4164,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-03T12:05:22.928Z"
+  "synced": "2026-08-03T12:05:27.134Z"
 }
