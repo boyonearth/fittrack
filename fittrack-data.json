@@ -3624,6 +3624,19 @@
         "secs": 0
       },
       {
+        "name": "Concentration Curls",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "16:33",
+        "secs": 0
+      },
+      {
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3642,19 +3655,6 @@
         "sets": 1,
         "reps": 5,
         "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Concentration Curls",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -4548,5 +4548,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:31:19.751Z"
+  "synced": "2026-08-04T15:33:52.337Z"
 }
