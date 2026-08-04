@@ -3745,19 +3745,6 @@
         "secs": 0
       },
       {
-        "name": "Machine Lateral Pull",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 10,
-        "kg": 39,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -4565,5 +4552,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:55:07.029Z"
+  "synced": "2026-08-04T15:55:27.781Z"
 }
