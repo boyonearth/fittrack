@@ -3680,6 +3680,19 @@
         "t": "16:41"
       },
       {
+        "name": "Dumbell rotation",
+        "cat": "Forearms",
+        "sets": 1,
+        "reps": 10,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "16:46"
+      },
+      {
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3964,19 +3977,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell rotation",
-        "cat": "Forearms",
-        "sets": 1,
-        "reps": 10,
-        "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "16:46"
       }
     ],
     "session_2026-06-14": {
@@ -4565,5 +4565,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:46:31.544Z"
+  "synced": "2026-08-04T15:46:37.202Z"
 }
