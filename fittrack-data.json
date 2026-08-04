@@ -3771,6 +3771,19 @@
         "secs": 0
       },
       {
+        "name": "Machine Seated Leg Extension",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 5,
+        "kg": 25,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:03"
+      },
+      {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3795,19 +3808,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Machine Seated Leg Extension",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 10,
-        "kg": 18,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "One-Arm Dumbell Row",
@@ -4565,5 +4565,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T16:00:08.377Z"
+  "synced": "2026-08-04T16:03:44.676Z"
 }
