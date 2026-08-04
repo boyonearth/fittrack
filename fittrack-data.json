@@ -3849,6 +3849,19 @@
         "secs": 0
       },
       {
+        "name": "Scissors",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:14",
+        "secs": 0
+      },
+      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -3866,19 +3879,6 @@
         "cat": "Abs",
         "sets": 1,
         "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Scissors",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
         "kg": 0,
         "dist": 0,
         "dur": 0,
@@ -4526,5 +4526,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T16:13:35.232Z"
+  "synced": "2026-08-04T16:14:40.059Z"
 }
