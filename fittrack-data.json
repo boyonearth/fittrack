@@ -3964,6 +3964,19 @@
         "notes": "",
         "t": "",
         "secs": 0
+      },
+      {
+        "name": "Dumbell rotation",
+        "cat": "Forearms",
+        "sets": 1,
+        "reps": 10,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "16:46"
       }
     ],
     "session_2026-06-14": {
@@ -4552,5 +4565,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:46:20.063Z"
+  "synced": "2026-08-04T15:46:31.544Z"
 }
