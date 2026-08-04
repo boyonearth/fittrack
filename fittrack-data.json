@@ -3784,19 +3784,6 @@
         "t": "17:03"
       },
       {
-        "name": "Machine Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
@@ -4539,5 +4526,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T16:08:32.691Z"
+  "synced": "2026-08-04T16:08:40.703Z"
 }
