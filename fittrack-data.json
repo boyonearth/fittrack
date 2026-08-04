@@ -272,6 +272,10 @@
     {
       "n": "Dumbell rotation",
       "c": "Forearms"
+    },
+    {
+      "n": "Machine Seated Lateral Pull",
+      "c": "Shoulders"
     }
   ],
   "cats": [
@@ -4548,5 +4552,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:57:05.170Z"
+  "synced": "2026-08-04T15:57:23.167Z"
 }
