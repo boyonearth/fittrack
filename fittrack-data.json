@@ -272,6 +272,10 @@
     {
       "n": "Rod Pushdown",
       "c": "Triceps"
+    },
+    {
+      "n": "Dumbell rotation",
+      "c": "Forearms"
     }
   ],
   "cats": [
@@ -4548,5 +4552,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:41:45.256Z"
+  "synced": "2026-08-04T15:46:20.063Z"
 }
