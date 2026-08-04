@@ -3663,6 +3663,19 @@
         "secs": 0
       },
       {
+        "name": "Bicep curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 6,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "16:41"
+      },
+      {
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3947,19 +3960,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Bicep curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 6,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "16:41"
       }
     ],
     "session_2026-06-14": {
@@ -4548,5 +4548,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-04T15:41:39.610Z"
+  "synced": "2026-08-04T15:41:45.256Z"
 }
