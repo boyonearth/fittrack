@@ -4255,14 +4255,14 @@
         "name": "Incline Dumbell Press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 12,
+        "reps": 10,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:12"
       },
       {
         "name": "One-Arm Dumbell Row",
@@ -4876,5 +4876,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:10:09.449Z"
+  "synced": "2026-08-07T17:12:42.349Z"
 }
