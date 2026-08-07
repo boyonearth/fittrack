@@ -4523,6 +4523,19 @@
         "notes": "",
         "t": "",
         "secs": 0
+      },
+      {
+        "name": "Triceps Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 0,
+        "reps": 15,
+        "kg": 36,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:39"
       }
     ],
     "session_2026-06-24": {
@@ -4889,5 +4902,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:33:01.457Z"
+  "synced": "2026-08-07T17:39:18.053Z"
 }
