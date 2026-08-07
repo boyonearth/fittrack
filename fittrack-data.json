@@ -4463,14 +4463,14 @@
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
-        "reps": 8,
+        "reps": 10,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:59"
       },
       {
         "name": "Side Planks",
@@ -4889,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:57:49.791Z"
+  "synced": "2026-08-07T17:59:22.679Z"
 }
