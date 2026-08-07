@@ -4281,14 +4281,14 @@
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 10,
+        "reps": 15,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:18"
       },
       {
         "name": "Converging Chest Press",
@@ -4889,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:14:57.157Z"
+  "synced": "2026-08-07T17:18:59.375Z"
 }
