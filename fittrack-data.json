@@ -4473,7 +4473,7 @@
         "t": "18:59"
       },
       {
-        "name": "Side Planks",
+        "name": "Plank",
         "cat": "Abs",
         "sets": 1,
         "reps": 0,
@@ -4482,11 +4482,11 @@
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "19:01",
         "secs": 30
       },
       {
-        "name": "Plank",
+        "name": "Side Planks",
         "cat": "Abs",
         "sets": 1,
         "reps": 0,
@@ -4889,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:59:22.679Z"
+  "synced": "2026-08-07T18:01:36.634Z"
 }
