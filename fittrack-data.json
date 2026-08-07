@@ -4486,19 +4486,6 @@
         "secs": 30
       },
       {
-        "name": "Side Planks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 30
-      },
-      {
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 0,
@@ -4889,5 +4876,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T18:01:36.634Z"
+  "synced": "2026-08-07T18:01:40.820Z"
 }
