@@ -4510,6 +4510,19 @@
         "notes": "",
         "t": "",
         "secs": 0
+      },
+      {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 0,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:14"
       }
     ],
     "session_2026-06-24": {
@@ -4876,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:12:42.349Z"
+  "synced": "2026-08-07T17:14:51.729Z"
 }
