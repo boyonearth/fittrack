@@ -4408,24 +4408,24 @@
         "secs": 0
       },
       {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:55",
+        "secs": 0
+      },
+      {
         "name": "Russian Twists",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
         "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Crunch Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -4889,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:54:16.409Z"
+  "synced": "2026-08-07T17:55:11.822Z"
 }
