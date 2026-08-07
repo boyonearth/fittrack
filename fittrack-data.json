@@ -4177,14 +4177,14 @@
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 10,
-        "kg": 20,
+        "reps": 8,
+        "kg": 30,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "17:57"
       },
       {
         "name": "Tricpes back pull",
@@ -4876,5 +4876,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T16:52:06.829Z"
+  "synced": "2026-08-07T16:57:08.388Z"
 }
