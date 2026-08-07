@@ -4369,19 +4369,6 @@
         "secs": 0
       },
       {
-        "name": "Rod Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 36,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -4902,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:44:27.255Z"
+  "synced": "2026-08-07T17:44:48.523Z"
 }
