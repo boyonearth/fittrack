@@ -4330,24 +4330,24 @@
         "t": "18:39"
       },
       {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 57,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:42",
+        "secs": 0
+      },
+      {
         "name": "Single Arm Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
         "reps": 15,
         "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 57,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -4902,5 +4902,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:39:22.965Z"
+  "synced": "2026-08-07T17:42:29.637Z"
 }
