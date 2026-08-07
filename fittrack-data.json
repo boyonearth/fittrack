@@ -4424,13 +4424,13 @@
         "name": "Russian Twists",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 12,
         "kg": 5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "18:56",
         "secs": 0
       },
       {
@@ -4889,5 +4889,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-07T17:55:11.822Z"
+  "synced": "2026-08-07T17:56:17.167Z"
 }
