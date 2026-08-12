@@ -2789,6 +2789,19 @@
         "secs": 40
       },
       {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:39",
+        "secs": 0
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2894,19 +2907,6 @@
       },
       {
         "name": "Side Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
@@ -5222,5 +5222,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:37:06.410Z"
+  "synced": "2026-08-12T19:39:22.808Z"
 }
