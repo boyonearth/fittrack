@@ -2685,6 +2685,19 @@
         "t": "20:22"
       },
       {
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 15,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:24",
+        "secs": 0
+      },
+      {
         "name": "Bicep curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2703,19 +2716,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -5235,5 +5235,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:22:36.374Z"
+  "synced": "2026-08-12T19:24:46.433Z"
 }
