@@ -2711,6 +2711,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 0,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:30"
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2917,19 +2930,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 0,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "20:29"
       }
     ],
     "w_2026-08-10": [
@@ -5235,5 +5235,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:29:49.889Z"
+  "synced": "2026-08-12T19:31:00.335Z"
 }
