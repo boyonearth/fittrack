@@ -2750,6 +2750,19 @@
         "secs": 0
       },
       {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:35",
+        "secs": 0
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2820,19 +2833,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -5222,5 +5222,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:34:39.468Z"
+  "synced": "2026-08-12T19:35:18.102Z"
 }
