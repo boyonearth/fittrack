@@ -2776,6 +2776,19 @@
         "secs": 0
       },
       {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:37",
+        "secs": 40
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2891,19 +2904,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 35
       },
       {
         "name": "Knee Raises",
@@ -5222,5 +5222,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:35:46.994Z"
+  "synced": "2026-08-12T19:37:06.410Z"
 }
