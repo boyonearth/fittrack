@@ -2672,24 +2672,24 @@
         "secs": 0
       },
       {
-        "name": "Bicep curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 6,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Dumbell rotation",
         "cat": "Forearms",
         "sets": 1,
         "reps": 10,
         "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:22"
+      },
+      {
+        "name": "Bicep curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 6,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -5235,5 +5235,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T19:20:55.612Z"
+  "synced": "2026-08-12T19:22:36.374Z"
 }
