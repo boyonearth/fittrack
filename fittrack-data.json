@@ -2605,94 +2605,6 @@
         "t": "18:22"
       }
     ],
-    "w_2026-08-10": [
-      {
-        "name": "Outdoor Walk",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 4,
-        "dur": 53,
-        "secs": 0,
-        "calBurn": 206,
-        "notes": "",
-        "t": "21:44"
-      }
-    ],
-    "f_2026-06-14": [
-      {
-        "name": "Chicken curry",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "14:46"
-      },
-      {
-        "name": "Bagara rice",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "14:46"
-      }
-    ],
-    "w_2026-06-14": [
-      {
-        "name": "Outdoor Walk",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 3.77,
-        "dur": 50,
-        "calBurn": 0,
-        "notes": "",
-        "t": "14:13"
-      }
-    ],
-    "f_2026-06-15": [
-      {
-        "name": "Chicken curry",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
-      },
-      {
-        "name": "Bagara rice",
-        "meal": "Lunch",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
-      },
-      {
-        "name": "Protein Oats",
-        "meal": "Dinner",
-        "cal": 0,
-        "pr": 0,
-        "ca": 0,
-        "fa": 0,
-        "amt": "",
-        "t": "17:32"
-      }
-    ],
-    "session_2026-06-30": {
-      "start": "18:34",
-      "end": "20:13",
-      "dur": 99
-    },
     "w_2026-08-12": [
       {
         "name": "Treadmill",
@@ -2700,11 +2612,11 @@
         "sets": 0,
         "reps": 0,
         "kg": 0,
-        "dist": 0.95,
+        "dist": 0.71,
         "dur": 10,
-        "calBurn": 48,
+        "calBurn": 62,
         "notes": "",
-        "t": "",
+        "t": "20:14",
         "secs": 0
       },
       {
@@ -3033,6 +2945,94 @@
         "secs": 0
       }
     ],
+    "w_2026-08-10": [
+      {
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 4,
+        "dur": 53,
+        "secs": 0,
+        "calBurn": 206,
+        "notes": "",
+        "t": "21:44"
+      }
+    ],
+    "f_2026-06-14": [
+      {
+        "name": "Chicken curry",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "14:46"
+      },
+      {
+        "name": "Bagara rice",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "14:46"
+      }
+    ],
+    "w_2026-06-14": [
+      {
+        "name": "Outdoor Walk",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 3.77,
+        "dur": 50,
+        "calBurn": 0,
+        "notes": "",
+        "t": "14:13"
+      }
+    ],
+    "f_2026-06-15": [
+      {
+        "name": "Chicken curry",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      },
+      {
+        "name": "Bagara rice",
+        "meal": "Lunch",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      },
+      {
+        "name": "Protein Oats",
+        "meal": "Dinner",
+        "cal": 0,
+        "pr": 0,
+        "ca": 0,
+        "fa": 0,
+        "amt": "",
+        "t": "17:32"
+      }
+    ],
+    "session_2026-06-30": {
+      "start": "18:34",
+      "end": "20:13",
+      "dur": 99
+    },
     "w_2026-06-21": [
       {
         "name": "Outdoor Walk",
@@ -5248,5 +5248,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-12T18:57:10.519Z"
+  "synced": "2026-08-12T19:14:41.857Z"
 }
