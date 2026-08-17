@@ -280,6 +280,10 @@
     {
       "n": "Bicycle Abdominal Crunches",
       "c": "Abs"
+    },
+    {
+      "n": "Lying Bent Knee Oblique Twist",
+      "c": "Abs"
     }
   ],
   "cats": [
@@ -5401,5 +5405,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-17T16:19:18.470Z"
+  "synced": "2026-08-17T16:22:05.259Z"
 }
