@@ -276,6 +276,10 @@
     {
       "n": "Machine Seated Lateral Pull",
       "c": "Shoulders"
+    },
+    {
+      "n": "Bicycle Abdominal Crunches",
+      "c": "Abs"
     }
   ],
   "cats": [
@@ -5384,5 +5388,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-17T16:16:55.816Z"
+  "synced": "2026-08-17T16:19:12.283Z"
 }
