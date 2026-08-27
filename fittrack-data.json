@@ -5241,6 +5241,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "10:15"
+      },
+      {
+        "name": "Bicycle Abdominal Crunches",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:16"
       }
     ],
     "session_2026-06-24": {
@@ -5607,5 +5620,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-27T09:15:37.246Z"
+  "synced": "2026-08-27T09:16:30.856Z"
 }
