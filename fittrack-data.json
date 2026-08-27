@@ -5228,6 +5228,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "10:14"
+      },
+      {
+        "name": "Lying Bent Knee Oblique Twist",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:15"
       }
     ],
     "session_2026-06-24": {
@@ -5594,5 +5607,5 @@
       "dur": 89
     }
   },
-  "synced": "2026-08-27T09:14:26.588Z"
+  "synced": "2026-08-27T09:15:37.246Z"
 }
