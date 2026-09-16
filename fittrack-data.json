@@ -5716,6 +5716,19 @@
         "t": "19:13"
       },
       {
+        "name": "Cable Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 30,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:17"
+      },
+      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5948,19 +5961,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Cable Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:17"
       }
     ],
     "w_2026-07-14": [
@@ -6009,5 +6009,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-16T18:17:12.005Z"
+  "synced": "2026-09-16T18:17:17.535Z"
 }
