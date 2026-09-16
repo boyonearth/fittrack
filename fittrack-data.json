@@ -5703,6 +5703,19 @@
         "t": "19:07"
       },
       {
+        "name": "Lat pulldown",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 39,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:13"
+      },
+      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5935,19 +5948,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Lat pulldown",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 39,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:13"
       }
     ],
     "w_2026-07-14": [
@@ -5996,5 +5996,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-16T18:13:26.200Z"
+  "synced": "2026-09-16T18:13:33.513Z"
 }
