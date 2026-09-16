@@ -5729,19 +5729,6 @@
         "t": "19:17"
       },
       {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 15,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
@@ -6009,5 +5996,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-16T18:17:17.535Z"
+  "synced": "2026-09-16T18:18:22.960Z"
 }
