@@ -5846,19 +5846,6 @@
         "secs": 0
       },
       {
-        "name": "Machine Seated Lateral Pull",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 12,
-        "kg": 32,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Cable Crunch",
         "cat": "Abs",
         "sets": 1,
@@ -5983,5 +5970,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-16T18:18:25.871Z"
+  "synced": "2026-09-16T18:18:33.768Z"
 }
