@@ -1574,19 +1574,6 @@
         "secs": 0
       },
       {
-        "name": "Reverse Cable Curl on Machine",
-        "cat": "Forearms",
-        "sets": 1,
-        "reps": 10,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Back Extension",
         "cat": "Back",
         "sets": 1,
@@ -6315,5 +6302,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:43:46.388Z"
+  "synced": "2026-09-30T18:43:49.049Z"
 }
