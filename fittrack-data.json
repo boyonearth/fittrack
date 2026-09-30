@@ -1652,6 +1652,19 @@
         "t": "19:53"
       },
       {
+        "name": "Side Planks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:57",
+        "secs": 22
+      },
+      {
         "name": "Russian Twists",
         "cat": "Abs",
         "sets": 1,
@@ -1663,19 +1676,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Side Planks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 30
       },
       {
         "name": "Side Leg Raises",
@@ -6276,5 +6276,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:53:59.032Z"
+  "synced": "2026-09-30T18:57:43.984Z"
 }
