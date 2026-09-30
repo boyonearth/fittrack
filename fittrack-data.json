@@ -1691,6 +1691,19 @@
         "secs": 30
       },
       {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:01"
+      },
+      {
         "name": "Russian Twists",
         "cat": "Abs",
         "sets": 1,
@@ -1702,19 +1715,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       }
     ],
     "session_2026-08-05": {
@@ -6276,5 +6276,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:59:59.736Z"
+  "synced": "2026-09-30T19:01:22.580Z"
 }
