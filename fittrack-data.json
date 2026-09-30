@@ -1574,19 +1574,6 @@
         "secs": 0
       },
       {
-        "name": "Cable Crunch One Side",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 14,
-        "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Reverse Cable Curl on Machine",
         "cat": "Forearms",
         "sets": 1,
@@ -6328,5 +6315,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:42:14.497Z"
+  "synced": "2026-09-30T18:43:46.388Z"
 }
