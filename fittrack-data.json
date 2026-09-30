@@ -1460,13 +1460,14 @@
         "name": "Incline Dumbell Press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 10,
+        "reps": 15,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:22",
+        "secs": 0
       },
       {
         "name": "Dumbell Overhead Triceps Extension",
@@ -6327,5 +6328,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:20:01.533Z"
+  "synced": "2026-09-30T18:22:56.282Z"
 }
