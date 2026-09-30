@@ -1487,13 +1487,13 @@
         "cat": "Lateral muscles",
         "sets": 1,
         "reps": 15,
-        "kg": 15,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:27"
       },
       {
         "name": "Converging Chest Press",
@@ -6328,5 +6328,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:24:37.373Z"
+  "synced": "2026-09-30T18:27:38.486Z"
 }
