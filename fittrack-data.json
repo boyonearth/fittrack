@@ -1509,6 +1509,19 @@
         "secs": 0
       },
       {
+        "name": "Leg press",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 10,
+        "kg": 52,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:33"
+      },
+      {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
@@ -1585,19 +1598,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 10,
-        "kg": 52,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Back Extension",
@@ -6328,5 +6328,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-09-30T18:31:48.252Z"
+  "synced": "2026-09-30T18:33:44.237Z"
 }
