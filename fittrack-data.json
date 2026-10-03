@@ -2851,13 +2851,13 @@
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
-        "reps": 5,
+        "reps": 6,
         "kg": 9,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "11:56",
         "secs": 0
       },
       {
@@ -6634,5 +6634,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:55:31.437Z"
+  "synced": "2026-10-03T10:56:52.685Z"
 }
