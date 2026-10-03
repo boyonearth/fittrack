@@ -2838,13 +2838,13 @@
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 12,
+        "reps": 10,
         "kg": 9,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "11:55",
         "secs": 0
       },
       {
@@ -6634,5 +6634,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:53:06.169Z"
+  "synced": "2026-10-03T10:55:31.437Z"
 }
