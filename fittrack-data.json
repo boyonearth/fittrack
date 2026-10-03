@@ -2747,13 +2747,13 @@
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 5,
+        "reps": 10,
         "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "11:21",
         "secs": 0
       },
       {
@@ -6660,5 +6660,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:12:46.693Z"
+  "synced": "2026-10-03T10:21:24.773Z"
 }
