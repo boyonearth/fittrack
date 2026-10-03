@@ -2783,19 +2783,6 @@
         "secs": 0
       },
       {
-        "name": "Seated Dumbbell Shoulder Press",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 5,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Concentration Curls",
         "cat": "Biceps",
         "sets": 1,
@@ -6660,5 +6647,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:27:08.267Z"
+  "synced": "2026-10-03T10:27:20.963Z"
 }
