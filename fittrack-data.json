@@ -2809,6 +2809,19 @@
         "secs": 0
       },
       {
+        "name": "Machine Shoulder Press Seated",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 15,
+        "kg": 32,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:49",
+        "secs": 0
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2866,19 +2879,6 @@
         "sets": 1,
         "reps": 15,
         "kg": 57,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Machine Shoulder Press Seated",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 10,
-        "kg": 32,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -6621,5 +6621,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:46:55.397Z"
+  "synced": "2026-10-03T10:49:13.303Z"
 }
