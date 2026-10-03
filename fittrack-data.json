@@ -2887,19 +2887,6 @@
         "secs": 0
       },
       {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 14,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
@@ -6608,5 +6595,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T11:02:06.770Z"
+  "synced": "2026-10-03T11:02:14.425Z"
 }
