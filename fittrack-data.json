@@ -3004,6 +3004,19 @@
         "secs": 0
       },
       {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:17",
+        "secs": 0
+      },
+      {
         "name": "Side Planks",
         "cat": "Abs",
         "sets": 1,
@@ -3015,19 +3028,6 @@
         "notes": "",
         "t": "",
         "secs": 16
-      },
-      {
-        "name": "Side Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Plank",
@@ -6608,5 +6608,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T11:17:06.554Z"
+  "synced": "2026-10-03T11:18:00.057Z"
 }
