@@ -2822,6 +2822,19 @@
         "secs": 0
       },
       {
+        "name": "Machine Seated Leg Extension",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 5,
+        "kg": 18,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:53"
+      },
+      {
         "name": "Machine Single Hand Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3067,19 +3080,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Machine Seated Leg Extension",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 5,
-        "kg": 18,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "11:52"
       }
     ],
     "w_2026-07-28": [
@@ -6634,5 +6634,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:52:35.959Z"
+  "synced": "2026-10-03T10:53:06.169Z"
 }
