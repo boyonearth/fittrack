@@ -2796,19 +2796,6 @@
         "secs": 0
       },
       {
-        "name": "Dumbell Shrugs",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
@@ -6647,5 +6634,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:33:59.911Z"
+  "synced": "2026-10-03T10:34:08.625Z"
 }
