@@ -2900,19 +2900,6 @@
         "secs": 0
       },
       {
-        "name": "Machine Seated Leg Extension",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 10,
-        "kg": 18,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -6634,5 +6621,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-03T10:56:52.685Z"
+  "synced": "2026-10-03T10:57:08.741Z"
 }
