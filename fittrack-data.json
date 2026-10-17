@@ -6464,19 +6464,6 @@
         "secs": 0
       },
       {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Heel Touches",
         "cat": "Abs",
         "sets": 1,
@@ -6488,6 +6475,19 @@
         "notes": "",
         "t": "",
         "secs": 0
+      },
+      {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
       },
       {
         "name": "Side Planks",
@@ -6914,5 +6914,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:37:00.772Z"
+  "synced": "2026-10-17T10:37:04.497Z"
 }
