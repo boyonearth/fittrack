@@ -6438,6 +6438,19 @@
         "secs": 0
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:35"
+      },
+      {
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
@@ -6501,19 +6514,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Plank",
@@ -6914,5 +6914,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:35:03.850Z"
+  "synced": "2026-10-17T10:35:57.633Z"
 }
