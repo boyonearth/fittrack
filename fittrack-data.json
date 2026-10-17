@@ -6282,6 +6282,19 @@
         "t": "10:53"
       },
       {
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 15,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:01"
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -6293,19 +6306,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Bench press",
@@ -6979,5 +6979,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:00:56.449Z"
+  "synced": "2026-10-17T10:01:06.090Z"
 }
