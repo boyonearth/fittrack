@@ -6386,19 +6386,6 @@
         "t": ""
       },
       {
-        "name": "Rod Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 36,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Leg press",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -6953,5 +6940,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:16:30.768Z"
+  "synced": "2026-10-17T10:16:36.983Z"
 }
