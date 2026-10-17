@@ -6295,19 +6295,6 @@
         "t": ""
       },
       {
-        "name": "Incline Dumbell Press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 13,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -7005,5 +6992,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T09:53:19.536Z"
+  "synced": "2026-10-17T09:54:18.072Z"
 }
