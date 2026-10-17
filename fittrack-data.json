@@ -6311,6 +6311,19 @@
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
+        "reps": 8,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:05"
+      },
+      {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
         "reps": 10,
         "kg": 20,
         "dist": 0,
@@ -6319,19 +6332,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 22.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Converging Chest Press",
@@ -6979,5 +6979,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:03:01.465Z"
+  "synced": "2026-10-17T10:05:47.975Z"
 }
