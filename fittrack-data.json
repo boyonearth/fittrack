@@ -6451,6 +6451,19 @@
         "t": "11:35"
       },
       {
+        "name": "Flutter Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:36",
+        "secs": 0
+      },
+      {
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
@@ -6462,19 +6475,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Flutter Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Heel Touches",
@@ -6914,5 +6914,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:35:57.633Z"
+  "synced": "2026-10-17T10:37:00.772Z"
 }
