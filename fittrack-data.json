@@ -6399,32 +6399,6 @@
         "secs": 0
       },
       {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 10,
-        "kg": 20,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Single Arm Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 14,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Leg press",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -6953,5 +6927,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:32:23.025Z"
+  "synced": "2026-10-17T10:32:39.492Z"
 }
