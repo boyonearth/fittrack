@@ -6360,6 +6360,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:23"
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -6391,19 +6404,6 @@
         "sets": 1,
         "reps": 7,
         "kg": 52,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 14,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -6940,5 +6940,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-17T10:16:36.983Z"
+  "synced": "2026-10-17T10:23:07.853Z"
 }
