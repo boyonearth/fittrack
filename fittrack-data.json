@@ -2543,6 +2543,19 @@
         "secs": 0
       },
       {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:54",
+        "secs": 0
+      },
+      {
         "name": "Machine Seated Leg Extension",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -2583,19 +2596,6 @@
       },
       {
         "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
         "reps": 15,
@@ -7246,5 +7246,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-18T09:47:02.632Z"
+  "synced": "2026-10-18T09:54:54.336Z"
 }
