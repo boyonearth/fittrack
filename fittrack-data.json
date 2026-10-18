@@ -2582,6 +2582,19 @@
         "secs": 0
       },
       {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:01",
+        "secs": 30
+      },
+      {
         "name": "Machine Seated Leg Extension",
         "cat": "Legs/Calves",
         "sets": 1,
@@ -2684,19 +2697,6 @@
         "notes": "",
         "t": "",
         "secs": 20
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 37
       },
       {
         "name": "Knee Raises",
@@ -7246,5 +7246,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-18T10:00:58.555Z"
+  "synced": "2026-10-18T10:01:58.995Z"
 }
