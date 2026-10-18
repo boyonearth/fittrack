@@ -2478,6 +2478,19 @@
         "secs": 0
       },
       {
+        "name": "Machine lateral raise",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 10,
+        "kg": 2.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:22",
+        "secs": 0
+      },
+      {
         "name": "Machine Shoulder Press Seated",
         "cat": "Shoulders",
         "sets": 1,
@@ -2508,19 +2521,6 @@
         "cat": "Biceps",
         "sets": 1,
         "reps": 10,
-        "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Machine lateral raise",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 6,
         "kg": 9,
         "dist": 0,
         "dur": 0,
@@ -7246,5 +7246,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-18T09:20:13.237Z"
+  "synced": "2026-10-18T09:22:19.637Z"
 }
