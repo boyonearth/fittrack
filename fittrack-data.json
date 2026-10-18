@@ -2465,6 +2465,19 @@
         "secs": 0
       },
       {
+        "name": "Machine Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 10,
+        "kg": 23.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:20",
+        "secs": 0
+      },
+      {
         "name": "Machine Shoulder Press Seated",
         "cat": "Shoulders",
         "sets": 1,
@@ -2509,19 +2522,6 @@
         "sets": 1,
         "reps": 6,
         "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Machine Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 30,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -7246,5 +7246,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-18T09:15:58.504Z"
+  "synced": "2026-10-18T09:20:13.237Z"
 }
