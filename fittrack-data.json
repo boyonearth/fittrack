@@ -996,6 +996,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:33"
+      },
+      {
         "name": "Single Arm Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
@@ -1007,19 +1020,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Pushups",
@@ -7565,5 +7565,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:26:14.934Z"
+  "synced": "2026-10-20T09:33:13.162Z"
 }
