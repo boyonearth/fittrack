@@ -866,6 +866,19 @@
     ],
     "w_2026-10-20": [
       {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 10,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:09"
+      },
+      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -899,19 +912,6 @@
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "10:09"
-      },
-      {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 10,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
@@ -7552,5 +7552,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:09:59.976Z"
+  "synced": "2026-10-20T09:10:06.974Z"
 }
