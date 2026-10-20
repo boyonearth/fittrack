@@ -973,14 +973,14 @@
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 8,
+        "reps": 11,
         "kg": 20,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "10:24"
       },
       {
         "name": "Machine Seated Pec Fly",
@@ -7565,5 +7565,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:19:00.136Z"
+  "synced": "2026-10-20T09:24:02.596Z"
 }
