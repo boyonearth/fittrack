@@ -1009,6 +1009,19 @@
         "t": "10:33"
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:36",
+        "secs": 0
+      },
+      {
         "name": "Single Arm Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
@@ -1033,19 +1046,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Leg raise",
@@ -7565,5 +7565,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:33:13.162Z"
+  "synced": "2026-10-20T09:37:01.068Z"
 }
