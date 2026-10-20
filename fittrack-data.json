@@ -944,6 +944,19 @@
         "secs": 0
       },
       {
+        "name": "Rod Pushdown",
+        "cat": "Triceps",
+        "sets": 0,
+        "reps": 5,
+        "kg": 23.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:17"
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -1163,19 +1176,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Rod Pushdown",
-        "cat": "Triceps",
-        "sets": 0,
-        "reps": 5,
-        "kg": 23.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "10:16"
       }
     ],
     "session_2026-07-15": {
@@ -7565,5 +7565,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:16:56.501Z"
+  "synced": "2026-10-20T09:17:02.223Z"
 }
