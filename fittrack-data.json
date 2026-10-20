@@ -879,6 +879,19 @@
         "secs": 0
       },
       {
+        "name": "Incline Dumbell Press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 15,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:08",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -890,19 +903,6 @@
         "calBurn": 65,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Incline Dumbell Press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 15,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Dumbell Overhead Triceps Extension",
@@ -7552,5 +7552,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:05:30.310Z"
+  "synced": "2026-10-20T09:08:21.193Z"
 }
