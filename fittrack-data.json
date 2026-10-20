@@ -866,19 +866,6 @@
     ],
     "w_2026-10-20": [
       {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 10,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "10:09"
-      },
-      {
         "name": "Tricpes back pull",
         "cat": "Triceps",
         "sets": 1,
@@ -905,6 +892,19 @@
         "secs": 0
       },
       {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 10,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:09"
+      },
+      {
         "name": "Dumbell Overhead Triceps Extension",
         "cat": "Triceps",
         "sets": 1,
@@ -928,7 +928,7 @@
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "10:13"
       },
       {
         "name": "Triceps Cable Pushdown",
@@ -7552,5 +7552,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-20T09:10:06.974Z"
+  "synced": "2026-10-20T09:13:37.236Z"
 }
