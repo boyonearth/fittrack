@@ -6830,6 +6830,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "10:46"
+      },
+      {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 16,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "10:53"
       }
     ],
     "session_2026-06-30": {
@@ -7585,5 +7598,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-21T09:46:58.187Z"
+  "synced": "2026-10-21T09:53:14.569Z"
 }
