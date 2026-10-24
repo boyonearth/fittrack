@@ -3628,6 +3628,19 @@
         "secs": 0
       },
       {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:05",
+        "secs": 0
+      },
+      {
         "name": "Machine Shoulder Press Seated",
         "cat": "Shoulders",
         "sets": 1,
@@ -3685,19 +3698,6 @@
         "sets": 1,
         "reps": 15,
         "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Heel Touches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -8077,5 +8077,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T11:05:00.221Z"
+  "synced": "2026-10-24T11:05:30.952Z"
 }
