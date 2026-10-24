@@ -3550,6 +3550,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:00"
+      },
+      {
         "name": "Machine Shoulder Press Seated",
         "cat": "Shoulders",
         "sets": 1,
@@ -3646,19 +3659,6 @@
         "sets": 1,
         "reps": 5,
         "kg": 18,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 16,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -8077,5 +8077,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T10:52:08.464Z"
+  "synced": "2026-10-24T11:00:25.983Z"
 }
