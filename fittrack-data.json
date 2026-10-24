@@ -3563,24 +3563,24 @@
         "t": "12:00"
       },
       {
-        "name": "Machine Shoulder Press Seated",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 10,
-        "kg": 22.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
         "reps": 20,
         "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:01",
+        "secs": 0
+      },
+      {
+        "name": "Machine Shoulder Press Seated",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 10,
+        "kg": 22.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -8077,5 +8077,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T11:00:25.983Z"
+  "synced": "2026-10-24T11:01:33.276Z"
 }
