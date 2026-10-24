@@ -3472,6 +3472,19 @@
         "secs": 0
       },
       {
+        "name": "Concentration Curls",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 5,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "11:37"
+      },
+      {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -3717,19 +3730,6 @@
         "notes": "",
         "t": "",
         "secs": 20
-      },
-      {
-        "name": "Concentration Curls",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 5,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "11:37"
       }
     ],
     "w_2026-10-03": [
@@ -8064,5 +8064,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T10:37:18.611Z"
+  "synced": "2026-10-24T10:37:24.522Z"
 }
