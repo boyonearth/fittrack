@@ -3462,13 +3462,13 @@
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 15,
+        "reps": 10,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "11:34",
         "secs": 0
       },
       {
@@ -8051,5 +8051,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T10:31:24.833Z"
+  "synced": "2026-10-24T10:34:10.741Z"
 }
