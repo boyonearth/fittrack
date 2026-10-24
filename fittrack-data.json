@@ -3654,6 +3654,19 @@
         "secs": 0
       },
       {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "12:07",
+        "secs": 35
+      },
+      {
         "name": "Machine Shoulder Press Seated",
         "cat": "Shoulders",
         "sets": 1,
@@ -3665,19 +3678,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 30
       },
       {
         "name": "Knee Raises",
@@ -8077,5 +8077,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-24T11:06:18.765Z"
+  "synced": "2026-10-24T11:07:48.355Z"
 }
