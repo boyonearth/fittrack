@@ -1506,6 +1506,138 @@
         "secs": 0
       }
     ],
+    "w_2026-10-29": [
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 20,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 16,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 7,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Scissors",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Side Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Bent knee abdominal lift",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      },
+      {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 50,
+        "calBurn": 0,
+        "notes": "",
+        "t": ""
+      }
+    ],
     "w_2026-06-15": [
       {
         "name": "Outdoor Cycling",
@@ -8082,5 +8214,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-29T18:53:16.951Z"
+  "synced": "2026-10-29T19:16:13.791Z"
 }
