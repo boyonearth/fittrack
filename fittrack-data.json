@@ -1534,19 +1534,6 @@
         "t": "19:23"
       },
       {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:23"
-      },
-      {
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -1610,6 +1597,19 @@
         "calBurn": 0,
         "notes": "",
         "t": "19:30"
+      },
+      {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:33"
       },
       {
         "name": "Dumbell Side Bend",
@@ -8227,5 +8227,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-29T19:31:07.547Z"
+  "synced": "2026-10-29T19:33:30.085Z"
 }
