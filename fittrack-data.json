@@ -1547,24 +1547,24 @@
         "t": "19:23"
       },
       {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 16,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
         "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:25"
+      },
+      {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 16,
         "dist": 0,
         "dur": 0,
         "secs": 0,
@@ -8214,5 +8214,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-10-29T19:23:49.747Z"
+  "synced": "2026-10-29T19:25:07.149Z"
 }
