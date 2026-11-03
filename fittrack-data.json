@@ -7146,24 +7146,24 @@
         "secs": 0
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 8,
+        "kg": 9,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:59",
+        "secs": 0
+      },
+      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
         "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 6,
-        "kg": 10,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -8611,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T18:57:26.740Z"
+  "synced": "2026-11-03T18:59:13.879Z"
 }
