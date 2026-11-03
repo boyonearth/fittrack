@@ -7029,19 +7029,6 @@
         "secs": 0
       },
       {
-        "name": "Concentration Curls",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 5,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Dumbell rotation",
         "cat": "Forearms",
         "sets": 1,
@@ -8624,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T18:36:14.863Z"
+  "synced": "2026-11-03T18:36:18.951Z"
 }
