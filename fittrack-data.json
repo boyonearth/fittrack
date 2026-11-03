@@ -6980,14 +6980,14 @@
         "name": "Dumbell Shrugs",
         "cat": "Shoulders",
         "sets": 1,
-        "reps": 15,
+        "reps": 12,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:29"
       },
       {
         "name": "Alternating Dumbell Curl",
@@ -8611,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T18:27:57.495Z"
+  "synced": "2026-11-03T18:29:37.620Z"
 }
