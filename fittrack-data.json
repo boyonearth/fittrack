@@ -7159,23 +7159,23 @@
         "secs": 0
       },
       {
-        "name": "Flutter Kicks",
+        "name": "Heel Touches",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 7,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "19:01",
         "secs": 0
       },
       {
-        "name": "Heel Touches",
+        "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
-        "reps": 5,
+        "reps": 10,
         "kg": 0,
         "dist": 0,
         "dur": 0,
@@ -8611,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T18:59:13.879Z"
+  "synced": "2026-11-03T19:01:10.304Z"
 }
