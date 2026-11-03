@@ -7172,6 +7172,19 @@
         "secs": 0
       },
       {
+        "name": "Knee Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:02",
+        "secs": 0
+      },
+      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -7209,19 +7222,6 @@
         "notes": "",
         "t": "",
         "secs": 35
-      },
-      {
-        "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Machine Shoulder Press Seated",
@@ -8611,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T19:01:10.304Z"
+  "synced": "2026-11-03T19:03:00.911Z"
 }
