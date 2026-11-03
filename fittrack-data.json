@@ -7042,6 +7042,19 @@
         "t": "18:38"
       },
       {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 37.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:43",
+        "secs": 0
+      },
+      {
         "name": "Machine Biceps Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -7073,19 +7086,6 @@
         "sets": 1,
         "reps": 12,
         "kg": 6,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 15,
-        "kg": 30.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -8611,5 +8611,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-03T18:38:09.015Z"
+  "synced": "2026-11-03T18:43:18.191Z"
 }
