@@ -8611,6 +8611,19 @@
         "t": "18:08"
       },
       {
+        "name": "Bench press",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 8,
+        "kg": 30,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:12"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -8648,19 +8661,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 8,
-        "kg": 20,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Machine Seated Pec Fly",
@@ -8917,5 +8917,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T18:08:41.950Z"
+  "synced": "2026-11-04T18:12:38.162Z"
 }
