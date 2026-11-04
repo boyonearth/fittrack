@@ -8572,6 +8572,19 @@
     ],
     "w_2026-11-04": [
       {
+        "name": "Tricpes back pull",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 15,
+        "kg": 7.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:03",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -8583,19 +8596,6 @@
         "calBurn": 65,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Tricpes back pull",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 15,
-        "kg": 7.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Incline Dumbell Press",
@@ -8917,5 +8917,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T17:38:04.811Z"
+  "synced": "2026-11-04T18:03:41.926Z"
 }
