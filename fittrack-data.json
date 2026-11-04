@@ -8598,6 +8598,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Overhead Triceps Extension",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 15,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:08"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -8607,19 +8620,6 @@
         "dur": 10,
         "secs": 0,
         "calBurn": 65,
-        "notes": "",
-        "t": ""
-      },
-      {
-        "name": "Dumbell Overhead Triceps Extension",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 12,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
         "notes": "",
         "t": ""
       },
@@ -8917,5 +8917,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T18:06:13.247Z"
+  "synced": "2026-11-04T18:08:41.950Z"
 }
