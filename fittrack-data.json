@@ -8754,6 +8754,19 @@
         "secs": 0
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 12,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:36"
+      },
+      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -8804,19 +8817,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Heel Touches",
@@ -8930,5 +8930,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T18:35:39.692Z"
+  "synced": "2026-11-04T18:36:27.232Z"
 }
