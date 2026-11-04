@@ -8676,6 +8676,19 @@
         "secs": 0
       },
       {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 8,
+        "kg": 6,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:23",
+        "secs": 0
+      },
+      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -8694,19 +8707,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 30,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Single Arm Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 6,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -8930,5 +8930,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T18:21:27.461Z"
+  "synced": "2026-11-04T18:23:05.830Z"
 }
