@@ -8715,6 +8715,19 @@
         "secs": 0
       },
       {
+        "name": "Leg raise",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:30",
+        "secs": 0
+      },
+      {
         "name": "One-Arm Dumbell Row",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -8752,19 +8765,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Leg raise",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Russian Twists",
@@ -8930,5 +8930,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-04T18:29:37.725Z"
+  "synced": "2026-11-04T18:30:27.529Z"
 }
