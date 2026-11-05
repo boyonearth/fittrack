@@ -5246,6 +5246,19 @@
         "t": "19:00"
       },
       {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 13,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:01"
+      },
+      {
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
@@ -5296,19 +5309,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 0,
-        "reps": 13,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "19:01"
       }
     ],
     "session_2026-11-04": {
@@ -9093,5 +9093,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-05T19:01:18.211Z"
+  "synced": "2026-11-05T19:01:29.437Z"
 }
