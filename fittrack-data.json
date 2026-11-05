@@ -5184,14 +5184,14 @@
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 15,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:56"
       },
       {
         "name": "Heel Touches",
@@ -9080,5 +9080,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-05T18:55:31.741Z"
+  "synced": "2026-11-05T18:56:22.302Z"
 }
