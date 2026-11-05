@@ -5288,14 +5288,14 @@
         "name": "Knee Raises",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 5,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "19:07"
       },
       {
         "name": "Dumbell Side Bend",
@@ -9106,5 +9106,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-05T19:04:47.555Z"
+  "synced": "2026-11-05T19:07:51.041Z"
 }
