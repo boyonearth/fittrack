@@ -5197,27 +5197,27 @@
         "name": "Heel Touches",
         "cat": "Abs",
         "sets": 1,
-        "reps": 10,
+        "reps": 7,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:56"
       },
       {
         "name": "Crunch Kicks",
         "cat": "Abs",
         "sets": 1,
-        "reps": 15,
+        "reps": 14,
         "kg": 0,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "18:57"
       },
       {
         "name": "Crunches",
@@ -9080,5 +9080,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-05T18:56:22.302Z"
+  "synced": "2026-11-05T18:57:56.717Z"
 }
