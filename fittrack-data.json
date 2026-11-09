@@ -2310,6 +2310,19 @@
         "t": "17:53"
       },
       {
+        "name": "Dumbell rotation",
+        "cat": "Forearms",
+        "sets": 1,
+        "reps": 10,
+        "kg": 5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:56"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2347,19 +2360,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell rotation",
-        "cat": "Forearms",
-        "sets": 1,
-        "reps": 10,
-        "kg": 5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Cable Crunch",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:53:54.922Z"
+  "synced": "2026-11-09T17:56:37.791Z"
 }
