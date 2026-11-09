@@ -2375,6 +2375,19 @@
         "secs": 0
       },
       {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 34,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:13",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2382,19 +2395,6 @@
         "kg": 0,
         "dist": 0,
         "dur": 10,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 37.5,
-        "dist": 0,
-        "dur": 0,
         "calBurn": 0,
         "notes": "",
         "t": "",
@@ -9477,5 +9477,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T18:11:08.617Z"
+  "synced": "2026-11-09T18:13:49.324Z"
 }
