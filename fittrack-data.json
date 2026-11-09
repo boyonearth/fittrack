@@ -2297,6 +2297,19 @@
         "t": "17:50"
       },
       {
+        "name": "Hammer curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 7,
+        "kg": 10,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:53"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2308,19 +2321,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Hammer curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 7,
-        "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "One-Arm Dumbell Row",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:50:56.417Z"
+  "synced": "2026-11-09T17:53:54.922Z"
 }
