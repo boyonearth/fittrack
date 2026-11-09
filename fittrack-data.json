@@ -2245,6 +2245,19 @@
         "secs": 0
       },
       {
+        "name": "Seated Dumbbell Shoulder Press",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 8,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:46",
+        "secs": 0
+      },
+      {
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
@@ -2263,19 +2276,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 10,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "17:46",
-        "secs": 0
-      },
-      {
-        "name": "Seated Dumbbell Shoulder Press",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 8,
-        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:46:58.823Z"
+  "synced": "2026-11-09T17:47:03.058Z"
 }
