@@ -2349,19 +2349,6 @@
         "secs": 0
       },
       {
-        "name": "Alternating Dumbell Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Cable Crunch",
         "cat": "Abs",
         "sets": 1,
@@ -9490,5 +9477,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T18:00:10.450Z"
+  "synced": "2026-11-09T18:01:09.907Z"
 }
