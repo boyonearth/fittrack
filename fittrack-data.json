@@ -2362,6 +2362,19 @@
         "t": "18:05"
       },
       {
+        "name": "Machine Biceps Curl",
+        "cat": "Biceps",
+        "sets": 1,
+        "reps": 8,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:11",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2380,19 +2393,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 37.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Machine Biceps Curl",
-        "cat": "Biceps",
-        "sets": 1,
-        "reps": 10,
-        "kg": 20,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -9477,5 +9477,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T18:06:20.035Z"
+  "synced": "2026-11-09T18:11:08.617Z"
 }
