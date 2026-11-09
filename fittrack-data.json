@@ -2271,19 +2271,6 @@
         "secs": 0
       },
       {
-        "name": "Treadmill",
-        "cat": "Cardio",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 10,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
         "name": "Seated Dumbbell Shoulder Press",
         "cat": "Shoulders",
         "sets": 1,
@@ -2291,6 +2278,19 @@
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:46",
+        "secs": 0
+      },
+      {
+        "name": "Treadmill",
+        "cat": "Cardio",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 10,
         "calBurn": 0,
         "notes": "",
         "t": "",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:46:37.050Z"
+  "synced": "2026-11-09T17:46:58.823Z"
 }
