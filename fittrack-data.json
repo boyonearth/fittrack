@@ -2323,6 +2323,19 @@
         "t": "17:56"
       },
       {
+        "name": "One-Arm Dumbell Row",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 12,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:00",
+        "secs": 0
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2330,19 +2343,6 @@
         "kg": 0,
         "dist": 0,
         "dur": 10,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
         "calBurn": 0,
         "notes": "",
         "t": "",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:56:37.791Z"
+  "synced": "2026-11-09T18:00:10.450Z"
 }
