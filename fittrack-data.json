@@ -2274,14 +2274,14 @@
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 8,
+        "reps": 6,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "17:43"
+        "t": "17:48"
       },
       {
         "name": "Treadmill",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:47:09.285Z"
+  "synced": "2026-11-09T17:48:41.266Z"
 }
