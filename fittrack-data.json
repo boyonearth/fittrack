@@ -2453,24 +2453,24 @@
         "secs": 0
       },
       {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:33",
+        "secs": 0
+      },
+      {
         "name": "Crunches",
         "cat": "Abs",
         "sets": 1,
         "reps": 8,
         "kg": 9,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Heel Touches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 7,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -9477,5 +9477,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T18:32:09.713Z"
+  "synced": "2026-11-09T18:33:24.447Z"
 }
