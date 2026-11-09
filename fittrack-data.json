@@ -2284,6 +2284,19 @@
         "t": "17:48"
       },
       {
+        "name": "Dumbell Shrugs",
+        "cat": "Shoulders",
+        "sets": 1,
+        "reps": 10,
+        "kg": 12.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "17:50"
+      },
+      {
         "name": "Treadmill",
         "cat": "Cardio",
         "sets": 0,
@@ -2295,19 +2308,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell Shrugs",
-        "cat": "Shoulders",
-        "sets": 1,
-        "reps": 12,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Hammer curl",
@@ -9490,5 +9490,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-09T17:48:41.266Z"
+  "synced": "2026-11-09T17:50:56.417Z"
 }
