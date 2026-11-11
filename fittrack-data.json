@@ -3223,13 +3223,13 @@
         "name": "Incline Dumbell Press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 12,
+        "reps": 15,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "08:36",
         "secs": 0
       },
       {
@@ -9796,5 +9796,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:34:05.547Z"
+  "synced": "2026-11-11T08:36:35.427Z"
 }
