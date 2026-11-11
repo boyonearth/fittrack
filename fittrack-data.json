@@ -3249,14 +3249,14 @@
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
-        "reps": 8,
-        "kg": 30,
+        "reps": 6,
+        "kg": 20,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "08:42"
       },
       {
         "name": "Triceps Cable Pushdown",
@@ -9796,5 +9796,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:38:27.502Z"
+  "synced": "2026-11-11T08:42:41.779Z"
 }
