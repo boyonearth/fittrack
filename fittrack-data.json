@@ -3350,6 +3350,19 @@
         "secs": 0
       },
       {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "09:01"
+      },
+      {
         "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
@@ -3361,19 +3374,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 12,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Heel Touches",
@@ -9783,5 +9783,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:59:53.054Z"
+  "synced": "2026-11-11T09:01:33.430Z"
 }
