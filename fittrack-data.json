@@ -3272,24 +3272,24 @@
         "secs": 0
       },
       {
+        "name": "Single Arm Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 5,
+        "kg": 6,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "08:49",
+        "secs": 0
+      },
+      {
         "name": "Cable Crunch",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
         "kg": 34,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Single Arm Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 8,
-        "kg": 6,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -9783,5 +9783,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:49:00.737Z"
+  "synced": "2026-11-11T08:49:08.737Z"
 }
