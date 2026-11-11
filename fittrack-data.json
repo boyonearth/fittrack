@@ -3301,14 +3301,14 @@
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
-        "reps": 10,
-        "kg": 16,
+        "reps": 7,
+        "kg": 20,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "08:54"
       },
       {
         "name": "Crunches",
@@ -9783,5 +9783,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:51:07.539Z"
+  "synced": "2026-11-11T08:54:07.484Z"
 }
