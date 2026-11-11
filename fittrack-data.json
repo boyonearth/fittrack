@@ -3262,13 +3262,13 @@
         "name": "Triceps Cable Pushdown",
         "cat": "Triceps",
         "sets": 1,
-        "reps": 12,
+        "reps": 15,
         "kg": 16.5,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
         "notes": "",
-        "t": "",
+        "t": "08:47",
         "secs": 0
       },
       {
@@ -9796,5 +9796,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-11T08:42:41.779Z"
+  "synced": "2026-11-11T08:47:33.224Z"
 }
