@@ -5499,6 +5499,19 @@
         "secs": 0
       },
       {
+        "name": "Leg Raises",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 15,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:18",
+        "secs": 0
+      },
+      {
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
@@ -5543,19 +5556,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 34,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Leg Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:15:34.460Z"
+  "synced": "2026-11-12T20:18:47.497Z"
 }
