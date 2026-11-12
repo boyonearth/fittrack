@@ -5551,6 +5551,19 @@
         "secs": 0
       },
       {
+        "name": "Scissors",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:24",
+        "secs": 0
+      },
+      {
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
@@ -5679,19 +5692,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Scissors",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Side Leg Raises",
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:24:04.402Z"
+  "synced": "2026-11-12T20:24:08.365Z"
 }
