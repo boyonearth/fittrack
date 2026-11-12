@@ -5525,6 +5525,19 @@
         "secs": 0
       },
       {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 7,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:20",
+        "secs": 0
+      },
+      {
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
@@ -5569,19 +5582,6 @@
         "sets": 1,
         "reps": 10,
         "kg": 34,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Heel Touches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 5,
-        "kg": 0,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:19:30.113Z"
+  "synced": "2026-11-12T20:20:45.358Z"
 }
