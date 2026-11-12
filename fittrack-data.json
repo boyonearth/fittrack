@@ -5411,14 +5411,14 @@
         "name": "Alternating Dumbell Curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 6,
+        "reps": 7,
         "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "20:04"
       },
       {
         "name": "Dumbell Shrugs",
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:01:24.321Z"
+  "synced": "2026-11-12T20:04:43.868Z"
 }
