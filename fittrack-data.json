@@ -5473,6 +5473,19 @@
         "secs": 0
       },
       {
+        "name": "Dumbell Side Bend",
+        "cat": "Lateral muscles",
+        "sets": 1,
+        "reps": 10,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:13"
+      },
+      {
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
@@ -5523,19 +5536,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Dumbell Side Bend",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 10,
-        "kg": 18,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
       },
       {
         "name": "Crunches",
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:11:40.393Z"
+  "synced": "2026-11-12T20:13:17.111Z"
 }
