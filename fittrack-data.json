@@ -5538,6 +5538,19 @@
         "secs": 0
       },
       {
+        "name": "Flutter Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "20:24",
+        "secs": 0
+      },
+      {
         "name": "Machine lateral raise",
         "cat": "Shoulders",
         "sets": 1,
@@ -5617,19 +5630,6 @@
       },
       {
         "name": "Knee Raises",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Flutter Kicks",
         "cat": "Abs",
         "sets": 1,
         "reps": 10,
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:20:45.358Z"
+  "synced": "2026-11-12T20:24:04.402Z"
 }
