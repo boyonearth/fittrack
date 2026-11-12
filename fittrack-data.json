@@ -5437,14 +5437,14 @@
         "name": "Hammer curl",
         "cat": "Biceps",
         "sets": 1,
-        "reps": 7,
-        "kg": 10,
+        "reps": 6,
+        "kg": 12.5,
         "dist": 0,
         "dur": 0,
         "secs": 0,
         "calBurn": 0,
         "notes": "",
-        "t": ""
+        "t": "20:07"
       },
       {
         "name": "Dumbell rotation",
@@ -10167,5 +10167,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-12T20:05:56.545Z"
+  "synced": "2026-11-12T20:07:35.586Z"
 }
