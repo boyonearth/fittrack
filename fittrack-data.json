@@ -472,6 +472,19 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
+      },
+      {
+        "name": "Leg Extension",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 10,
+        "kg": 22.5,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "19:18"
       }
     ],
     "session_2026-07-17": {
@@ -10321,5 +10334,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-19T19:18:32.613Z"
+  "synced": "2026-11-19T19:18:46.798Z"
 }
