@@ -5175,6 +5175,32 @@
         "secs": 0
       },
       {
+        "name": "Leg press",
+        "cat": "Legs/Calves",
+        "sets": 1,
+        "reps": 5,
+        "kg": 15,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:28"
+      },
+      {
+        "name": "Crunches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 20,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:30",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5199,19 +5225,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Crunches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 20,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Leg raise",
@@ -5394,19 +5407,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Leg press",
-        "cat": "Legs/Calves",
-        "sets": 1,
-        "reps": 5,
-        "kg": 15,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "18:28"
       }
     ],
     "session_2026-10-18": {
@@ -10679,5 +10679,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:28:29.351Z"
+  "synced": "2026-11-23T18:30:18.598Z"
 }
