@@ -5253,6 +5253,19 @@
         "secs": 0
       },
       {
+        "name": "Flutter Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:35",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5277,19 +5290,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Flutter Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Bicycle Abdominal Crunches",
@@ -10679,5 +10679,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:35:11.924Z"
+  "synced": "2026-11-23T18:35:53.608Z"
 }
