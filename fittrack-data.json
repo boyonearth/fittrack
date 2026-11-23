@@ -5318,19 +5318,6 @@
         "t": ""
       },
       {
-        "name": "One-Arm Dumbell Row",
-        "cat": "Lateral muscles",
-        "sets": 1,
-        "reps": 15,
-        "kg": 12.5,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Machine Seated Pec Fly",
         "cat": "Chest",
         "sets": 1,
@@ -10666,5 +10653,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:38:36.461Z"
+  "synced": "2026-11-23T18:38:43.058Z"
 }
