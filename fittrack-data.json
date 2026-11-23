@@ -5322,6 +5322,19 @@
         "secs": 15
       },
       {
+        "name": "T-Bar Row Chest",
+        "cat": "Chest",
+        "sets": 1,
+        "reps": 8,
+        "kg": 20,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:44"
+      },
+      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5398,19 +5411,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "T-Bar Row Chest",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 8,
-        "kg": 20,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "18:44"
       }
     ],
     "session_2026-10-18": {
@@ -10683,5 +10683,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:44:24.354Z"
+  "synced": "2026-11-23T18:44:29.691Z"
 }
