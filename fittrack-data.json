@@ -5279,6 +5279,19 @@
         "t": "18:38"
       },
       {
+        "name": "Bent knee abdominal lift",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:40"
+      },
+      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5381,19 +5394,6 @@
         "notes": "",
         "t": "",
         "secs": 0
-      },
-      {
-        "name": "Bent knee abdominal lift",
-        "cat": "Abs",
-        "sets": 0,
-        "reps": 10,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "18:40"
       }
     ],
     "session_2026-10-18": {
@@ -10666,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:40:04.671Z"
+  "synced": "2026-11-23T18:40:10.883Z"
 }
