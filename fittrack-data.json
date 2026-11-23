@@ -5136,6 +5136,19 @@
         "t": "18:15"
       },
       {
+        "name": "Triceps Cable Pushdown",
+        "cat": "Triceps",
+        "sets": 1,
+        "reps": 15,
+        "kg": 16.5,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:18",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5147,19 +5160,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Triceps Cable Pushdown",
-        "cat": "Triceps",
-        "sets": 1,
-        "reps": 15,
-        "kg": 16.5,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Single Arm Cable Pushdown",
@@ -10666,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:15:46.108Z"
+  "synced": "2026-11-23T18:18:45.461Z"
 }
