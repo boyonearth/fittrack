@@ -5240,6 +5240,19 @@
         "t": "18:34"
       },
       {
+        "name": "Heel Touches",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 5,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:35",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5264,19 +5277,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Heel Touches",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 5,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Flutter Kicks",
@@ -10679,5 +10679,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:34:41.118Z"
+  "synced": "2026-11-23T18:35:11.924Z"
 }
