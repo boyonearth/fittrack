@@ -5149,6 +5149,19 @@
         "secs": 0
       },
       {
+        "name": "Cable Crunch",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 34,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:20",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5167,19 +5180,6 @@
         "sets": 1,
         "reps": 5,
         "kg": 6,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
-      },
-      {
-        "name": "Cable Crunch",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 34,
         "dist": 0,
         "dur": 0,
         "calBurn": 0,
@@ -10666,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:18:45.461Z"
+  "synced": "2026-11-23T18:20:51.927Z"
 }
