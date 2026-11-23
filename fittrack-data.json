@@ -5214,6 +5214,19 @@
         "secs": 0
       },
       {
+        "name": "Crunch Kicks",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 14,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:34",
+        "secs": 0
+      },
+      {
         "name": "Bench press",
         "cat": "Chest",
         "sets": 1,
@@ -5238,19 +5251,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Crunch Kicks",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 12,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Crunches",
@@ -10679,5 +10679,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:33:34.198Z"
+  "synced": "2026-11-23T18:34:05.774Z"
 }
