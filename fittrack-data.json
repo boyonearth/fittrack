@@ -5279,19 +5279,6 @@
         "t": "18:38"
       },
       {
-        "name": "Bench press",
-        "cat": "Chest",
-        "sets": 1,
-        "reps": 6,
-        "kg": 20,
-        "dist": 0,
-        "dur": 0,
-        "secs": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": ""
-      },
-      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -10679,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:38:24.023Z"
+  "synced": "2026-11-23T18:38:36.461Z"
 }
