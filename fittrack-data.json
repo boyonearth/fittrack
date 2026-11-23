@@ -5292,6 +5292,19 @@
         "t": "18:40"
       },
       {
+        "name": "Russian Twists",
+        "cat": "Abs",
+        "sets": 1,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:40",
+        "secs": 0
+      },
+      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5355,19 +5368,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Russian Twists",
-        "cat": "Abs",
-        "sets": 1,
-        "reps": 10,
-        "kg": 6,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 0
       },
       {
         "name": "Side Planks",
@@ -10666,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:40:10.883Z"
+  "synced": "2026-11-23T18:41:00.711Z"
 }
