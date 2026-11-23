@@ -5381,6 +5381,19 @@
         "notes": "",
         "t": "",
         "secs": 0
+      },
+      {
+        "name": "Bent knee abdominal lift",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 10,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "secs": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:40"
       }
     ],
     "session_2026-10-18": {
@@ -10653,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:38:43.058Z"
+  "synced": "2026-11-23T18:40:04.671Z"
 }
