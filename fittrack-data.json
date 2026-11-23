@@ -5305,6 +5305,19 @@
         "secs": 0
       },
       {
+        "name": "Plank",
+        "cat": "Abs",
+        "sets": 0,
+        "reps": 0,
+        "kg": 0,
+        "dist": 0,
+        "dur": 0,
+        "calBurn": 0,
+        "notes": "",
+        "t": "18:42",
+        "secs": 15
+      },
+      {
         "name": "Dumbell Side Bend",
         "cat": "Lateral muscles",
         "sets": 1,
@@ -5316,19 +5329,6 @@
         "calBurn": 0,
         "notes": "",
         "t": ""
-      },
-      {
-        "name": "Plank",
-        "cat": "Abs",
-        "sets": 0,
-        "reps": 0,
-        "kg": 0,
-        "dist": 0,
-        "dur": 0,
-        "calBurn": 0,
-        "notes": "",
-        "t": "",
-        "secs": 39
       },
       {
         "name": "Knee Raises",
@@ -10666,5 +10666,5 @@
     ],
     "wt_2026-06-16": 250
   },
-  "synced": "2026-11-23T18:41:00.711Z"
+  "synced": "2026-11-23T18:42:26.302Z"
 }
